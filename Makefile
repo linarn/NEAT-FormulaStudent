@@ -7,7 +7,7 @@ CC = g++ -O3
 
 #CFLAGS = -g -Wall -Wno-return-type $(INCLUDES) -DSWIG_GLOBAL
 #CFLAGS = -g -Wall -Werror
-CFLAGS = -g -Wall 
+CFLAGS = -g -Wall -std=c++11
 
 neat: neat.o network.o nnode.o link.o trait.o gene.o genome.o innovation.o organism.o species.o population.o experiments.o neatmain.o #neatswig_wrap.o visual.o
 	$(CC) $(CFLAGS) $(LIBS) neat.o network.o nnode.o link.o trait.o gene.o genome.o innovation.o organism.o species.o population.o experiments.o neatmain.o -o neat
@@ -18,10 +18,10 @@ neat: neat.o network.o nnode.o link.o trait.o gene.o genome.o innovation.o organ
 neat.o: neat.cpp neat.h
 	  $(CC) $(CFLAGS) -c neat.cpp -o neat.o
 
-network.o: network.cpp network.h neat.h neat.o  
+network.o: network.cpp network.h neat.h neat.o
 	$(CC) $(CFLAGS) -c network.cpp -o network.o
 
-nnode.o: nnode.cpp nnode.h    
+nnode.o: nnode.cpp nnode.h
 	$(CC) $(CFLAGS) -c nnode.cpp -o nnode.o
 
 link.o: link.cpp link.h
@@ -39,7 +39,7 @@ genome.o: genome.cpp genome.h
 innovation.o: innovation.cpp innovation.h
 	  $(CC) $(CFLAGS) -c innovation.cpp -o innovation.o
 
-organism.o: organism.cpp organism.h    
+organism.o: organism.cpp organism.h
 	$(CC) $(CFLAGS) -c organism.cpp -o organism.o
 
 species.o: species.cpp species.h organism.h

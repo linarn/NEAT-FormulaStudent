@@ -31,7 +31,8 @@
 #include "organism.h"
 #include "genome.h"
 #include "species.h"
-
+#include "Eigen/Eigen"
+#include "Eigen/Core"
 using namespace std;
 
 using namespace NEAT;
@@ -51,14 +52,17 @@ void cart_pole(int action, float *x,float *x_dot, float *theta, float *theta_dot
 
 //CFSD vehicle evolution routines ***************************
 Population *CFSD_test(int gens);
-bool CFSD_evaluate(Organism *org);
+bool CFSD_evaluate(Organism *org, Population *pop);
 int CFSD_epoch(Population *pop,int generation,char *filename);
-int go_car(Network *net,int max_steps,int thresh); //Run input
+float go_car(Network *net, Population *pop); //Run input
 //Move the cart and pole
-void vehicleModel(int action, float *x,float *x_dot, float *theta, float *theta_dot);
+void vehicleModel(float steeringAngle,float accelerationRequest, float *vx,float *vy, float *yawRate, float dt);
 float magicFormula(float const &a_slipAngle, float const &a_forceZ,
     float const &a_frictionCoefficient, float const &a_cAlpha, float const &a_c,
-    float const &a_e) const;
+    float const &a_e);
+void worldPosition(float *x, float *y, float *z, float *roll, float *pitch, float *yaw, float vx, float vy, float vz, float rollRate, float pitchRate, float yawRate, float dt);
+std::tuple<Eigen::ArrayXXf, Eigen::ArrayXXf, Eigen::ArrayXXf, Eigen::ArrayXXf, std::vector<float>> readMap(std::string coneFile, std::string pathFile);
+Eigen::ArrayXXd simConeDetectorSlam(Eigen::ArrayXXf globalMap, Eigen::ArrayXXf location, float heading, int nConesInFakeSlam);
 //Double pole balacing evolution routines ***************************
 class CartPole;
 
@@ -93,24 +97,24 @@ private:
   void rk4(double f, double y[], double dydx[], double yout[]);
   bool outsideBounds();
 
-  const static int NUM_INPUTS=7;
-  const static double MUP = 0.000002;
-  const static double MUC = 0.0005;
-  const static double GRAVITY= -9.8;
-  const static double MASSCART= 1.0;
-  const static double MASSPOLE_1= 0.1;
+  const static constexpr int NUM_INPUTS=7;
+  const static constexpr double MUP = 0.000002;
+  const static constexpr double MUC = 0.0005;
+  const static constexpr double GRAVITY= -9.8;
+  const static constexpr double MASSCART= 1.0;
+  const static constexpr double MASSPOLE_1= 0.1;
 
-  const static double LENGTH_1= 0.5;		  /* actually half the pole's length */
+  const static constexpr double LENGTH_1= 0.5;		  /* actually half the pole's length */
 
-  const static double FORCE_MAG= 10.0;
-  const static double TAU= 0.01;		  //seconds between state updates
+  const static constexpr double FORCE_MAG= 10.0;
+  const static constexpr double TAU= 0.01;		  //seconds between state updates
 
-  const static double one_degree= 0.0174532;	/* 2pi/360 */
-  const static double six_degrees= 0.1047192;
-  const static double twelve_degrees= 0.2094384;
-  const static double fifteen_degrees= 0.2617993;
-  const static double thirty_six_degrees= 0.628329;
-  const static double fifty_degrees= 0.87266;
+  const static constexpr double one_degree= 0.0174532;	/* 2pi/360 */
+  const static constexpr double six_degrees= 0.1047192;
+  const static constexpr double twelve_degrees= 0.2094384;
+  const static constexpr double fifteen_degrees= 0.2617993;
+  const static constexpr double thirty_six_degrees= 0.628329;
+  const static constexpr double fifty_degrees= 0.87266;
 
   double LENGTH_2;
   double MASSPOLE_2;

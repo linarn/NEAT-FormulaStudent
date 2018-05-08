@@ -1,15 +1,19 @@
+(generalization = 238 )
+generation= 21
+genomestart 15
+trait 1 0.0849646 0.000473803 0 0 0.0429301 0 0.0710125 0 
+node 1 1 1 1
+node 2 1 1 1
+node 3 1 1 1
+node 4 1 1 3
+node 5 1 0 2
+gene 1 1 5 -2.4816 0 1 -2.4816 1
+gene 1 2 5 -8 0 2 -8 1
+gene 1 3 5 5.84875 0 3 5.84875 1
+gene 1 4 5 1.52011 0 4 1.52011 1
+gene 1 5 5 -1.15923 1 93 -1.15923 1
+genomeend 15
 Generation highs: 
-      55 
-     143 
-     143 
-     143 
-     143 
-     146 
-     247 
-     247 
-     825 
-     825 
-  100000 
          
          
          
@@ -30,6 +34,7 @@ Generation highs:
          
          
          
+       6 
          
          
          
@@ -99,17 +104,16 @@ Generation highs:
          
          
          
-   7 
-   7 
-   7 
-   7 
-   7 
-   7 
-   7 
-   7 
-   7 
-   7 
-   7 
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
      
      
      
@@ -120,6 +124,17 @@ Generation highs:
      
      
      
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+   5 
      
      
      
@@ -200,17 +215,6 @@ Generation highs:
      
      
 Generation nodes in champ: 
-   8 
-   8 
-   8 
-   8 
-   8 
-   8 
-   8 
-   8 
-   8 
-   8 
-   8 
      
      
      
@@ -221,6 +225,17 @@ Generation nodes in champ:
      
      
      
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+   5 
      
      
      
@@ -301,16 +316,6 @@ Generation nodes in champ:
      
      
 Generational record fitness averages: 
-55
-143
-143
-143
-143
-146
-247
-247
-825
-825
 100000
 100000
 100000
@@ -322,6 +327,16 @@ Generational record fitness averages:
 100000
 100000
 100000
+100000
+100000
+100000
+100000
+100000
+100000
+100000
+100000
+100000
+6
 100000
 100000
 100000
@@ -401,17 +416,6 @@ Generational record fitness averages:
 100000
 100000
 Generational number of genes in champ averages: 
-7
-7
-7
-7
-7
-7
-7
-7
-7
-7
-7
 -nan
 -nan
 -nan
@@ -422,6 +426,17 @@ Generational number of genes in champ averages:
 -nan
 -nan
 -nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+5
 -nan
 -nan
 -nan
@@ -501,17 +516,6 @@ Generational number of genes in champ averages:
 -nan
 -nan
 Generational number of nodes in champ averages: 
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
-8
 -nan
 -nan
 -nan
@@ -522,6 +526,17 @@ Generational number of nodes in champ averages:
 -nan
 -nan
 -nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+5
 -nan
 -nan
 -nan
@@ -601,6 +616,6 @@ Generational number of nodes in champ averages:
 -nan
 -nan
 Winner evals: 
-1558
+20015
 Failures: 0 out of 1 runs
-Average # evals: 1558
+Average # evals: 20015
