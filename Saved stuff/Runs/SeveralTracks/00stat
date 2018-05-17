@@ -1,0 +1,4104 @@
+Iteration 0
+Inputs at stop: 
+in[] = 1;
+in[] = 7.95852;
+in[] = 0.13422;
+in[] = 0.242943;
+in[] = -0.673917;
+in[] = 2.93335;
+in[] = 4.3159;
+in[] = 3.12433;
+in[] = 9.08485;
+in[] = 4.31621;
+in[] = 11.5723;
+in[] = 8.08727;
+in[] = 11.3525;
+in[] = 13.0669;
+in[] = 1.22869;
+in[] = -0.0910025;
+in[] = 6.20957;
+in[] = 0.307826;
+in[] = 10.8791;
+in[] = 1.91119;
+in[] = 14.1212;
+in[] = 5.63649;
+in[] = 14.5926;
+in[] = 10.5327;
+out1 at stop: 1
+out2 at stop: 0.999846
+Time: 180.05
+startIndex: 63
+endIndex: 1398
+distanceTraveledAlongPath: 1267.78
+Total length of path: 262.816
+Start -> x: -10.514 y: 1.3958 yaw: -3.1315
+Stop -> x: 20.2292 y: -11.4264 yaw: 1.52499
+Calculated average vx: 0.0633716 km/h
+vx at stop: 8.49734
+vy at stop: 0.214552
+--------------------------------- 
+averageDistanceTraveledOnMap: 126.778
+averageVelocityOnMap: 0.00633716
+Iteration 1
+Inputs at stop: 
+in[] = 1;
+in[] = 6.83822;
+in[] = 0.428188;
+in[] = 0.755506;
+in[] = 0.00150108;
+in[] = 1.24608;
+in[] = 4.44633;
+in[] = 2.65399;
+in[] = 8.36617;
+in[] = 5.75668;
+in[] = 12.0329;
+in[] = 9.15215;
+in[] = 15.7277;
+in[] = 12.5204;
+in[] = -1.13797;
+in[] = -1.54448;
+in[] = 3.71672;
+in[] = -1.40478;
+in[] = 7.76055;
+in[] = 1.4819;
+in[] = 11.65;
+in[] = 4.62049;
+in[] = 15.2771;
+in[] = 8.06094;
+out1 at stop: 0.917435
+out2 at stop: 0.416008
+Time: 180.05
+startIndex: 1494
+endIndex: 1239
+distanceTraveledAlongPath: 1264.34
+Total length of path: 262.816
+Start -> x: 12.522 y: 1.6395 yaw: 3.031
+Stop -> x: 16.2714 y: -37.1198 yaw: 0.884653
+Calculated average vx: 0.0631992 km/h
+vx at stop: 6.99737
+vy at stop: 0.451388
+--------------------------------- 
+averageDistanceTraveledOnMap: 253.212
+averageVelocityOnMap: 0.0126571
+Iteration 2
+Inputs at stop: 
+in[] = 1;
+in[] = 7.27293;
+in[] = 0.111373;
+in[] = 0.239122;
+in[] = 1.38065;
+in[] = 2.70167;
+in[] = 6.3782;
+in[] = 2.82766;
+in[] = 11.3755;
+in[] = 2.99066;
+in[] = 16.1512;
+in[] = 3.99988;
+in[] = 19.284;
+in[] = 7.43184;
+in[] = 1.59452;
+in[] = -0.29695;
+in[] = 6.59294;
+in[] = -0.166932;
+in[] = 11.5903;
+in[] = -0.00393075;
+in[] = 16.4665;
+in[] = 0.775449;
+in[] = 20.6779;
+in[] = 3.43716;
+out1 at stop: 0.987349
+out2 at stop: 0.996411
+Time: 180.05
+startIndex: 963
+endIndex: 699
+distanceTraveledAlongPath: 1262.86
+Total length of path: 262.816
+Start -> x: -26.086 y: -39.75 yaw: -0.12221
+Stop -> x: -21.8077 y: -24.9007 yaw: 3.12555
+Calculated average vx: 0.0631256 km/h
+vx at stop: 7.81048
+vy at stop: 0.2245
+--------------------------------- 
+averageDistanceTraveledOnMap: 379.498
+averageVelocityOnMap: 0.0189696
+Iteration 3
+Inputs at stop: 
+in[] = 1;
+in[] = 6.32505;
+in[] = -0.24214;
+in[] = -0.435593;
+in[] = 1.72748;
+in[] = 3.72003;
+in[] = 6.1438;
+in[] = 1.51586;
+in[] = 8.34424;
+in[] = -2.86904;
+in[] = 7.62065;
+in[] = -7.68083;
+in[] = 4.28364;
+in[] = -11.2692;
+in[] = -0.905907;
+in[] = 0.54375;
+in[] = 3.62421;
+in[] = -0.144379;
+in[] = 5.47048;
+in[] = -4.56011;
+in[] = 2.99591;
+in[] = -8.5571;
+in[] = -1.44024;
+in[] = -10.8624;
+out1 at stop: -1
+out2 at stop: -0.999831
+Time: 180.05
+startIndex: 810
+endIndex: 519
+distanceTraveledAlongPath: 1258.36
+Total length of path: 262.816
+Start -> x: -39.735 y: -28.076 yaw: -2.4793
+Stop -> x: -7.17162 y: -15.1213 yaw: -0.428625
+Calculated average vx: 0.0629003 km/h
+vx at stop: 5.37505
+vy at stop: -0.335056
+--------------------------------- 
+averageDistanceTraveledOnMap: 505.334
+averageVelocityOnMap: 0.0252597
+Iteration 4
+Inputs at stop: 
+in[] = 1;
+in[] = 7.01819;
+in[] = 0.289003;
+in[] = 0.532955;
+in[] = -1.73421;
+in[] = 2.82586;
+in[] = 3.26301;
+in[] = 2.67034;
+in[] = 8.24189;
+in[] = 2.27441;
+in[] = 13.2221;
+in[] = 1.91045;
+in[] = 18.0938;
+in[] = 2.56573;
+in[] = -0.165751;
+in[] = -0.216381;
+in[] = 4.832;
+in[] = -0.381943;
+in[] = 9.79711;
+in[] = -0.942407;
+in[] = 14.7915;
+in[] = -1.0988;
+in[] = 19.6101;
+in[] = -0.02355;
+out1 at stop: 0.561695
+out2 at stop: 0.60564
+Time: 180.05
+startIndex: 33
+endIndex: 1344
+distanceTraveledAlongPath: 1263.78
+Total length of path: 262.816
+Start -> x: -5.5146 y: 1.4455 yaw: -3.1317
+Stop -> x: 19.8643 y: -20.0961 yaw: 1.6465
+Calculated average vx: 0.0631716 km/h
+vx at stop: 7.35916
+vy at stop: 0.358626
+--------------------------------- 
+averageDistanceTraveledOnMap: 631.712
+averageVelocityOnMap: 0.0315768
+Iteration 5
+Inputs at stop: 
+in[] = 1;
+in[] = 8.94049;
+in[] = 0.358411;
+in[] = 0.760844;
+in[] = 0.057156;
+in[] = 2.70366;
+in[] = 4.58677;
+in[] = 4.81167;
+in[] = 9.02108;
+in[] = 7.11604;
+in[] = 13.8291;
+in[] = 8.41176;
+in[] = 18.7342;
+in[] = 7.49722;
+in[] = -1.76278;
+in[] = -1.12427;
+in[] = 2.89803;
+in[] = 0.634788;
+in[] = 7.36757;
+in[] = 2.87294;
+in[] = 11.9136;
+in[] = 4.90326;
+in[] = 16.6803;
+in[] = 4.72048;
+out1 at stop: 1
+out2 at stop: -0.920553
+Time: 180.05
+startIndex: 1167
+endIndex: 900
+distanceTraveledAlongPath: 1262.33
+Total length of path: 262.816
+Start -> x: 4.948 y: -39.599 yaw: 0.060099
+Stop -> x: -36.803 y: -40.1666 yaw: -0.466366
+Calculated average vx: 0.0630992 km/h
+vx at stop: 8.07504
+vy at stop: 0.316127
+--------------------------------- 
+averageDistanceTraveledOnMap: 757.945
+averageVelocityOnMap: 0.0378867
+Iteration 6
+Inputs at stop: 
+in[] = 1;
+in[] = 6.04205;
+in[] = 0.449065;
+in[] = 0.833838;
+in[] = 1.06171;
+in[] = 1.86976;
+in[] = 5.6432;
+in[] = 3.8332;
+in[] = 9.51663;
+in[] = 5.82555;
+in[] = 12.718;
+in[] = 7.37927;
+in[] = 17.2529;
+in[] = 9.48521;
+in[] = -0.331593;
+in[] = -1.38017;
+in[] = 4.41586;
+in[] = -0.0929056;
+in[] = 8.8128;
+in[] = 2.25858;
+in[] = 10.5905;
+in[] = 3.0243;
+in[] = 13.9816;
+in[] = 4.6583;
+out1 at stop: 1
+out2 at stop: 0.76239
+Time: 180.05
+startIndex: 210
+endIndex: 1485
+distanceTraveledAlongPath: 1257.77
+Total length of path: 262.816
+Start -> x: -35.003 y: 1.5088 yaw: -2.966
+Stop -> x: 14.3203 y: 1.57864 yaw: 2.75409
+Calculated average vx: 0.0628709 km/h
+vx at stop: 6.4541
+vy at stop: 0.527214
+--------------------------------- 
+averageDistanceTraveledOnMap: 883.722
+averageVelocityOnMap: 0.0441738
+Iteration 7
+Inputs at stop: 
+in[] = 1;
+in[] = 6.80396;
+in[] = 0.434931;
+in[] = 0.633777;
+in[] = -1.38995;
+in[] = 2.77735;
+in[] = 3.45417;
+in[] = 2.78344;
+in[] = 6.37514;
+in[] = 6.41753;
+in[] = 7.92031;
+in[] = 11.1719;
+in[] = 9.09258;
+in[] = 16.0299;
+in[] = -0.851478;
+in[] = -0.454511;
+in[] = 4.05107;
+in[] = -0.171111;
+in[] = 8.0157;
+in[] = 2.63409;
+in[] = 9.78375;
+in[] = 7.27731;
+in[] = 11.2838;
+in[] = 12.0448;
+out1 at stop: 1
+out2 at stop: -0.829985
+Time: 180.05
+startIndex: 1446
+endIndex: 1212
+distanceTraveledAlongPath: 1267.82
+Total length of path: 262.816
+Start -> x: 18.139 y: -3.2768 yaw: 1.8001
+Stop -> x: 12.7948 y: -40.051 yaw: 0.298031
+Calculated average vx: 0.0633736 km/h
+vx at stop: 6.00689
+vy at stop: 0.402048
+--------------------------------- 
+averageDistanceTraveledOnMap: 1010.5
+averageVelocityOnMap: 0.0505112
+Iteration 8
+Inputs at stop: 
+in[] = 1;
+in[] = 7.70521;
+in[] = -0.0361549;
+in[] = -0.15504;
+in[] = 2.38039;
+in[] = 2.70211;
+in[] = 7.3806;
+in[] = 2.66337;
+in[] = 12.3797;
+in[] = 2.64762;
+in[] = 17.3797;
+in[] = 2.66888;
+in[] = 22.182;
+in[] = 3.54231;
+in[] = 2.51015;
+in[] = -0.297367;
+in[] = 7.50937;
+in[] = -0.34011;
+in[] = 12.5095;
+in[] = -0.351852;
+in[] = 17.5094;
+in[] = -0.330592;
+in[] = 22.4057;
+in[] = 0.310233;
+out1 at stop: 1
+out2 at stop: 0.999998
+Time: 180.05
+startIndex: 906
+endIndex: 663
+distanceTraveledAlongPath: 1266.36
+Total length of path: 262.816
+Start -> x: -35.564 y: -39.159 yaw: -0.10454
+Stop -> x: -15.9051 y: -24.9241 yaw: -3.13952
+Calculated average vx: 0.0633006 km/h
+vx at stop: 8.24008
+vy at stop: 0.0846546
+--------------------------------- 
+averageDistanceTraveledOnMap: 1137.14
+averageVelocityOnMap: 0.0568413
+Iteration 9
+Inputs at stop: 
+in[] = 1;
+in[] = 6.98889;
+in[] = 0.504751;
+in[] = 0.863028;
+in[] = -1.36869;
+in[] = 2.84193;
+in[] = 3.40666;
+in[] = 2.92874;
+in[] = 5.39054;
+in[] = 6.77249;
+in[] = 3.78544;
+in[] = 11.4846;
+in[] = 1.51404;
+in[] = 15.9389;
+in[] = 0.330452;
+in[] = -0.64248;
+in[] = 5.11979;
+in[] = 0.399994;
+in[] = 7.82209;
+in[] = 4.36987;
+in[] = 7.81951;
+in[] = 9.21556;
+in[] = 5.95559;
+in[] = 13.8327;
+out1 at stop: 1
+out2 at stop: 0.11629
+Time: 180.05
+startIndex: 495
+endIndex: 258
+distanceTraveledAlongPath: 1267.36
+Total length of path: 262.816
+Start -> x: -9.9907 y: -12.343 yaw: -0.097979
+Stop -> x: -42.7087 y: -2.1524 yaw: -2.00023
+Calculated average vx: 0.0633502 km/h
+vx at stop: 6.92554
+vy at stop: 0.484636
+--------------------------------- 
+averageDistanceTraveledOnMap: 1263.88
+averageVelocityOnMap: 0.0631763
+Iteration 0
+Inputs at stop: 
+in[] = 1;
+in[] = 6.54921;
+in[] = 0.5346;
+in[] = 0.766532;
+in[] = -2.76382;
+in[] = 3.8317;
+in[] = 2.02582;
+in[] = 5.18736;
+in[] = 5.61206;
+in[] = 8.21258;
+in[] = 5.03254;
+in[] = 13.1617;
+in[] = 4.12087;
+in[] = 18.0586;
+in[] = -1.82812;
+in[] = 0.934419;
+in[] = 2.95243;
+in[] = 2.34065;
+in[] = 7.09342;
+in[] = 5.03166;
+in[] = 8.55554;
+in[] = 9.57681;
+in[] = 7.93261;
+in[] = 14.5351;
+out1 at stop: 1
+out2 at stop: -0.680538
+Time: 179.55
+startIndex: 96
+endIndex: 378
+distanceTraveledAlongPath: 1309.96
+Total length of path: 317.19
+Start -> x: -15.344 y: 4.0414 yaw: 2.3343
+Stop -> x: 8.96235 y: 30.022 yaw: 1.49523
+Calculated average vx: 0.0656623 km/h
+vx at stop: 5.88436
+vy at stop: 0.470193
+--------------------------------- 
+averageDistanceTraveledOnMap: 130.996
+averageVelocityOnMap: 0.00656623
+Iteration 1
+Inputs at stop: 
+in[] = 1;
+in[] = 7.83874;
+in[] = -0.119733;
+in[] = -0.110963;
+in[] = -0.265313;
+in[] = 2.07607;
+in[] = 4.7029;
+in[] = 2.51682;
+in[] = 9.66945;
+in[] = 2.38731;
+in[] = 14.1637;
+in[] = 0.369467;
+in[] = 17.3263;
+in[] = -3.38428;
+in[] = 0.24726;
+in[] = -0.879809;
+in[] = 5.21495;
+in[] = -0.440383;
+in[] = 10.134;
+in[] = -0.762431;
+in[] = 14.144;
+in[] = -3.63496;
+in[] = 15.422;
+in[] = -8.43481;
+out1 at stop: -0.830414
+out2 at stop: 0.948416
+Time: 180.05
+startIndex: 1560
+endIndex: 3
+distanceTraveledAlongPath: 1320.2
+Total length of path: 317.19
+Start -> x: 15.497 y: 46.721 yaw: -1.5708
+Stop -> x: -0.765268 y: 2.06385 yaw: -3.11922
+Calculated average vx: 0.0659914 km/h
+vx at stop: 8.36618
+vy at stop: -0.183925
+--------------------------------- 
+averageDistanceTraveledOnMap: 263.016
+averageVelocityOnMap: 0.0131654
+Iteration 2
+Inputs at stop: 
+in[] = 1;
+in[] = 6.061;
+in[] = 0.464579;
+in[] = 0.863456;
+in[] = -2.60706;
+in[] = 3.80191;
+in[] = 2.13026;
+in[] = 5.33038;
+in[] = 5.60443;
+in[] = 8.48367;
+in[] = 4.84581;
+in[] = 13.4085;
+in[] = 3.75715;
+in[] = 18.2691;
+in[] = -1.5669;
+in[] = 0.94047;
+in[] = 3.15951;
+in[] = 2.51915;
+in[] = 7.20018;
+in[] = 5.35857;
+in[] = 8.4965;
+in[] = 9.95374;
+in[] = 7.69416;
+in[] = 14.8862;
+out1 at stop: 1
+out2 at stop: 0.83299
+Time: 136.15
+startIndex: 114
+endIndex: 375
+distanceTraveledAlongPath: 990.59
+Total length of path: 317.19
+Start -> x: -16.716 y: 6.648 yaw: 1.8597
+Stop -> x: 9.00156 y: 29.7526 yaw: 1.45364
+Calculated average vx: 0.0654815 km/h
+vx at stop: 6.53001
+vy at stop: 0.537838
+--------------------------------- 
+averageDistanceTraveledOnMap: 362.075
+averageVelocityOnMap: 0.0197135
+Iteration 3
+Inputs at stop: 
+in[] = 1;
+in[] = 5.99555;
+in[] = 0.603624;
+in[] = 1.12256;
+in[] = 1.7284;
+in[] = 0.513288;
+in[] = 5.65918;
+in[] = 3.57571;
+in[] = 9.37303;
+in[] = 6.89503;
+in[] = 13.2397;
+in[] = 10.0318;
+in[] = 17.9283;
+in[] = 11.3605;
+in[] = -0.222873;
+in[] = -2.40309;
+in[] = 4.42146;
+in[] = -1.29573;
+in[] = 8.33762;
+in[] = 1.80859;
+in[] = 11.9872;
+in[] = 5.21092;
+in[] = 15.9968;
+in[] = 8.13308;
+out1 at stop: 1
+out2 at stop: 1
+Time: 0.55
+startIndex: 408
+endIndex: 420
+distanceTraveledAlongPath: 1.49983
+Total length of path: 317.19
+Start -> x: 4.435 y: 34.598 yaw: 2.0902
+Stop -> x: 2.86575 y: 35.7804 yaw: 2.5259
+Calculated average vx: 0.0245427 km/h
+vx at stop: 6.63136
+vy at stop: 0.637998
+--------------------------------- 
+averageDistanceTraveledOnMap: 362.225
+averageVelocityOnMap: 0.0221678
+Iteration 4
+Inputs at stop: 
+in[] = 1;
+in[] = 5.83293;
+in[] = 0.473994;
+in[] = 0.883392;
+in[] = -2.95361;
+in[] = 3.93573;
+in[] = 1.90609;
+in[] = 5.01361;
+in[] = 5.66042;
+in[] = 7.82752;
+in[] = 5.36657;
+in[] = 12.8018;
+in[] = 4.73811;
+in[] = 17.743;
+in[] = -2.18612;
+in[] = 0.989413;
+in[] = 2.66741;
+in[] = 2.11831;
+in[] = 6.95635;
+in[] = 4.56665;
+in[] = 8.67751;
+in[] = 9.02015;
+in[] = 8.34085;
+in[] = 14.0061;
+out1 at stop: 1
+out2 at stop: 0.794659
+Time: 42.45
+startIndex: 414
+endIndex: 378
+distanceTraveledAlongPath: 309.884
+Total length of path: 317.19
+Start -> x: 3.9387 y: 35.466 yaw: 2.0902
+Stop -> x: 8.91985 y: 30.4582 yaw: 1.54782
+Calculated average vx: 0.0656997 km/h
+vx at stop: 6.27585
+vy at stop: 0.560806
+--------------------------------- 
+averageDistanceTraveledOnMap: 393.213
+averageVelocityOnMap: 0.0287378
+Iteration 5
+Inputs at stop: 
+in[] = 1;
+in[] = 6.25819;
+in[] = -0.485713;
+in[] = -0.695243;
+in[] = 0.450533;
+in[] = 4.19376;
+in[] = 5.18393;
+in[] = 2.89458;
+in[] = 8.90631;
+in[] = -0.431038;
+in[] = 11.9537;
+in[] = -4.33963;
+in[] = 14.5698;
+in[] = -8.59161;
+in[] = -2.22726;
+in[] = 0.976761;
+in[] = 2.70456;
+in[] = 0.883891;
+in[] = 6.47852;
+in[] = -2.3455;
+in[] = 9.57224;
+in[] = -6.16451;
+in[] = 11.8868;
+in[] = -10.497;
+out1 at stop: 0.0320574
+out2 at stop: -0.592645
+Time: 180.05
+startIndex: 1680
+endIndex: 84
+distanceTraveledAlongPath: 1313.69
+Total length of path: 317.19
+Start -> x: 15.497 y: 26.721 yaw: -1.5708
+Stop -> x: -12.1027 y: 4.61007 yaw: 2.5569
+Calculated average vx: 0.0656662 km/h
+vx at stop: 5.82876
+vy at stop: -0.170866
+--------------------------------- 
+averageDistanceTraveledOnMap: 524.582
+averageVelocityOnMap: 0.0353044
+Iteration 6
+Inputs at stop: 
+in[] = 1;
+in[] = 6.1252;
+in[] = 0.574541;
+in[] = 0.781263;
+in[] = 1.67477;
+in[] = 4.77323;
+in[] = 5.64653;
+in[] = 7.27088;
+in[] = 5.7602;
+in[] = 12.2525;
+in[] = 5.53769;
+in[] = 17.2285;
+in[] = 5.55328;
+in[] = 22.2075;
+in[] = 2.19691;
+in[] = 1.82539;
+in[] = 6.6716;
+in[] = 3.915;
+in[] = 8.75099;
+in[] = 8.21294;
+in[] = 8.82296;
+in[] = 13.2097;
+in[] = 8.49548;
+in[] = 18.1885;
+out1 at stop: 1
+out2 at stop: 0.707723
+Time: 74.6
+startIndex: 936
+endIndex: 381
+distanceTraveledAlongPath: 539.366
+Total length of path: 317.19
+Start -> x: -17.326 y: 62.057 yaw: -1.1202
+Stop -> x: 8.81392 y: 31.1001 yaw: 1.63726
+Calculated average vx: 0.065071 km/h
+vx at stop: 6.50743
+vy at stop: 0.493927
+--------------------------------- 
+averageDistanceTraveledOnMap: 578.519
+averageVelocityOnMap: 0.0418115
+Iteration 7
+Inputs at stop: 
+in[] = 1;
+in[] = 3.06187;
+in[] = -0.490934;
+in[] = -0.433072;
+in[] = 0.0223796;
+in[] = 3.72664;
+in[] = 4.44443;
+in[] = 1.65624;
+in[] = 5.31994;
+in[] = -3.05029;
+in[] = 3.60014;
+in[] = -7.71409;
+in[] = 1.51733;
+in[] = -12.2596;
+in[] = -0.668131;
+in[] = 0.622447;
+in[] = 2.49326;
+in[] = -1.45933;
+in[] = 1.00834;
+in[] = -6.16989;
+in[] = -1.07536;
+in[] = -10.715;
+in[] = -3.17359;
+in[] = -15.2534;
+out1 at stop: -1
+out2 at stop: -0.831504
+Time: 180.05
+startIndex: 1047
+endIndex: 1281
+distanceTraveledAlongPath: 1302.45
+Total length of path: 317.19
+Start -> x: -7.6826 y: 46.748 yaw: -0.49904
+Stop -> x: -6.22843 y: 65.499 yaw: 1.93361
+Calculated average vx: 0.0651046 km/h
+vx at stop: 2.25436
+vy at stop: -0.299885
+--------------------------------- 
+averageDistanceTraveledOnMap: 708.764
+averageVelocityOnMap: 0.0483219
+Iteration 8
+Inputs at stop: 
+in[] = 1;
+in[] = 5.57005;
+in[] = -0.519662;
+in[] = -0.584278;
+in[] = 1.40164;
+in[] = 3.43919;
+in[] = 5.39272;
+in[] = 0.503886;
+in[] = 8.33908;
+in[] = -2.28404;
+in[] = 10.816;
+in[] = -4.82283;
+in[] = 14.359;
+in[] = -8.33349;
+in[] = 2.18491;
+in[] = -0.677674;
+in[] = 5.87213;
+in[] = -4.05256;
+in[] = 6.12143;
+in[] = -4.30441;
+in[] = 8.88887;
+in[] = -7.12197;
+in[] = 12.4305;
+in[] = -10.6331;
+out1 at stop: -0.999999
+out2 at stop: 1
+Time: 180.05
+startIndex: 1524
+endIndex: 1827
+distanceTraveledAlongPath: 1314.01
+Total length of path: 317.19
+Start -> x: 15.497 y: 52.721 yaw: -1.5708
+Stop -> x: 10.2383 y: 5.34478 yaw: -2.27729
+Calculated average vx: 0.0656824 km/h
+vx at stop: 6.14968
+vy at stop: -0.402026
+--------------------------------- 
+averageDistanceTraveledOnMap: 840.165
+averageVelocityOnMap: 0.0548902
+Iteration 9
+Inputs at stop: 
+in[] = 1;
+in[] = 7.84517;
+in[] = 0.457635;
+in[] = 0.821635;
+in[] = 0.740261;
+in[] = 1.80665;
+in[] = 5.14215;
+in[] = 3.68518;
+in[] = 7.48642;
+in[] = 8.0759;
+in[] = 9.56037;
+in[] = 12.5896;
+in[] = 13.4155;
+in[] = 15.697;
+in[] = 1.14859;
+in[] = -1.14936;
+in[] = 5.88144;
+in[] = 0.319493;
+in[] = 8.95777;
+in[] = 4.165;
+in[] = 10.8348;
+in[] = 8.77417;
+in[] = 13.9539;
+in[] = 12.5628;
+out1 at stop: 1
+out2 at stop: 0.49914
+Time: 180.05
+startIndex: 864
+endIndex: 1152
+distanceTraveledAlongPath: 1311.49
+Total length of path: 317.19
+Start -> x: -25.667 y: 70.319 yaw: -0.46899
+Stop -> x: 6.31844 y: 51.257 yaw: 1.63331
+Calculated average vx: 0.0655561 km/h
+vx at stop: 8.06
+vy at stop: 0.414009
+--------------------------------- 
+averageDistanceTraveledOnMap: 971.314
+averageVelocityOnMap: 0.0614458
+Iteration 0
+Inputs at stop: 
+in[] = 1;
+in[] = 3.78323;
+in[] = -0.336254;
+in[] = -1.00718;
+in[] = 4.43504;
+in[] = 0.397915;
+in[] = 7.36053;
+in[] = -3.65372;
+in[] = 9.68707;
+in[] = -8.07971;
+in[] = 12.0035;
+in[] = -12.5105;
+in[] = 14.4553;
+in[] = -16.8628;
+in[] = 0.204015;
+in[] = 1.23968;
+in[] = 3.06131;
+in[] = -2.85905;
+in[] = 5.76155;
+in[] = -7.04813;
+in[] = 8.07893;
+in[] = -11.4786;
+in[] = 10.3999;
+in[] = -15.9071;
+out1 at stop: -1
+out2 at stop: -1
+Time: 15.75
+startIndex: 2952
+endIndex: 3621
+distanceTraveledAlongPath: 111.427
+Total length of path: 650.709
+Start -> x: 115.18 y: 47.168 yaw: 1.5818
+Stop -> x: 40.1098 y: 20.2198 yaw: -1.87015
+Calculated average vx: 0.0636726 km/h
+vx at stop: 2.86833
+vy at stop: -0.568283
+--------------------------------- 
+averageDistanceTraveledOnMap: 11.1427
+averageVelocityOnMap: 0.00636726
+Iteration 1
+Inputs at stop: 
+in[] = 1;
+in[] = 3.97204;
+in[] = -0.593221;
+in[] = -0.62115;
+in[] = 4.46357;
+in[] = 0.502668;
+in[] = 7.47427;
+in[] = -3.48606;
+in[] = 9.89407;
+in[] = -7.86176;
+in[] = 12.3039;
+in[] = -12.2424;
+in[] = 14.8474;
+in[] = -16.5418;
+in[] = 0.215662;
+in[] = 1.25459;
+in[] = 3.15917;
+in[] = -2.78267;
+in[] = 5.94757;
+in[] = -6.9136;
+in[] = 8.35832;
+in[] = -11.294;
+in[] = 10.7726;
+in[] = -15.6723;
+out1 at stop: -1
+out2 at stop: -1
+Time: 8.95
+startIndex: 3240
+endIndex: 3621
+distanceTraveledAlongPath: 63.4455
+Total length of path: 650.709
+Start -> x: 83.939 y: 57.384 yaw: -2.6213
+Stop -> x: 40.1096 y: 20.2502 yaw: -1.90484
+Calculated average vx: 0.0637999 km/h
+vx at stop: 3.06153
+vy at stop: -0.413603
+--------------------------------- 
+averageDistanceTraveledOnMap: 17.4872
+averageVelocityOnMap: 0.0127472
+Iteration 2
+Inputs at stop: 
+in[] = 1;
+in[] = 3.71511;
+in[] = -0.339032;
+in[] = -0.879817;
+in[] = 4.4991;
+in[] = 0.526099;
+in[] = 7.48259;
+in[] = -3.48302;
+in[] = 9.87257;
+in[] = -7.87508;
+in[] = 12.2525;
+in[] = -12.272;
+in[] = 14.7667;
+in[] = -16.5887;
+in[] = 0.256403;
+in[] = 1.3069;
+in[] = 3.17238;
+in[] = -2.75029;
+in[] = 5.93261;
+in[] = -6.90009;
+in[] = 8.31351;
+in[] = -11.2968;
+in[] = 10.698;
+in[] = -15.6914;
+out1 at stop: -1
+out2 at stop: -1
+Time: 76.35
+startIndex: 174
+endIndex: 3621
+distanceTraveledAlongPath: 574.297
+Total length of path: 650.709
+Start -> x: -4.9979 y: -16.985 yaw: 0.27586
+Stop -> x: 40.0657 y: 20.3094 yaw: -1.87847
+Calculated average vx: 0.0676971 km/h
+vx at stop: 2.79409
+vy at stop: -0.593889
+--------------------------------- 
+averageDistanceTraveledOnMap: 74.9169
+averageVelocityOnMap: 0.019517
+Iteration 3
+Inputs at stop: 
+in[] = 1;
+in[] = 3.61484;
+in[] = -0.264087;
+in[] = -0.118521;
+in[] = -4.04741;
+in[] = 0.642777;
+in[] = -0.745609;
+in[] = 4.36907;
+in[] = 4.00784;
+in[] = 4.51277;
+in[] = 7.22968;
+in[] = 0.718603;
+in[] = 10.2865;
+in[] = -3.23493;
+in[] = -0.3029;
+in[] = 0.568295;
+in[] = 2.97333;
+in[] = 1.42118;
+in[] = 5.96349;
+in[] = -2.58165;
+in[] = 8.79963;
+in[] = -6.67994;
+in[] = 11.2611;
+in[] = -11.0321;
+out1 at stop: 0.807128
+out2 at stop: 0.875049
+Time: 38.35
+startIndex: 1887
+endIndex: 3588
+distanceTraveledAlongPath: 283.426
+Total length of path: 650.709
+Start -> x: 28.121 y: -57.225 yaw: -0.28958
+Stop -> x: 40.7668 y: 22.8924 yaw: -1.8769
+Calculated average vx: 0.0665145 km/h
+vx at stop: 4.09414
+vy at stop: 0.145832
+--------------------------------- 
+averageDistanceTraveledOnMap: 103.259
+averageVelocityOnMap: 0.0261684
+Iteration 4
+Inputs at stop: 
+in[] = 1;
+in[] = 3.86508;
+in[] = -0.471826;
+in[] = -1.08676;
+in[] = 4.41327;
+in[] = 0.433413;
+in[] = 7.35533;
+in[] = -3.60621;
+in[] = 9.69997;
+in[] = -8.02264;
+in[] = 12.0345;
+in[] = -12.4439;
+in[] = 14.5041;
+in[] = -16.7861;
+in[] = 0.178833;
+in[] = 1.25785;
+in[] = 3.05289;
+in[] = -2.82914;
+in[] = 5.77025;
+in[] = -7.00714;
+in[] = 8.10576;
+in[] = -11.4281;
+in[] = 10.4449;
+in[] = -15.8471;
+out1 at stop: -1
+out2 at stop: -1
+Time: 71.65
+startIndex: 402
+endIndex: 3621
+distanceTraveledAlongPath: 536.297
+Total length of path: 650.709
+Start -> x: 30.89 y: -4.8512 yaw: 0.11282
+Stop -> x: 40.0798 y: 20.2021 yaw: -1.87845
+Calculated average vx: 0.0673646 km/h
+vx at stop: 2.9766
+vy at stop: -0.680605
+--------------------------------- 
+averageDistanceTraveledOnMap: 156.889
+averageVelocityOnMap: 0.0329049
+Iteration 5
+Inputs at stop: 
+in[] = 1;
+in[] = 3.77708;
+in[] = -0.594447;
+in[] = -0.698567;
+in[] = 4.47683;
+in[] = 0.52826;
+in[] = 7.46811;
+in[] = -3.47505;
+in[] = 9.86662;
+in[] = -7.86245;
+in[] = 12.2551;
+in[] = -12.2548;
+in[] = 14.7777;
+in[] = -16.5665;
+in[] = 0.232616;
+in[] = 1.30081;
+in[] = 3.15648;
+in[] = -2.7507;
+in[] = 5.92478;
+in[] = -6.89513;
+in[] = 8.31422;
+in[] = -11.2872;
+in[] = 10.7072;
+in[] = -15.6772;
+out1 at stop: -1
+out2 at stop: -1
+Time: 55.1
+startIndex: 1191
+endIndex: 3621
+distanceTraveledAlongPath: 404.843
+Total length of path: 650.709
+Start -> x: 77.009 y: -7.1308 yaw: -2.6856
+Stop -> x: 40.0675 y: 20.2831 yaw: -1.89822
+Calculated average vx: 0.0661269 km/h
+vx at stop: 2.87369
+vy at stop: -0.488284
+--------------------------------- 
+averageDistanceTraveledOnMap: 197.374
+averageVelocityOnMap: 0.0395176
+Iteration 6
+Inputs at stop: 
+in[] = 1;
+in[] = 4.30938;
+in[] = -0.50857;
+in[] = -0.972515;
+in[] = 4.48887;
+in[] = 0.571006;
+in[] = 7.54778;
+in[] = -3.38087;
+in[] = 10.0205;
+in[] = -7.72686;
+in[] = 12.4833;
+in[] = -12.0779;
+in[] = 15.0789;
+in[] = -16.3462;
+in[] = 0.23214;
+in[] = 1.27129;
+in[] = 3.22446;
+in[] = -2.72993;
+in[] = 6.06282;
+in[] = -6.82669;
+in[] = 8.52658;
+in[] = -11.1775;
+in[] = 10.9939;
+in[] = -15.5262;
+out1 at stop: -1
+out2 at stop: -1
+Time: 64.2
+startIndex: 744
+endIndex: 3621
+distanceTraveledAlongPath: 479.313
+Total length of path: 650.709
+Start -> x: 73.482 y: 21.861 yaw: 0.53151
+Stop -> x: 40.0863 y: 20.2723 yaw: -1.90365
+Calculated average vx: 0.0671934 km/h
+vx at stop: 3.41786
+vy at stop: -0.693918
+--------------------------------- 
+averageDistanceTraveledOnMap: 245.305
+averageVelocityOnMap: 0.0462369
+Iteration 7
+Inputs at stop: 
+in[] = 1;
+in[] = 4.195;
+in[] = -0.630139;
+in[] = -0.898041;
+in[] = 4.34122;
+in[] = 0.592775;
+in[] = 7.3958;
+in[] = -3.36245;
+in[] = 9.8638;
+in[] = -7.71114;
+in[] = 12.3218;
+in[] = -12.0649;
+in[] = 14.9127;
+in[] = -16.336;
+in[] = 0.085259;
+in[] = 1.29772;
+in[] = 3.0732;
+in[] = -2.70677;
+in[] = 5.90706;
+in[] = -6.80664;
+in[] = 8.36607;
+in[] = -11.1601;
+in[] = 10.8286;
+in[] = -15.5115;
+out1 at stop: -1
+out2 at stop: -1
+Time: 6.95
+startIndex: 3342
+endIndex: 3621
+distanceTraveledAlongPath: 46.4455
+Total length of path: 650.709
+Start -> x: 69.189 y: 48.932 yaw: -2.6212
+Stop -> x: 40.0201 y: 20.143 yaw: -1.91047
+Calculated average vx: 0.0601453 km/h
+vx at stop: 3.31428
+vy at stop: -0.666485
+--------------------------------- 
+averageDistanceTraveledOnMap: 249.949
+averageVelocityOnMap: 0.0522514
+Iteration 8
+Inputs at stop: 
+in[] = 1;
+in[] = 5.93764;
+in[] = 0.151652;
+in[] = 0.413094;
+in[] = 1.22007;
+in[] = 0.626923;
+in[] = 5.58898;
+in[] = 2.00136;
+in[] = 6.49902;
+in[] = 6.66433;
+in[] = 6.99874;
+in[] = 11.6391;
+in[] = 7.96843;
+in[] = 16.5318;
+in[] = 0.10169;
+in[] = -2.25453;
+in[] = 5.0437;
+in[] = -2.08331;
+in[] = 8.61241;
+in[] = 1.18229;
+in[] = 9.45481;
+in[] = 6.01961;
+in[] = 9.94461;
+in[] = 10.9956;
+out1 at stop: -0.999991
+out2 at stop: 0.970438
+Time: 0.55
+startIndex: 1647
+endIndex: 1659
+distanceTraveledAlongPath: 1.49971
+Total length of path: 650.709
+Start -> x: 7.4847 y: -29.741 yaw: -2.4241
+Stop -> x: 6.53274 y: -31.4497 yaw: -2.09191
+Calculated average vx: 0.0245406 km/h
+vx at stop: 6.45889
+vy at stop: 0.0747945
+--------------------------------- 
+averageDistanceTraveledOnMap: 250.099
+averageVelocityOnMap: 0.0547055
+Iteration 9
+Inputs at stop: 
+in[] = 1;
+in[] = 4.07017;
+in[] = -0.584622;
+in[] = -0.986195;
+in[] = 4.50589;
+in[] = 0.467783;
+in[] = 7.44116;
+in[] = -3.57678;
+in[] = 9.77838;
+in[] = -7.99714;
+in[] = 12.1055;
+in[] = -12.4223;
+in[] = 14.5678;
+in[] = -16.7687;
+in[] = 0.272844;
+in[] = 1.29933;
+in[] = 3.14003;
+in[] = -2.79248;
+in[] = 5.85037;
+in[] = -6.97504;
+in[] = 8.17845;
+in[] = -11.3999;
+in[] = 10.5101;
+in[] = -15.8228;
+out1 at stop: -1
+out2 at stop: -1
+Time: 97.65
+startIndex: 3189
+endIndex: 3621
+distanceTraveledAlongPath: 721.386
+Total length of path: 650.709
+Start -> x: 91.314 y: 61.61 yaw: -2.6212
+Stop -> x: 40.057 y: 20.2923 yaw: -1.87521
+Calculated average vx: 0.0664872 km/h
+vx at stop: 3.19118
+vy at stop: -0.752262
+--------------------------------- 
+averageDistanceTraveledOnMap: 322.238
+averageVelocityOnMap: 0.0613542
+Iteration 0
+Inputs at stop: 
+in[] = 1;
+in[] = 6.77862;
+in[] = 0.357655;
+in[] = 0.621887;
+in[] = 2.19291;
+in[] = -0.283931;
+in[] = 3.73719;
+in[] = 4.2295;
+in[] = 7.67312;
+in[] = 6.89731;
+in[] = 11.3139;
+in[] = 5.13292;
+in[] = 14.5894;
+in[] = 2.70019;
+in[] = -0.540064;
+in[] = -2.59216;
+in[] = 4.14809;
+in[] = -2.02979;
+in[] = 6.05771;
+in[] = 2.32658;
+in[] = 8.96677;
+in[] = 3.16576;
+in[] = 9.44888;
+in[] = 2.78312;
+out1 at stop: 1
+out2 at stop: 1
+Time: 5.6
+startIndex: 702
+endIndex: 906
+distanceTraveledAlongPath: 33.45
+Total length of path: 169.714
+Start -> x: 36.578 y: 0.069251 yaw: 3.1251
+Stop -> x: 9.48152 y: 10.9322 yaw: -2.43853
+Calculated average vx: 0.0537588 km/h
+vx at stop: 7.34605
+vy at stop: 0.397672
+--------------------------------- 
+averageDistanceTraveledOnMap: 3.345
+averageVelocityOnMap: 0.00537588
+Iteration 1
+Inputs at stop: 
+in[] = 1;
+in[] = 7.19799;
+in[] = 0.278418;
+in[] = 0.586225;
+in[] = 2.34197;
+in[] = 0.0229399;
+in[] = 3.49737;
+in[] = 4.65122;
+in[] = 7.19252;
+in[] = 7.64364;
+in[] = 10.97;
+in[] = 6.19482;
+in[] = 14.4403;
+in[] = 4.04905;
+in[] = -0.185111;
+in[] = -2.50904;
+in[] = 4.43835;
+in[] = -1.55057;
+in[] = 5.9711;
+in[] = 2.95224;
+in[] = 8.79839;
+in[] = 4.03543;
+in[] = 9.31125;
+in[] = 3.69511;
+out1 at stop: 1
+out2 at stop: 1
+Time: 7.15
+startIndex: 621
+endIndex: 906
+distanceTraveledAlongPath: 46.9182
+Total length of path: 169.714
+Start -> x: 45.566 y: 6.3732 yaw: -1.4937
+Stop -> x: 9.48664 y: 11.1201 yaw: -2.52801
+Calculated average vx: 0.0590579 km/h
+vx at stop: 7.75653
+vy at stop: 0.357201
+--------------------------------- 
+averageDistanceTraveledOnMap: 8.03681
+averageVelocityOnMap: 0.0112817
+Iteration 2
+Inputs at stop: 
+in[] = 1;
+in[] = 7.59488;
+in[] = 0.291748;
+in[] = 0.607614;
+in[] = 2.35246;
+in[] = -0.0840011;
+in[] = 3.73236;
+in[] = 4.48237;
+in[] = 7.56915;
+in[] = 7.2909;
+in[] = 11.2714;
+in[] = 5.65945;
+in[] = 14.6328;
+in[] = 3.34688;
+in[] = -0.295173;
+in[] = -2.48964;
+in[] = 4.36955;
+in[] = -1.75795;
+in[] = 6.12023;
+in[] = 2.66469;
+in[] = 8.99701;
+in[] = 3.60862;
+in[] = 9.49265;
+in[] = 3.24368;
+out1 at stop: 1
+out2 at stop: 0.999996
+Time: 2.85
+startIndex: 834
+endIndex: 906
+distanceTraveledAlongPath: 11.4769
+Total length of path: 169.714
+Start -> x: 19.505 y: 8.2629 yaw: 2.0884
+Stop -> x: 9.48833 y: 11.1063 yaw: -2.47778
+Calculated average vx: 0.0362429 km/h
+vx at stop: 8.15552
+vy at stop: 0.345793
+--------------------------------- 
+averageDistanceTraveledOnMap: 9.18451
+averageVelocityOnMap: 0.014906
+Iteration 3
+Inputs at stop: 
+in[] = 1;
+in[] = 6.87574;
+in[] = 0.31296;
+in[] = 0.637562;
+in[] = 2.11201;
+in[] = -0.105354;
+in[] = 3.4365;
+in[] = 4.4774;
+in[] = 7.23899;
+in[] = 7.33219;
+in[] = 10.9607;
+in[] = 5.7457;
+in[] = 14.3499;
+in[] = 3.47401;
+in[] = -0.506292;
+in[] = -2.54288;
+in[] = 4.14923;
+in[] = -1.75475;
+in[] = 5.84622;
+in[] = 2.68877;
+in[] = 8.71136;
+in[] = 3.66747;
+in[] = 9.21138;
+in[] = 3.30856;
+out1 at stop: 1
+out2 at stop: 1
+Time: 5.25
+startIndex: 717
+endIndex: 906
+distanceTraveledAlongPath: 30.9506
+Total length of path: 169.714
+Start -> x: 34.079 y: 0.1114 yaw: 3.1241
+Stop -> x: 9.34821 y: 10.9486 yaw: -2.48944
+Calculated average vx: 0.0530582 km/h
+vx at stop: 7.43973
+vy at stop: 0.393901
+--------------------------------- 
+averageDistanceTraveledOnMap: 12.2796
+averageVelocityOnMap: 0.0202118
+Iteration 4
+Inputs at stop: 
+in[] = 1;
+in[] = 7.85663;
+in[] = -0.159489;
+in[] = -0.192244;
+in[] = 3.24448;
+in[] = 0.609012;
+in[] = 7.87365;
+in[] = 0.709058;
+in[] = 12.5522;
+in[] = 2.45275;
+in[] = 17.4175;
+in[] = 2.87884;
+in[] = 20.9585;
+in[] = -0.533985;
+in[] = 0.376421;
+in[] = -0.756096;
+in[] = 4.73041;
+in[] = -2.89937;
+in[] = 9.46004;
+in[] = -1.85102;
+in[] = 14.1448;
+in[] = -0.119894;
+in[] = 18.0956;
+in[] = -1.69522;
+out1 at stop: -1
+out2 at stop: 1
+Time: 10.4
+startIndex: 27
+endIndex: 459
+distanceTraveledAlongPath: 71.8541
+Total length of path: 169.714
+Start -> x: -4.358 y: 2.0575 yaw: 2.7618
+Stop -> x: 29.0936 y: 23.7216 yaw: -0.551975
+Calculated average vx: 0.0621814 km/h
+vx at stop: 8.39527
+vy at stop: -0.206696
+--------------------------------- 
+averageDistanceTraveledOnMap: 19.465
+averageVelocityOnMap: 0.0264299
+Iteration 5
+Inputs at stop: 
+in[] = 1;
+in[] = 6.8767;
+in[] = 0.560518;
+in[] = 1.00665;
+in[] = 2.18165;
+in[] = -0.303173;
+in[] = 3.64828;
+in[] = 4.23609;
+in[] = 7.53787;
+in[] = 6.97102;
+in[] = 11.2084;
+in[] = 5.26934;
+in[] = 14.5251;
+in[] = 2.89316;
+in[] = -0.511334;
+in[] = -2.65794;
+in[] = 4.16648;
+in[] = -2.01524;
+in[] = 6.00109;
+in[] = 2.37325;
+in[] = 8.89533;
+in[] = 3.2622;
+in[] = 9.38393;
+in[] = 2.88789;
+out1 at stop: 1
+out2 at stop: 0.999999
+Time: 0.65
+startIndex: 891
+endIndex: 906
+distanceTraveledAlongPath: 2.00018
+Total length of path: 169.714
+Start -> x: 11.677 y: 12.427 yaw: -2.9739
+Stop -> x: 9.50168 y: 10.868 yaw: -2.44163
+Calculated average vx: 0.0276949 km/h
+vx at stop: 7.49544
+vy at stop: 0.540808
+--------------------------------- 
+averageDistanceTraveledOnMap: 19.665
+averageVelocityOnMap: 0.0291994
+Iteration 6
+Inputs at stop: 
+in[] = 1;
+in[] = 8.71714;
+in[] = -0.193114;
+in[] = -0.36494;
+in[] = 3.3665;
+in[] = 0.60883;
+in[] = 7.99635;
+in[] = 0.669203;
+in[] = 12.6897;
+in[] = 2.37274;
+in[] = 17.5585;
+in[] = 2.75712;
+in[] = 21.0701;
+in[] = -0.685924;
+in[] = 0.486842;
+in[] = -0.73165;
+in[] = 4.8223;
+in[] = -2.91216;
+in[] = 9.56074;
+in[] = -1.90437;
+in[] = 14.2602;
+in[] = -0.213458;
+in[] = 18.1974;
+in[] = -1.82258;
+out1 at stop: -1
+out2 at stop: 0.999986
+Time: 4.7
+startIndex: 252
+endIndex: 459
+distanceTraveledAlongPath: 33.979
+Total length of path: 169.714
+Start -> x: -2.6576 y: 28.411 yaw: 0.0095027
+Stop -> x: 29.016 y: 23.7343 yaw: -0.546749
+Calculated average vx: 0.0650662 km/h
+vx at stop: 9.26175
+vy at stop: -0.234028
+--------------------------------- 
+averageDistanceTraveledOnMap: 23.0629
+averageVelocityOnMap: 0.035706
+Iteration 7
+Inputs at stop: 
+in[] = 1;
+in[] = 5.90743;
+in[] = 0.249788;
+in[] = 0.703986;
+in[] = 1.99598;
+in[] = 0.570031;
+in[] = 1.80192;
+in[] = 5.3364;
+in[] = 4.50538;
+in[] = 9.24793;
+in[] = 8.53791;
+in[] = 8.92094;
+in[] = 12.4719;
+in[] = 7.83873;
+in[] = 0.283764;
+in[] = -2.57089;
+in[] = 4.4505;
+in[] = -0.349783;
+in[] = 4.65386;
+in[] = 4.4024;
+in[] = 7.06195;
+in[] = 6.23761;
+in[] = 7.64986;
+in[] = 6.05541;
+out1 at stop: 1
+out2 at stop: 1
+Time: 1.05
+startIndex: 879
+endIndex: 909
+distanceTraveledAlongPath: 4.49478
+Total length of path: 169.714
+Start -> x: 13.661 y: 12.276 yaw: 3.0253
+Stop -> x: 9.29316 y: 11.055 yaw: -2.81401
+Calculated average vx: 0.0385267 km/h
+vx at stop: 6.46787
+vy at stop: 0.427364
+--------------------------------- 
+averageDistanceTraveledOnMap: 23.5124
+averageVelocityOnMap: 0.0395587
+Iteration 8
+Inputs at stop: 
+in[] = 1;
+in[] = 6.70945;
+in[] = 0.369948;
+in[] = 0.636696;
+in[] = 2.10271;
+in[] = -0.391507;
+in[] = 3.69794;
+in[] = 4.10417;
+in[] = 7.66379;
+in[] = 6.72729;
+in[] = 11.2844;
+in[] = 4.92184;
+in[] = 14.5322;
+in[] = 2.45222;
+in[] = -0.656197;
+in[] = -2.66867;
+in[] = 4.03802;
+in[] = -2.15937;
+in[] = 5.99678;
+in[] = 2.17513;
+in[] = 8.91515;
+in[] = 2.98135;
+in[] = 9.3929;
+in[] = 2.59328;
+out1 at stop: 1
+out2 at stop: 1
+Time: 7.35
+startIndex: 633
+endIndex: 906
+distanceTraveledAlongPath: 44.9182
+Total length of path: 169.714
+Start -> x: 45.72 y: 4.3791 yaw: -1.5204
+Stop -> x: 9.47222 y: 10.8119 yaw: -2.4265
+Calculated average vx: 0.0550018 km/h
+vx at stop: 7.27885
+vy at stop: 0.407383
+--------------------------------- 
+averageDistanceTraveledOnMap: 28.0042
+averageVelocityOnMap: 0.0450589
+Iteration 9
+Inputs at stop: 
+in[] = 1;
+in[] = 6.94207;
+in[] = 0.340462;
+in[] = 0.670616;
+in[] = 2.15486;
+in[] = -0.404917;
+in[] = 3.90002;
+in[] = 4.03471;
+in[] = 7.95164;
+in[] = 6.5233;
+in[] = 11.5096;
+in[] = 4.5974;
+in[] = 14.6727;
+in[] = 2.02021;
+in[] = -0.678895;
+in[] = -2.58824;
+in[] = 4.02976;
+in[] = -2.23671;
+in[] = 6.13285;
+in[] = 2.02963;
+in[] = 9.07662;
+in[] = 2.73748;
+in[] = 9.54108;
+in[] = 2.3336;
+out1 at stop: 1
+out2 at stop: 1
+Time: 4.6
+startIndex: 747
+endIndex: 906
+distanceTraveledAlongPath: 25.9498
+Total length of path: 169.714
+Start -> x: 29.079 y: 0.199 yaw: 3.1241
+Stop -> x: 9.48473 y: 10.8824 yaw: -2.39439
+Calculated average vx: 0.0507714 km/h
+vx at stop: 7.51038
+vy at stop: 0.404622
+--------------------------------- 
+averageDistanceTraveledOnMap: 30.5992
+averageVelocityOnMap: 0.050136
+Iteration 0
+Inputs at stop: 
+in[] = 1;
+in[] = 6.66315;
+in[] = -0.197214;
+in[] = -0.450239;
+in[] = -0.15333;
+in[] = 3.90532;
+in[] = 4.68833;
+in[] = 3.15533;
+in[] = 8.92229;
+in[] = 0.549841;
+in[] = 12.5159;
+in[] = -2.92454;
+in[] = 15.1288;
+in[] = -7.06474;
+in[] = 2.2397;
+in[] = 0.913072;
+in[] = 6.61386;
+in[] = -1.43958;
+in[] = 10.2318;
+in[] = -4.88605;
+in[] = 12.1222;
+in[] = -9.1321;
+in[] = 10.0603;
+in[] = -13.6555;
+out1 at stop: -0.807555
+out2 at stop: 0.998963
+Time: 180.05
+startIndex: 1263
+endIndex: 261
+distanceTraveledAlongPath: 1315.47
+Total length of path: 248.307
+Start -> x: -32.316 y: -8.8444 yaw: 1.7967
+Stop -> x: 32.8585 y: -25.1107 yaw: -0.848958
+Calculated average vx: 0.0657552 km/h
+vx at stop: 7.24398
+vy at stop: -0.332505
+--------------------------------- 
+averageDistanceTraveledOnMap: 131.547
+averageVelocityOnMap: 0.00657552
+Iteration 1
+Inputs at stop: 
+in[] = 1;
+in[] = 8.93561;
+in[] = 0.28439;
+in[] = 0.559678;
+in[] = -1.94985;
+in[] = 4.20022;
+in[] = 2.98429;
+in[] = 5.00929;
+in[] = 7.26175;
+in[] = 7.27654;
+in[] = 6.80571;
+in[] = 11.8206;
+in[] = 3.08628;
+in[] = 15.069;
+in[] = -1.12099;
+in[] = 1.29637;
+in[] = 3.81227;
+in[] = 2.11069;
+in[] = 8.32117;
+in[] = 4.12367;
+in[] = 10.8019;
+in[] = 8.30789;
+in[] = 9.50936;
+in[] = 13.0614;
+out1 at stop: 1
+out2 at stop: -0.916371
+Time: 76.35
+startIndex: 300
+endIndex: 687
+distanceTraveledAlongPath: 558.054
+Total length of path: 248.307
+Start -> x: 37.172 y: -29.034 yaw: -1.3497
+Stop -> x: -1.71668 y: -19.5015 yaw: 2.65991
+Calculated average vx: 0.0657824 km/h
+vx at stop: 8.05626
+vy at stop: 0.276321
+--------------------------------- 
+averageDistanceTraveledOnMap: 187.352
+averageVelocityOnMap: 0.0131538
+Iteration 2
+Inputs at stop: 
+in[] = 1;
+in[] = 6.93778;
+in[] = -0.531317;
+in[] = -0.827934;
+in[] = 1.86892;
+in[] = 2.91171;
+in[] = 6.41314;
+in[] = 0.828055;
+in[] = 11.0726;
+in[] = -0.146614;
+in[] = 15.2704;
+in[] = 2.22861;
+in[] = 19.002;
+in[] = 5.5566;
+in[] = -0.563357;
+in[] = 0.719424;
+in[] = 3.98399;
+in[] = -1.35842;
+in[] = 8.59187;
+in[] = -3.26046;
+in[] = 13.4851;
+in[] = -2.60631;
+in[] = 17.5268;
+in[] = 0.22155;
+out1 at stop: -1
+out2 at stop: -0.495031
+Time: 180.05
+startIndex: 66
+endIndex: 576
+distanceTraveledAlongPath: 1320.2
+Total length of path: 248.307
+Start -> x: 10.846 y: -2.3556 yaw: -0.6258
+Stop -> x: 7.3723 y: -36.3847 yaw: 2.02076
+Calculated average vx: 0.0659915 km/h
+vx at stop: 6.41658
+vy at stop: -0.47684
+--------------------------------- 
+averageDistanceTraveledOnMap: 319.372
+averageVelocityOnMap: 0.0197529
+Iteration 3
+Inputs at stop: 
+in[] = 1;
+in[] = 7.60261;
+in[] = -0.516978;
+in[] = -0.888768;
+in[] = -1.18453;
+in[] = 3.31486;
+in[] = 3.62992;
+in[] = 2.03622;
+in[] = 8.38001;
+in[] = 0.47525;
+in[] = 13.1301;
+in[] = -1.08572;
+in[] = 17.8804;
+in[] = -2.64675;
+in[] = 1.25406;
+in[] = -0.340865;
+in[] = 6.00415;
+in[] = -1.90183;
+in[] = 10.7542;
+in[] = -3.4628;
+in[] = 15.5046;
+in[] = -5.02386;
+in[] = 20.2547;
+in[] = -6.58483;
+out1 at stop: -0.99991
+out2 at stop: 0.999994
+Time: 180.05
+startIndex: 882
+endIndex: 1332
+distanceTraveledAlongPath: 1310.15
+Total length of path: 248.307
+Start -> x: -16.814 y: -41.486 yaw: -2.8761
+Stop -> x: -24.8886 y: -2.9787 yaw: 0.273737
+Calculated average vx: 0.0654892 km/h
+vx at stop: 8.20562
+vy at stop: -0.455598
+--------------------------------- 
+averageDistanceTraveledOnMap: 450.387
+averageVelocityOnMap: 0.0263018
+Iteration 4
+Inputs at stop: 
+in[] = 1;
+in[] = 8.28394;
+in[] = 0.31459;
+in[] = 0.629523;
+in[] = 0.815411;
+in[] = 1.67924;
+in[] = 5.71372;
+in[] = 2.68539;
+in[] = 10.6351;
+in[] = 3.5516;
+in[] = 15.5884;
+in[] = 4.23539;
+in[] = 20.2312;
+in[] = 2.67063;
+in[] = -2.22965;
+in[] = -1.37208;
+in[] = 2.72304;
+in[] = -1.00412;
+in[] = 7.61714;
+in[] = 0.018976;
+in[] = 12.5553;
+in[] = 0.794587;
+in[] = 17.436;
+in[] = 0.878847;
+out1 at stop: -0.989143
+out2 at stop: -0.267046
+Time: 180.05
+startIndex: 1188
+endIndex: 168
+distanceTraveledAlongPath: 1312.46
+Total length of path: 248.307
+Start -> x: -24.849 y: -18.656 yaw: 2.1257
+Stop -> x: 20.7817 y: -16.1583 yaw: -0.642617
+Calculated average vx: 0.0656049 km/h
+vx at stop: 7.89929
+vy at stop: 0.0553823
+--------------------------------- 
+averageDistanceTraveledOnMap: 581.633
+averageVelocityOnMap: 0.0328623
+Iteration 5
+Inputs at stop: 
+in[] = 1;
+in[] = 7.43794;
+in[] = 0.42318;
+in[] = 0.789133;
+in[] = 0.476035;
+in[] = 4.81328;
+in[] = 4.86809;
+in[] = 7.20289;
+in[] = 8.15969;
+in[] = 10.7529;
+in[] = 6.23192;
+in[] = 14.893;
+in[] = 1.6499;
+in[] = 16.7345;
+in[] = -2.36452;
+in[] = 0.512711;
+in[] = 2.21537;
+in[] = 2.34468;
+in[] = 6.60487;
+in[] = 4.73894;
+in[] = 10.1988;
+in[] = 8.12511;
+in[] = 11.1624;
+in[] = 12.893;
+out1 at stop: 1
+out2 at stop: 0.999908
+Time: 161.95
+startIndex: 999
+endIndex: 666
+distanceTraveledAlongPath: 1179.31
+Total length of path: 248.307
+Start -> x: -35.965 y: -40.738 yaw: 2.4196
+Stop -> x: 1.92182 y: -21.1868 yaw: 2.3321
+Calculated average vx: 0.0655376 km/h
+vx at stop: 8.02204
+vy at stop: 0.423237
+--------------------------------- 
+averageDistanceTraveledOnMap: 699.564
+averageVelocityOnMap: 0.0394161
+Iteration 6
+Inputs at stop: 
+in[] = 1;
+in[] = 5.54816;
+in[] = -0.496371;
+in[] = -0.883245;
+in[] = 3.24192;
+in[] = 2.93364;
+in[] = 6.91053;
+in[] = -0.439699;
+in[] = 10.1229;
+in[] = -4.27124;
+in[] = 13.3353;
+in[] = -8.10278;
+in[] = 15.4794;
+in[] = -12.458;
+in[] = 0.212711;
+in[] = 1.08035;
+in[] = 4.18401;
+in[] = -1.86956;
+in[] = 7.40251;
+in[] = -5.69596;
+in[] = 10.6149;
+in[] = -9.5275;
+in[] = 12.4497;
+in[] = -13.8484;
+out1 at stop: -1
+out2 at stop: -0.539185
+Time: 180.05
+startIndex: 417
+endIndex: 876
+distanceTraveledAlongPath: 1311.67
+Total length of path: 248.307
+Start -> x: 28.499 y: -42.991 yaw: -3.0994
+Stop -> x: -16.9238 y: -38.952 yaw: -2.308
+Calculated average vx: 0.065565 km/h
+vx at stop: 4.99365
+vy at stop: -0.586207
+--------------------------------- 
+averageDistanceTraveledOnMap: 830.731
+averageVelocityOnMap: 0.0459726
+Iteration 7
+Inputs at stop: 
+in[] = 1;
+in[] = 4.27966;
+in[] = -0.583422;
+in[] = -0.718685;
+in[] = 3.10305;
+in[] = 2.80584;
+in[] = 6.91413;
+in[] = -0.36983;
+in[] = 9.97177;
+in[] = -4.32404;
+in[] = 12.9746;
+in[] = -8.32189;
+in[] = 15.9759;
+in[] = -12.3209;
+in[] = -0.0161984;
+in[] = 1.2008;
+in[] = 4.05685;
+in[] = -1.64928;
+in[] = 7.15626;
+in[] = -5.57086;
+in[] = 10.1591;
+in[] = -9.56871;
+in[] = 13.162;
+in[] = -13.5666;
+out1 at stop: -1
+out2 at stop: 0.8868
+Time: 180.05
+startIndex: 1410
+endIndex: 384
+distanceTraveledAlongPath: 1311.47
+Total length of path: 248.307
+Start -> x: -12.264 y: -1.5 yaw: 0
+Stop -> x: 32.9755 y: -39.3918 yaw: -2.2637
+Calculated average vx: 0.0655552 km/h
+vx at stop: 4.79186
+vy at stop: -0.509903
+--------------------------------- 
+averageDistanceTraveledOnMap: 961.878
+averageVelocityOnMap: 0.0525281
+Iteration 8
+Inputs at stop: 
+in[] = 1;
+in[] = 6.6402;
+in[] = -0.143534;
+in[] = -0.133487;
+in[] = -1.91726;
+in[] = 2.56405;
+in[] = 3.0702;
+in[] = 2.91797;
+in[] = 8.05096;
+in[] = 2.61273;
+in[] = 12.1796;
+in[] = 0.286717;
+in[] = 13.2893;
+in[] = -4.55357;
+in[] = -2.39595;
+in[] = -0.477741;
+in[] = 2.59136;
+in[] = -0.121831;
+in[] = 7.57146;
+in[] = -0.348912;
+in[] = 10.1355;
+in[] = -3.67283;
+in[] = 10.8149;
+in[] = -8.62603;
+out1 at stop: -0.0362745
+out2 at stop: 0.943428
+Time: 180.05
+startIndex: 1452
+endIndex: 489
+distanceTraveledAlongPath: 1321.97
+Total length of path: 248.307
+Start -> x: -5.2641 y: -1.5 yaw: 0
+Stop -> x: 16.6065 y: -41.8824 yaw: 3.06892
+Calculated average vx: 0.06608 km/h
+vx at stop: 7.32684
+vy at stop: 0.061255
+--------------------------------- 
+averageDistanceTraveledOnMap: 1094.07
+averageVelocityOnMap: 0.0591361
+Iteration 9
+Inputs at stop: 
+in[] = 1;
+in[] = 5.52686;
+in[] = 0.155649;
+in[] = 0.280601;
+in[] = -0.932953;
+in[] = 1.93891;
+in[] = 3.29022;
+in[] = 4.27328;
+in[] = 3.25505;
+in[] = 9.06021;
+in[] = 1.077;
+in[] = 13.5143;
+in[] = -1.13617;
+in[] = 17.922;
+in[] = 1.55576;
+in[] = -0.466513;
+in[] = 5.5542;
+in[] = 2.39452;
+in[] = 6.84049;
+in[] = 7.09538;
+in[] = 5.3812;
+in[] = 11.8504;
+in[] = 2.9018;
+in[] = 16.1546;
+out1 at stop: 1
+out2 at stop: 0.632399
+Time: 180.05
+startIndex: 663
+endIndex: 1125
+distanceTraveledAlongPath: 1312.15
+Total length of path: 248.307
+Start -> x: 0.68722 y: -23.964 yaw: 2.6243
+Stop -> x: -26.3137 y: -28.3728 yaw: 0.333551
+Calculated average vx: 0.0655894 km/h
+vx at stop: 5.79176
+vy at stop: 0.283546
+--------------------------------- 
+averageDistanceTraveledOnMap: 1225.29
+averageVelocityOnMap: 0.0656951
+Iteration 0
+Inputs at stop: 
+in[] = 1;
+in[] = 7.40458;
+in[] = -0.366994;
+in[] = -0.640101;
+in[] = 2.33594;
+in[] = 3.86582;
+in[] = 6.82307;
+in[] = 1.79409;
+in[] = 9.7478;
+in[] = -2.19206;
+in[] = 11.1138;
+in[] = -6.96805;
+in[] = 10.2307;
+in[] = -11.8865;
+in[] = 1.223;
+in[] = 1.05;
+in[] = 5.64524;
+in[] = -1.0866;
+in[] = 7.83748;
+in[] = -5.54794;
+in[] = 7.49465;
+in[] = -10.4333;
+in[] = 5.27804;
+in[] = -14.8721;
+out1 at stop: -1
+out2 at stop: -0.999783
+Time: 180.05
+startIndex: 2244
+endIndex: 609
+distanceTraveledAlongPath: 1336.55
+Total length of path: 403.398
+Start -> x: -27.774 y: -4.9474 yaw: 0.63791
+Stop -> x: -22.2937 y: 12.2523 yaw: -2.68813
+Calculated average vx: 0.0668089 km/h
+vx at stop: 6.47404
+vy at stop: -0.375175
+--------------------------------- 
+averageDistanceTraveledOnMap: 133.655
+averageVelocityOnMap: 0.00668089
+Iteration 1
+Inputs at stop: 
+in[] = 1;
+in[] = 7.17614;
+in[] = 0.386089;
+in[] = 0.761037;
+in[] = -0.712271;
+in[] = 0.645633;
+in[] = 3.56864;
+in[] = 2.92391;
+in[] = 7.33102;
+in[] = 6.11841;
+in[] = 11.5097;
+in[] = 8.78517;
+in[] = 16.413;
+in[] = 9.58842;
+in[] = -1.99081;
+in[] = -2.23235;
+in[] = 2.80225;
+in[] = -1.38946;
+in[] = 6.49485;
+in[] = 1.89593;
+in[] = 10.5677;
+in[] = 4.73209;
+in[] = 15.0723;
+in[] = 6.5563;
+out1 at stop: 0.999997
+out2 at stop: 0.779226
+Time: 76
+startIndex: 813
+endIndex: 1845
+distanceTraveledAlongPath: 573.652
+Total length of path: 403.398
+Start -> x: -33.353 y: 33.097 yaw: 0.95542
+Stop -> x: 16.4779 y: -11.5499 yaw: -2.95125
+Calculated average vx: 0.0679325 km/h
+vx at stop: 7.5887
+vy at stop: 0.423598
+--------------------------------- 
+averageDistanceTraveledOnMap: 191.02
+averageVelocityOnMap: 0.0134741
+Iteration 2
+Inputs at stop: 
+in[] = 1;
+in[] = 7.83779;
+in[] = -0.0757651;
+in[] = -0.364002;
+in[] = -1.17148;
+in[] = 3.83418;
+in[] = 3.62398;
+in[] = 2.5892;
+in[] = 8.34109;
+in[] = 0.945553;
+in[] = 13.084;
+in[] = -0.6315;
+in[] = 17.2148;
+in[] = -3.41825;
+in[] = 0.553286;
+in[] = 0.602618;
+in[] = 5.20333;
+in[] = -1.23345;
+in[] = 9.97895;
+in[] = -2.71463;
+in[] = 14.3621;
+in[] = -5.01237;
+in[] = 18.332;
+in[] = -8.05214;
+out1 at stop: 0.50437
+out2 at stop: -0.890676
+Time: 180.05
+startIndex: 1392
+endIndex: 2268
+distanceTraveledAlongPath: 1352.58
+Total length of path: 403.398
+Start -> x: 44.544 y: 10.64 yaw: -1.5279
+Stop -> x: -23.9304 y: -4.97839 yaw: 0.541207
+Calculated average vx: 0.0676101 km/h
+vx at stop: 7.04816
+vy at stop: 0.0411394
+--------------------------------- 
+averageDistanceTraveledOnMap: 326.278
+averageVelocityOnMap: 0.0202352
+Iteration 3
+Inputs at stop: 
+in[] = 1;
+in[] = 4.97586;
+in[] = -0.220908;
+in[] = -0.325583;
+in[] = 2.05317;
+in[] = 3.91168;
+in[] = 6.4356;
+in[] = 1.59431;
+in[] = 10.8049;
+in[] = -0.781764;
+in[] = 15.1908;
+in[] = -0.744183;
+in[] = 16.7401;
+in[] = 3.85108;
+in[] = -2.08515;
+in[] = 0.951638;
+in[] = 2.63531;
+in[] = 0.483837;
+in[] = 6.80329;
+in[] = -2.27047;
+in[] = 11.4347;
+in[] = -4.09692;
+in[] = 16.2366;
+in[] = -3.71468;
+out1 at stop: -1
+out2 at stop: -1
+Time: 180.05
+startIndex: 852
+endIndex: 1737
+distanceTraveledAlongPath: 1354.14
+Total length of path: 403.398
+Start -> x: -27.784 y: 36.114 yaw: 0.15828
+Stop -> x: 29.6018 y: -21.0616 yaw: 2.51754
+Calculated average vx: 0.0676884 km/h
+vx at stop: 4.0207
+vy at stop: -0.311305
+--------------------------------- 
+averageDistanceTraveledOnMap: 461.692
+averageVelocityOnMap: 0.027004
+Iteration 4
+Inputs at stop: 
+in[] = 1;
+in[] = 6.49904;
+in[] = 0.113181;
+in[] = 0.34306;
+in[] = -1.80374;
+in[] = 2.41821;
+in[] = 3.19288;
+in[] = 2.3233;
+in[] = 8.17241;
+in[] = 2.60633;
+in[] = 13.0479;
+in[] = 3.64588;
+in[] = 17.9046;
+in[] = 4.78388;
+in[] = -1.53772;
+in[] = -0.605931;
+in[] = 3.46069;
+in[] = -0.673909;
+in[] = 8.44578;
+in[] = -0.402266;
+in[] = 13.3152;
+in[] = 0.656727;
+in[] = 18.1835;
+in[] = 1.74485;
+out1 at stop: -0.655019
+out2 at stop: 0.998315
+Time: 180.05
+startIndex: 1953
+endIndex: 336
+distanceTraveledAlongPath: 1339.55
+Total length of path: 403.398
+Start -> x: 2.141 y: -21.839 yaw: 3.0449
+Stop -> x: 18.0804 y: 27.2679 yaw: -3.07852
+Calculated average vx: 0.0669591 km/h
+vx at stop: 7.09974
+vy at stop: 0.0130834
+--------------------------------- 
+averageDistanceTraveledOnMap: 595.648
+averageVelocityOnMap: 0.0336999
+Iteration 5
+Inputs at stop: 
+in[] = 1;
+in[] = 8.89159;
+in[] = 0.239492;
+in[] = 0.466679;
+in[] = 1.30287;
+in[] = 2.46712;
+in[] = 6.30229;
+in[] = 2.38691;
+in[] = 11.3017;
+in[] = 2.30571;
+in[] = 16.2878;
+in[] = 2.06675;
+in[] = 21.1859;
+in[] = 1.21351;
+in[] = 0.781814;
+in[] = -0.524584;
+in[] = 5.78121;
+in[] = -0.605785;
+in[] = 10.7806;
+in[] = -0.685987;
+in[] = 15.7695;
+in[] = -0.885997;
+in[] = 20.6496;
+in[] = -1.78787;
+out1 at stop: 0.859264
+out2 at stop: -0.977624
+Time: 180.05
+startIndex: 228
+endIndex: 1089
+distanceTraveledAlongPath: 1350.11
+Total length of path: 403.398
+Start -> x: 29.479 y: 15.66 yaw: 1.509
+Stop -> x: 11.8895 y: 35.4599 yaw: 0.0476309
+Calculated average vx: 0.0674868 km/h
+vx at stop: 7.9841
+vy at stop: 0.258244
+--------------------------------- 
+averageDistanceTraveledOnMap: 730.659
+averageVelocityOnMap: 0.0404486
+Iteration 6
+Inputs at stop: 
+in[] = 1;
+in[] = 7.73756;
+in[] = -0.361577;
+in[] = -0.6109;
+in[] = 0.509537;
+in[] = 2.67442;
+in[] = 5.50681;
+in[] = 2.77028;
+in[] = 10.3308;
+in[] = 1.52156;
+in[] = 15.0874;
+in[] = -0.0194552;
+in[] = 16.0379;
+in[] = -0.327404;
+in[] = -1.72135;
+in[] = -0.426667;
+in[] = 3.27481;
+in[] = -0.229506;
+in[] = 8.17347;
+in[] = -0.933048;
+in[] = 12.9301;
+in[] = -2.47401;
+in[] = 15.1134;
+in[] = -3.18133;
+out1 at stop: -1
+out2 at stop: -0.550596
+Time: 180.05
+startIndex: 1437
+endIndex: 2310
+distanceTraveledAlongPath: 1352.08
+Total length of path: 403.398
+Start -> x: 44.91 y: 3.1494 yaw: -1.484
+Stop -> x: -17.1719 y: -2.75695 yaw: 0.164447
+Calculated average vx: 0.0675851 km/h
+vx at stop: 7.1418
+vy at stop: -0.350959
+--------------------------------- 
+averageDistanceTraveledOnMap: 865.867
+averageVelocityOnMap: 0.0472071
+Iteration 7
+Inputs at stop: 
+in[] = 1;
+in[] = 6.17158;
+in[] = -0.0382255;
+in[] = -0.251488;
+in[] = 0.184805;
+in[] = 3.81885;
+in[] = 5.10303;
+in[] = 3.11239;
+in[] = 9.1887;
+in[] = 0.387712;
+in[] = 13.4074;
+in[] = -2.29132;
+in[] = 18.1752;
+in[] = -3.78823;
+in[] = -1.93091;
+in[] = 0.235768;
+in[] = 2.91357;
+in[] = 0.622915;
+in[] = 7.08311;
+in[] = -1.79734;
+in[] = 11.2767;
+in[] = -4.51527;
+in[] = 15.965;
+in[] = -6.20157;
+out1 at stop: -0.771342
+out2 at stop: -0.923829
+Time: 180.05
+startIndex: 1041
+endIndex: 1926
+distanceTraveledAlongPath: 1354.11
+Total length of path: 403.398
+Start -> x: 3.7065 y: 36.377 yaw: 0.0049
+Stop -> x: 5.05852 y: -18.517 yaw: -2.69209
+Calculated average vx: 0.0676865 km/h
+vx at stop: 5.30499
+vy at stop: -0.263779
+--------------------------------- 
+averageDistanceTraveledOnMap: 1001.28
+averageVelocityOnMap: 0.0539757
+Iteration 8
+Inputs at stop: 
+in[] = 1;
+in[] = 7.19937;
+in[] = -0.414215;
+in[] = -0.671511;
+in[] = 0.946202;
+in[] = 3.75506;
+in[] = 5.70107;
+in[] = 2.3289;
+in[] = 9.49045;
+in[] = -0.857317;
+in[] = 11.1966;
+in[] = -5.498;
+in[] = 12.2316;
+in[] = -10.3895;
+in[] = 1.16163;
+in[] = 0.736581;
+in[] = 5.71993;
+in[] = -1.20084;
+in[] = 8.11306;
+in[] = -5.41678;
+in[] = 9.14805;
+in[] = -10.3083;
+in[] = 10.0515;
+in[] = -15.2162;
+out1 at stop: -1
+out2 at stop: -0.585812
+Time: 180.05
+startIndex: 684
+endIndex: 1581
+distanceTraveledAlongPath: 1356.15
+Total length of path: 403.398
+Start -> x: -32.367 y: 12.525 yaw: 2.3069
+Stop -> x: 48.4151 y: -18.7266 yaw: -1.92846
+Calculated average vx: 0.0677888 km/h
+vx at stop: 6.5858
+vy at stop: -0.399231
+--------------------------------- 
+averageDistanceTraveledOnMap: 1136.89
+averageVelocityOnMap: 0.0607546
+Iteration 9
+Inputs at stop: 
+in[] = 1;
+in[] = 8.83257;
+in[] = 0.168859;
+in[] = 0.271625;
+in[] = -1.67466;
+in[] = 3.10708;
+in[] = 3.22959;
+in[] = 3.7796;
+in[] = 7.73842;
+in[] = 5.93969;
+in[] = 10.5515;
+in[] = 9.58464;
+in[] = 10.6516;
+in[] = 14.4779;
+in[] = 0.885595;
+in[] = 0.309384;
+in[] = 5.65326;
+in[] = 1.60298;
+in[] = 10.0843;
+in[] = 3.90343;
+in[] = 13.2293;
+in[] = 7.74765;
+in[] = 13.9259;
+in[] = 12.6656;
+out1 at stop: 1
+out2 at stop: -0.78804
+Time: 180.05
+startIndex: 1782
+endIndex: 168
+distanceTraveledAlongPath: 1340.03
+Total length of path: 403.398
+Start -> x: 24.136 y: -16.557 yaw: 2.0763
+Stop -> x: 25.9128 y: 5.66375 yaw: 0.688844
+Calculated average vx: 0.0669831 km/h
+vx at stop: 8.03246
+vy at stop: 0.211863
+--------------------------------- 
+averageDistanceTraveledOnMap: 1270.9
+averageVelocityOnMap: 0.0674529
+Iteration 0
+Inputs at stop: 
+in[] = 1;
+in[] = 8.03398;
+in[] = -0.335459;
+in[] = -0.709718;
+in[] = -2.17311;
+in[] = 1.41486;
+in[] = 2.7981;
+in[] = 1.95036;
+in[] = 7.7694;
+in[] = 2.4858;
+in[] = 12.7404;
+in[] = 3.0214;
+in[] = 17.7118;
+in[] = 3.55657;
+in[] = -1.85178;
+in[] = -1.56786;
+in[] = 3.11941;
+in[] = -1.03239;
+in[] = 8.09064;
+in[] = -0.496869;
+in[] = 13.0622;
+in[] = 0.0384254;
+in[] = 18.0328;
+in[] = 0.574275;
+out1 at stop: -0.999999
+out2 at stop: 0.727957
+Time: 180.05
+startIndex: 183
+endIndex: 18
+distanceTraveledAlongPath: 1261
+Total length of path: 323.616
+Start -> x: -16.668 y: 25.089 yaw: 2.2071
+Stop -> x: -0.0593477 y: 2.96789 yaw: 2.06668
+Calculated average vx: 0.0630325 km/h
+vx at stop: 8.39972
+vy at stop: -0.352767
+--------------------------------- 
+averageDistanceTraveledOnMap: 126.1
+averageVelocityOnMap: 0.00630325
+Iteration 1
+Inputs at stop: 
+in[] = 1;
+in[] = 8.38978;
+in[] = 0.13109;
+in[] = 0.239928;
+in[] = -0.677152;
+in[] = 2.46535;
+in[] = 4.31601;
+in[] = 2.7232;
+in[] = 9.30932;
+in[] = 2.98202;
+in[] = 14.3025;
+in[] = 3.23986;
+in[] = 19.2966;
+in[] = 3.24625;
+in[] = 1.92763;
+in[] = -0.403635;
+in[] = 6.9208;
+in[] = -0.145799;
+in[] = 11.9141;
+in[] = 0.11303;
+in[] = 16.9053;
+in[] = 0.223774;
+in[] = 21.8775;
+in[] = 0.593498;
+out1 at stop: 1
+out2 at stop: 0.986945
+Time: 180.05
+startIndex: 1293
+endIndex: 1137
+distanceTraveledAlongPath: 1262.51
+Total length of path: 323.616
+Start -> x: -45.474 y: -31.172 yaw: 0.95402
+Stop -> x: -69.9355 y: -38.7559 yaw: 0.154361
+Calculated average vx: 0.0631078 km/h
+vx at stop: 8.91875
+vy at stop: 0.205857
+--------------------------------- 
+averageDistanceTraveledOnMap: 252.351
+averageVelocityOnMap: 0.012614
+Iteration 2
+Inputs at stop: 
+in[] = 1;
+in[] = 7.48293;
+in[] = 0.503266;
+in[] = 0.959511;
+in[] = -0.195503;
+in[] = 2.21605;
+in[] = 4.36902;
+in[] = 2.10121;
+in[] = 7.8735;
+in[] = 5.41078;
+in[] = 10.4047;
+in[] = 9.70798;
+in[] = 13.1256;
+in[] = 13.9026;
+in[] = -0.0629763;
+in[] = -1.3549;
+in[] = 4.8293;
+in[] = -1.00553;
+in[] = 8.96781;
+in[] = 1.68654;
+in[] = 11.5361;
+in[] = 5.93859;
+in[] = 14.2563;
+in[] = 10.1339;
+out1 at stop: 0.999996
+out2 at stop: -0.112113
+Time: 180.05
+startIndex: 1203
+endIndex: 1041
+distanceTraveledAlongPath: 1261.51
+Total length of path: 323.616
+Start -> x: -59.438 y: -35.744 yaw: 0.1851
+Stop -> x: -85.309 y: -35.9089 yaw: -0.763889
+Calculated average vx: 0.0630581 km/h
+vx at stop: 7.25536
+vy at stop: 0.472408
+--------------------------------- 
+averageDistanceTraveledOnMap: 378.502
+averageVelocityOnMap: 0.0189198
+Iteration 3
+Inputs at stop: 
+in[] = 1;
+in[] = 0.0807029;
+in[] = -0.109383;
+in[] = 0.0672259;
+in[] = 2.9524;
+in[] = 3.01722;
+in[] = 6.79377;
+in[] = -0.125599;
+in[] = 9.65208;
+in[] = -4.22759;
+in[] = 13.8761;
+in[] = -5.04174;
+in[] = 17.7237;
+in[] = -1.89836;
+in[] = -2.07944;
+in[] = 0.828944;
+in[] = 2.57074;
+in[] = -0.231125;
+in[] = 5.82198;
+in[] = -3.98185;
+in[] = 8.97749;
+in[] = -7.82058;
+in[] = 13.7357;
+in[] = -8.35486;
+out1 at stop: -1
+out2 at stop: -0.518702
+Time: 65.45
+startIndex: 771
+endIndex: 1401
+distanceTraveledAlongPath: 427.052
+Total length of path: 323.616
+Start -> x: -52.567 y: -13.123 yaw: -2.3858
+Stop -> x: -33.4034 y: -23.8727 yaw: -0.573232
+Calculated average vx: 0.0587237 km/h
+vx at stop: -0.152474
+vy at stop: 0.31785
+--------------------------------- 
+averageDistanceTraveledOnMap: 421.207
+averageVelocityOnMap: 0.0247922
+Iteration 4
+Inputs at stop: 
+in[] = 1;
+in[] = 3.88037;
+in[] = -0.403778;
+in[] = -1.05877;
+in[] = -0.0508673;
+in[] = 4.28807;
+in[] = 4.63604;
+in[] = 2.987;
+in[] = 6.90619;
+in[] = -1.32542;
+in[] = 6.8275;
+in[] = -6.28801;
+in[] = 5.38654;
+in[] = -11.0755;
+in[] = 2.06665;
+in[] = 1.26046;
+in[] = 4.12281;
+in[] = -3.04304;
+in[] = 3.20118;
+in[] = -7.92044;
+in[] = 2.15112;
+in[] = -12.7774;
+in[] = 4.68655;
+in[] = -16.8392;
+out1 at stop: -1
+out2 at stop: 0.991402
+Time: 180.05
+startIndex: 1515
+endIndex: 1371
+distanceTraveledAlongPath: 1264.58
+Total length of path: 323.616
+Start -> x: -23.514 y: -36.943 yaw: 0.037498
+Stop -> x: -36.0306 y: -23.9115 yaw: 0.293054
+Calculated average vx: 0.0632114 km/h
+vx at stop: 4.47245
+vy at stop: -0.619523
+--------------------------------- 
+averageDistanceTraveledOnMap: 547.665
+averageVelocityOnMap: 0.0311134
+Iteration 5
+Inputs at stop: 
+in[] = 1;
+in[] = 8.70784;
+in[] = 0.181995;
+in[] = 0.295218;
+in[] = 0.873172;
+in[] = 2.25401;
+in[] = 5.7114;
+in[] = 3.51534;
+in[] = 10.6054;
+in[] = 3.36452;
+in[] = 14.5047;
+in[] = 0.456721;
+in[] = 15.0619;
+in[] = -4.38478;
+in[] = 1.89714;
+in[] = -0.580104;
+in[] = 6.7324;
+in[] = 0.69163;
+in[] = 11.4849;
+in[] = -0.223906;
+in[] = 11.8458;
+in[] = -4.97971;
+in[] = 9.22287;
+in[] = -9.19383;
+out1 at stop: 1
+out2 at stop: -0.965728
+Time: 180.05
+startIndex: 1470
+endIndex: 1311
+distanceTraveledAlongPath: 1262.04
+Total length of path: 323.616
+Start -> x: -28.904 y: -32.813 yaw: -1.4643
+Stop -> x: -43.3234 y: -29.0846 yaw: 0.726931
+Calculated average vx: 0.0630843 km/h
+vx at stop: 7.77565
+vy at stop: 0.220651
+--------------------------------- 
+averageDistanceTraveledOnMap: 673.869
+averageVelocityOnMap: 0.0374218
+Iteration 6
+Inputs at stop: 
+in[] = 1;
+in[] = 5.51851;
+in[] = 0.453305;
+in[] = 0.850269;
+in[] = -0.804946;
+in[] = 3.33178;
+in[] = 4.05253;
+in[] = 2.40007;
+in[] = 7.49721;
+in[] = 5.28353;
+in[] = 8.46488;
+in[] = 10.1344;
+in[] = 9.28423;
+in[] = 15.0434;
+in[] = -1.77095;
+in[] = 0.476073;
+in[] = 3.11803;
+in[] = -0.548945;
+in[] = 7.87837;
+in[] = 0.665653;
+in[] = 10.4416;
+in[] = 4.6882;
+in[] = 11.4148;
+in[] = 9.56259;
+out1 at stop: -0.808176
+out2 at stop: 0.533332
+Time: 180.05
+startIndex: 774
+endIndex: 537
+distanceTraveledAlongPath: 1249.05
+Total length of path: 323.616
+Start -> x: -52.931 y: -13.466 yaw: -2.3858
+Stop -> x: -63.2075 y: 17.8972 yaw: -2.0516
+Calculated average vx: 0.0624353 km/h
+vx at stop: 5.79444
+vy at stop: 0.296175
+--------------------------------- 
+averageDistanceTraveledOnMap: 798.774
+averageVelocityOnMap: 0.0436653
+Iteration 7
+Inputs at stop: 
+in[] = 1;
+in[] = 7.34097;
+in[] = 0.300697;
+in[] = 0.49901;
+in[] = -2.42732;
+in[] = 2.69965;
+in[] = 2.57036;
+in[] = 2.85822;
+in[] = 7.56783;
+in[] = 3.01581;
+in[] = 12.552;
+in[] = 3.22763;
+in[] = 16.4195;
+in[] = 6.18931;
+in[] = -0.00690469;
+in[] = -0.224661;
+in[] = 4.99051;
+in[] = -0.0670547;
+in[] = 9.98802;
+in[] = 0.0905275;
+in[] = 14.8648;
+in[] = 0.913642;
+in[] = 18.6121;
+in[] = 4.12057;
+out1 at stop: 0.99729
+out2 at stop: -0.680537
+Time: 180.05
+startIndex: 1797
+endIndex: 1647
+distanceTraveledAlongPath: 1263.52
+Total length of path: 323.616
+Start -> x: 14.564 y: -18.007 yaw: 1.8731
+Stop -> x: -1.65632 y: -33.2555 yaw: 0.249518
+Calculated average vx: 0.0631585 km/h
+vx at stop: 6.63761
+vy at stop: 0.325512
+--------------------------------- 
+averageDistanceTraveledOnMap: 925.126
+averageVelocityOnMap: 0.0499812
+Iteration 8
+Inputs at stop: 
+in[] = 1;
+in[] = 3.82658;
+in[] = -0.317838;
+in[] = -0.95081;
+in[] = 2.56716;
+in[] = 3.13239;
+in[] = 6.05496;
+in[] = -0.398719;
+in[] = 8.46385;
+in[] = -4.77976;
+in[] = 12.5782;
+in[] = -6.03566;
+in[] = 16.7364;
+in[] = -3.31641;
+in[] = 1.84441;
+in[] = -0.0574487;
+in[] = 4.68116;
+in[] = -4.1307;
+in[] = 7.4134;
+in[] = -8.28135;
+in[] = 12.0886;
+in[] = -9.31541;
+in[] = 16.6055;
+in[] = -7.25096;
+out1 at stop: -1
+out2 at stop: 0.981564
+Time: 180.05
+startIndex: 1524
+endIndex: 1410
+distanceTraveledAlongPath: 1269.56
+Total length of path: 323.616
+Start -> x: -22.017 y: -36.858 yaw: 0.074287
+Stop -> x: -32.8066 y: -24.7223 yaw: -0.496617
+Calculated average vx: 0.0634605 km/h
+vx at stop: 4.39231
+vy at stop: -0.557552
+--------------------------------- 
+averageDistanceTraveledOnMap: 1052.08
+averageVelocityOnMap: 0.0563272
+Iteration 9
+Inputs at stop: 
+in[] = 1;
+in[] = 5.05643;
+in[] = -0.721577;
+in[] = -0.868579;
+in[] = -1.8085;
+in[] = 4.23161;
+in[] = 3.03514;
+in[] = 3.78541;
+in[] = 6.03651;
+in[] = -0.0541632;
+in[] = 6.84224;
+in[] = -4.95153;
+in[] = 6.27628;
+in[] = -9.91902;
+in[] = 0.81402;
+in[] = 1.62917;
+in[] = 3.60324;
+in[] = -2.2397;
+in[] = 3.56433;
+in[] = -7.20327;
+in[] = 3.3954;
+in[] = -12.1696;
+in[] = 6.61321;
+in[] = -15.7153;
+out1 at stop: -1
+out2 at stop: -0.420316
+Time: 180.05
+startIndex: 1485
+endIndex: 1392
+distanceTraveledAlongPath: 1273.04
+Total length of path: 323.616
+Start -> x: -27.758 y: -34.847 yaw: -0.71981
+Stop -> x: -35.0346 y: -23.8172 yaw: 0.098682
+Calculated average vx: 0.0636343 km/h
+vx at stop: 4.61944
+vy at stop: -0.558874
+--------------------------------- 
+averageDistanceTraveledOnMap: 1179.39
+averageVelocityOnMap: 0.0626906
+Iteration 0
+Inputs at stop: 
+in[] = 1;
+in[] = 6.83145;
+in[] = 0.447389;
+in[] = 0.829861;
+in[] = -1.12921;
+in[] = 2.019;
+in[] = 3.81226;
+in[] = 2.64939;
+in[] = 7.51583;
+in[] = 4.23797;
+in[] = 12.0681;
+in[] = 6.27297;
+in[] = 16.7715;
+in[] = 7.65728;
+in[] = 2.06262;
+in[] = -0.551394;
+in[] = 6.92646;
+in[] = 0.463372;
+in[] = 11.1356;
+in[] = 2.51667;
+in[] = 15.6283;
+in[] = 4.48907;
+in[] = 20.5955;
+in[] = 4.94102;
+out1 at stop: 1
+out2 at stop: 0.98751
+Time: 180.05
+startIndex: 1092
+endIndex: 2046
+distanceTraveledAlongPath: 1333.79
+Total length of path: 393.761
+Start -> x: 6.9168 y: -21.461 yaw: -0.17077
+Stop -> x: 31.6134 y: 29.6862 yaw: -2.06144
+Calculated average vx: 0.0666711 km/h
+vx at stop: 7.41186
+vy at stop: 0.475095
+--------------------------------- 
+averageDistanceTraveledOnMap: 133.379
+averageVelocityOnMap: 0.00666711
+Iteration 1
+Inputs at stop: 
+in[] = 1;
+in[] = 7.96847;
+in[] = -0.15775;
+in[] = -0.195138;
+in[] = -2.21207;
+in[] = 2.55638;
+in[] = 2.75769;
+in[] = 2.07137;
+in[] = 7.50571;
+in[] = 3.21132;
+in[] = 11.3926;
+in[] = 6.34633;
+in[] = 14.9011;
+in[] = 9.90121;
+in[] = -1.82758;
+in[] = -0.562316;
+in[] = 3.1541;
+in[] = -0.948036;
+in[] = 7.98332;
+in[] = 0.0612638;
+in[] = 12.0613;
+in[] = 2.9308;
+in[] = 15.6411;
+in[] = 6.41143;
+out1 at stop: -0.864203
+out2 at stop: -0.491181
+Time: 180.05
+startIndex: 387
+endIndex: 1359
+distanceTraveledAlongPath: 1336.8
+Total length of path: 393.761
+Start -> x: -64.474 y: 0.9964 yaw: -2.8725
+Stop -> x: 46.9253 y: -39.8835 yaw: 0.0898882
+Calculated average vx: 0.0668212 km/h
+vx at stop: 7.41277
+vy at stop: -0.209645
+--------------------------------- 
+averageDistanceTraveledOnMap: 267.059
+averageVelocityOnMap: 0.0133492
+Iteration 2
+Inputs at stop: 
+in[] = 1;
+in[] = 7.79398;
+in[] = 0.333154;
+in[] = 0.570861;
+in[] = -2.08355;
+in[] = 2.69859;
+in[] = 2.90151;
+in[] = 2.32902;
+in[] = 7.88733;
+in[] = 2.4272;
+in[] = 12.7712;
+in[] = 3.45587;
+in[] = 17.5877;
+in[] = 4.79123;
+in[] = -0.418818;
+in[] = -0.458645;
+in[] = 4.57148;
+in[] = -0.749327;
+in[] = 9.54877;
+in[] = -0.391068;
+in[] = 14.4073;
+in[] = 0.77845;
+in[] = 19.2091;
+in[] = 2.16484;
+out1 at stop: 0.930448
+out2 at stop: -0.918024
+Time: 180.05
+startIndex: 573
+endIndex: 1578
+distanceTraveledAlongPath: 1342.29
+Total length of path: 393.761
+Start -> x: -75.056 y: -23.243 yaw: -0.97256
+Stop -> x: 69.9564 y: -13.3288 yaw: 1.38924
+Calculated average vx: 0.0670961 km/h
+vx at stop: 6.93027
+vy at stop: 0.335651
+--------------------------------- 
+averageDistanceTraveledOnMap: 401.288
+averageVelocityOnMap: 0.0200588
+Iteration 3
+Inputs at stop: 
+in[] = 1;
+in[] = 6.52112;
+in[] = 0.179395;
+in[] = 0.33859;
+in[] = 2.53567;
+in[] = 2.24682;
+in[] = 7.51643;
+in[] = 2.64912;
+in[] = 12.4346;
+in[] = 3.51772;
+in[] = 17.2077;
+in[] = 4.99086;
+in[] = 21.7686;
+in[] = 7.02253;
+in[] = -2.04333;
+in[] = -0.488546;
+in[] = 2.93993;
+in[] = -0.741157;
+in[] = 7.91951;
+in[] = -0.323266;
+in[] = 12.8414;
+in[] = 0.5292;
+in[] = 17.6269;
+in[] = 1.95983;
+out1 at stop: -0.999998
+out2 at stop: 0.834717
+Time: 180.05
+startIndex: 705
+endIndex: 1704
+distanceTraveledAlongPath: 1341.3
+Total length of path: 393.761
+Start -> x: -55.36 y: -30.459 yaw: 0.014373
+Stop -> x: 70.8812 y: 7.79519 yaw: 1.78299
+Calculated average vx: 0.0670463 km/h
+vx at stop: 6.9403
+vy at stop: 0.0181715
+--------------------------------- 
+averageDistanceTraveledOnMap: 535.418
+averageVelocityOnMap: 0.0267635
+Iteration 4
+Inputs at stop: 
+in[] = 1;
+in[] = 7.59706;
+in[] = 0.0338653;
+in[] = -0.0446239;
+in[] = 1.31129;
+in[] = 2.54302;
+in[] = 6.30874;
+in[] = 2.69659;
+in[] = 11.2657;
+in[] = 2.09843;
+in[] = 16.12;
+in[] = 0.910602;
+in[] = 20.9213;
+in[] = -0.488074;
+in[] = 2.08728;
+in[] = -0.430188;
+in[] = 7.08155;
+in[] = -0.347759;
+in[] = 12.0155;
+in[] = -1.12376;
+in[] = 16.8452;
+in[] = -2.41346;
+in[] = 21.6464;
+in[] = -3.81013;
+out1 at stop: 0.999854
+out2 at stop: 0.99998
+Time: 180.05
+startIndex: 60
+endIndex: 1038
+distanceTraveledAlongPath: 1337.8
+Total length of path: 393.761
+Start -> x: -10 y: 1.5 yaw: 3.1416
+Stop -> x: -2.0066 y: -21.9804 yaw: -0.0216843
+Calculated average vx: 0.0668714 km/h
+vx at stop: 8.13088
+vy at stop: 0.123788
+--------------------------------- 
+averageDistanceTraveledOnMap: 669.198
+averageVelocityOnMap: 0.0334506
+Iteration 5
+Inputs at stop: 
+in[] = 1;
+in[] = 6.26507;
+in[] = -0.264334;
+in[] = -0.423326;
+in[] = 2.24596;
+in[] = 3.22688;
+in[] = 7.09574;
+in[] = 2.0245;
+in[] = 11.3662;
+in[] = -0.560783;
+in[] = 15.5478;
+in[] = -3.30274;
+in[] = 18.1288;
+in[] = -4.99518;
+in[] = -2.39167;
+in[] = 0.434403;
+in[] = 2.54807;
+in[] = 0.0819546;
+in[] = 7.25987;
+in[] = -1.4568;
+in[] = 11.4418;
+in[] = -4.19784;
+in[] = 15.6231;
+in[] = -6.93955;
+out1 at stop: -1
+out2 at stop: -0.995281
+Time: 180.05
+startIndex: 1275
+endIndex: 2223
+distanceTraveledAlongPath: 1332.79
+Total length of path: 393.761
+Start -> x: 33.923 y: -34.654 yaw: -0.67584
+Stop -> x: 19.8582 y: 5.03779 yaw: -2.62081
+Calculated average vx: 0.0666208 km/h
+vx at stop: 5.31945
+vy at stop: -0.329149
+--------------------------------- 
+averageDistanceTraveledOnMap: 802.477
+averageVelocityOnMap: 0.0401127
+Iteration 6
+Inputs at stop: 
+in[] = 1;
+in[] = 7.13246;
+in[] = -0.171257;
+in[] = -0.354247;
+in[] = 2.63022;
+in[] = 2.62533;
+in[] = 7.5616;
+in[] = 1.79948;
+in[] = 12.493;
+in[] = 0.973637;
+in[] = 17.4243;
+in[] = 0.147788;
+in[] = 22.3554;
+in[] = -0.678007;
+in[] = -2.1514;
+in[] = 0.115526;
+in[] = 2.7904;
+in[] = -0.443225;
+in[] = 7.72178;
+in[] = -1.26907;
+in[] = 12.6532;
+in[] = -2.09492;
+in[] = 17.5845;
+in[] = -2.92077;
+out1 at stop: -0.999999
+out2 at stop: -0.0369751
+Time: 180.05
+startIndex: 2295
+endIndex: 882
+distanceTraveledAlongPath: 1330.97
+Total length of path: 393.761
+Start -> x: 9.1663 y: 1.2592 yaw: 3.1092
+Stop -> x: -27.8231 y: -22.5841 yaw: 0.149958
+Calculated average vx: 0.06653 km/h
+vx at stop: 6.89787
+vy at stop: -0.272791
+--------------------------------- 
+averageDistanceTraveledOnMap: 935.574
+averageVelocityOnMap: 0.0467657
+Iteration 7
+Inputs at stop: 
+in[] = 1;
+in[] = 7.18341;
+in[] = 0.0564604;
+in[] = 0.263896;
+in[] = -1.09742;
+in[] = 1.70909;
+in[] = 3.84995;
+in[] = 1.8135;
+in[] = 8.63633;
+in[] = 3.24409;
+in[] = 13.5488;
+in[] = 4.12481;
+in[] = 18.5071;
+in[] = 3.63879;
+in[] = -1.47516;
+in[] = -1.26983;
+in[] = 3.48941;
+in[] = -1.31785;
+in[] = 8.31163;
+in[] = -0.0209899;
+in[] = 13.1748;
+in[] = 1.08375;
+in[] = 18.1279;
+in[] = 0.664663;
+out1 at stop: -0.954094
+out2 at stop: 0.998827
+Time: 180.05
+startIndex: 2157
+endIndex: 756
+distanceTraveledAlongPath: 1332.97
+Total length of path: 393.761
+Start -> x: 28.068 y: 11.402 yaw: -2.0325
+Stop -> x: -46.7142 y: -29.654 yaw: 0.34891
+Calculated average vx: 0.0666298 km/h
+vx at stop: 7.72685
+vy at stop: -0.0371661
+--------------------------------- 
+averageDistanceTraveledOnMap: 1068.87
+averageVelocityOnMap: 0.0534287
+Iteration 8
+Inputs at stop: 
+in[] = 1;
+in[] = 7.0214;
+in[] = -0.12545;
+in[] = -0.432875;
+in[] = 0.554738;
+in[] = 1.74588;
+in[] = 5.53609;
+in[] = 2.17734;
+in[] = 10.5174;
+in[] = 2.6088;
+in[] = 15.4988;
+in[] = 3.04026;
+in[] = 20.4801;
+in[] = 3.47171;
+in[] = 0.813613;
+in[] = -1.24293;
+in[] = 5.79496;
+in[] = -0.811472;
+in[] = 10.7763;
+in[] = -0.380013;
+in[] = 15.7577;
+in[] = 0.0514461;
+in[] = 20.739;
+in[] = 0.482905;
+out1 at stop: 0.834863
+out2 at stop: 1
+Time: 180.05
+startIndex: 1410
+endIndex: 2349
+distanceTraveledAlongPath: 1331.29
+Total length of path: 393.761
+Start -> x: 54.794 y: -36.782 yaw: 0.74193
+Stop -> x: 0.325177 y: 1.72519 yaw: 3.0558
+Calculated average vx: 0.0665462 km/h
+vx at stop: 7.59286
+vy at stop: -0.0233947
+--------------------------------- 
+averageDistanceTraveledOnMap: 1202
+averageVelocityOnMap: 0.0600833
+Iteration 9
+Inputs at stop: 
+in[] = 1;
+in[] = 8.40191;
+in[] = 0.241759;
+in[] = 0.467538;
+in[] = -1.81842;
+in[] = 2.7086;
+in[] = 3.05985;
+in[] = 2.90064;
+in[] = 7.58067;
+in[] = 4.97405;
+in[] = 11.5365;
+in[] = 8.02127;
+in[] = 14.2185;
+in[] = 12.1017;
+in[] = 0.73907;
+in[] = -0.441897;
+in[] = 5.60979;
+in[] = 0.586138;
+in[] = 9.99521;
+in[] = 2.96305;
+in[] = 13.8917;
+in[] = 6.09084;
+in[] = 16.7225;
+in[] = 10.1315;
+out1 at stop: 1
+out2 at stop: -0.273581
+Time: 180.05
+startIndex: 312
+endIndex: 1290
+distanceTraveledAlongPath: 1337.8
+Total length of path: 393.761
+Start -> x: -52 y: 1.5 yaw: 3.1416
+Stop -> x: 35.3622 y: -37.2525 yaw: -0.618044
+Calculated average vx: 0.0668714 km/h
+vx at stop: 7.99773
+vy at stop: 0.271938
+--------------------------------- 
+averageDistanceTraveledOnMap: 1335.78
+averageVelocityOnMap: 0.0667704
+Iteration 0
+Inputs at stop: 
+in[] = 1;
+in[] = 7.97143;
+in[] = 0.214875;
+in[] = 0.395801;
+in[] = 0.321446;
+in[] = 2.59739;
+in[] = 5.31439;
+in[] = 2.5153;
+in[] = 10.2226;
+in[] = 1.62569;
+in[] = 15.1862;
+in[] = 1.36157;
+in[] = 19.9037;
+in[] = -0.26157;
+in[] = 0.912906;
+in[] = -0.422921;
+in[] = 5.89997;
+in[] = -0.570264;
+in[] = 10.8221;
+in[] = -1.35599;
+in[] = 15.7435;
+in[] = -1.89278;
+in[] = 20.0153;
+in[] = -4.24237;
+out1 at stop: 0.815404
+out2 at stop: 0.330036
+Time: 180.05
+startIndex: 2265
+endIndex: 1992
+distanceTraveledAlongPath: 1301.85
+Total length of path: 675.147
+Start -> x: -37.215 y: 24.254 yaw: 1.3337
+Stop -> x: -14.0532 y: 5.43992 yaw: -2.73342
+Calculated average vx: 0.0650745 km/h
+vx at stop: 8.04857
+vy at stop: 0.269498
+--------------------------------- 
+averageDistanceTraveledOnMap: 130.185
+averageVelocityOnMap: 0.00650745
+Iteration 1
+Inputs at stop: 
+in[] = 1;
+in[] = 6.88276;
+in[] = -0.172713;
+in[] = -0.385233;
+in[] = 0.887555;
+in[] = 3.51824;
+in[] = 5.7629;
+in[] = 2.57245;
+in[] = 10;
+in[] = 0.0583334;
+in[] = 12.9176;
+in[] = -3.92192;
+in[] = 14.205;
+in[] = -8.74086;
+in[] = 2.06377;
+in[] = 0.424642;
+in[] = 6.7477;
+in[] = -1.1481;
+in[] = 10.0451;
+in[] = -4.79606;
+in[] = 11.2881;
+in[] = -9.62142;
+in[] = 11.1244;
+in[] = -14.613;
+out1 at stop: -1
+out2 at stop: 0.998838
+Time: 180.05
+startIndex: 1521
+endIndex: 1272
+distanceTraveledAlongPath: 1305.85
+Total length of path: 675.147
+Start -> x: 9.0634 y: 51.701 yaw: -0.24934
+Stop -> x: -22.1863 y: 69.0401 yaw: 0.427713
+Calculated average vx: 0.0652742 km/h
+vx at stop: 7.42592
+vy at stop: -0.292938
+--------------------------------- 
+averageDistanceTraveledOnMap: 260.77
+averageVelocityOnMap: 0.0130349
+Iteration 2
+Inputs at stop: 
+in[] = 1;
+in[] = 6.71959;
+in[] = -0.424991;
+in[] = -0.668397;
+in[] = -0.268154;
+in[] = 3.8128;
+in[] = 4.65402;
+in[] = 3.11854;
+in[] = 8.75381;
+in[] = 0.308235;
+in[] = 12.8726;
+in[] = -2.5259;
+in[] = 16.7067;
+in[] = -5.70568;
+in[] = -2.36291;
+in[] = 0.642489;
+in[] = 2.61335;
+in[] = 0.586283;
+in[] = 6.76237;
+in[] = -1.9575;
+in[] = 10.8722;
+in[] = -4.80445;
+in[] = 14.7218;
+in[] = -7.96131;
+out1 at stop: 0.700041
+out2 at stop: -0.829247
+Time: 180.05
+startIndex: 1971
+endIndex: 1704
+distanceTraveledAlongPath: 1302.83
+Total length of path: 675.147
+Start -> x: -10.48 y: 5.7655 yaw: -2.7495
+Stop -> x: 23.3879 y: 31.0006 yaw: -1.85646
+Calculated average vx: 0.0651234 km/h
+vx at stop: 5.9781
+vy at stop: -0.146952
+--------------------------------- 
+averageDistanceTraveledOnMap: 391.053
+averageVelocityOnMap: 0.0195472
+Iteration 3
+Inputs at stop: 
+in[] = 1;
+in[] = 8.34641;
+in[] = -0.291773;
+in[] = -0.614657;
+in[] = 1.2613;
+in[] = 2.81562;
+in[] = 6.19536;
+in[] = 2.00841;
+in[] = 11.0193;
+in[] = 0.767154;
+in[] = 15.7407;
+in[] = -0.88008;
+in[] = 20.4618;
+in[] = -2.52694;
+in[] = 0.426145;
+in[] = -0.0829787;
+in[] = 5.3576;
+in[] = -0.905592;
+in[] = 10.1858;
+in[] = -2.11952;
+in[] = 14.9068;
+in[] = -3.7663;
+in[] = 19.6278;
+in[] = -5.41307;
+out1 at stop: -0.999748
+out2 at stop: 0.750273
+Time: 180.05
+startIndex: 2004
+endIndex: 1752
+distanceTraveledAlongPath: 1305.33
+Total length of path: 675.147
+Start -> x: -15.584 y: 3.7173 yaw: -2.7805
+Stop -> x: 19.8373 y: 25.2397 yaw: -2.30922
+Calculated average vx: 0.0652482 km/h
+vx at stop: 8.72011
+vy at stop: -0.311436
+--------------------------------- 
+averageDistanceTraveledOnMap: 521.585
+averageVelocityOnMap: 0.026072
+Iteration 4
+Inputs at stop: 
+in[] = 1;
+in[] = 6.81261;
+in[] = 0.332175;
+in[] = 0.362737;
+in[] = 1.47612;
+in[] = 2.25113;
+in[] = 6.41873;
+in[] = 2.94977;
+in[] = 11.3574;
+in[] = 3.65274;
+in[] = 16.0815;
+in[] = 5.26423;
+in[] = 20.7429;
+in[] = 6.98172;
+in[] = 2.09949;
+in[] = -0.695122;
+in[] = 7.0412;
+in[] = 0.0142481;
+in[] = 11.9749;
+in[] = 0.738605;
+in[] = 16.7069;
+in[] = 2.32468;
+in[] = 21.3982;
+in[] = 3.97236;
+out1 at stop: 1
+out2 at stop: 1
+Time: 180.05
+startIndex: 624
+endIndex: 366
+distanceTraveledAlongPath: 1304.33
+Total length of path: 675.147
+Start -> x: 12.081 y: 71.024 yaw: 2.4272
+Stop -> x: 38.7523 y: 37.475 yaw: 1.89865
+Calculated average vx: 0.0651983 km/h
+vx at stop: 7.36474
+vy at stop: 0.287849
+--------------------------------- 
+averageDistanceTraveledOnMap: 652.018
+averageVelocityOnMap: 0.0325918
+Iteration 5
+Inputs at stop: 
+in[] = 1;
+in[] = 7.85277;
+in[] = -0.206669;
+in[] = -0.376629;
+in[] = -1.49572;
+in[] = 2.46442;
+in[] = 3.50018;
+in[] = 2.65269;
+in[] = 8.49705;
+in[] = 2.8407;
+in[] = 13.4937;
+in[] = 3.02815;
+in[] = 18.1653;
+in[] = 4.3698;
+in[] = -1.38272;
+in[] = -0.533457;
+in[] = 3.61319;
+in[] = -0.345187;
+in[] = 8.61002;
+in[] = -0.157269;
+in[] = 13.6059;
+in[] = 0.0310011;
+in[] = 18.4014;
+in[] = 1.09567;
+out1 at stop: 0.111534
+out2 at stop: -0.741189
+Time: 180.05
+startIndex: 354
+endIndex: 102
+distanceTraveledAlongPath: 1305.33
+Total length of path: 675.147
+Start -> x: 38.464 y: 35.52 yaw: 1.8344
+Stop -> x: 16.4285 y: 4.19278 yaw: 0.358228
+Calculated average vx: 0.0652485 km/h
+vx at stop: 7.25772
+vy at stop: 0.0176843
+--------------------------------- 
+averageDistanceTraveledOnMap: 782.551
+averageVelocityOnMap: 0.0391167
+Iteration 6
+Inputs at stop: 
+in[] = 1;
+in[] = 7.36804;
+in[] = -0.392673;
+in[] = -0.634474;
+in[] = 0.550148;
+in[] = 2.76432;
+in[] = 5.10992;
+in[] = 3.82963;
+in[] = 5.42718;
+in[] = 8.46316;
+in[] = 3.3679;
+in[] = 12.9911;
+in[] = -0.608057;
+in[] = 15.6736;
+in[] = -2.25013;
+in[] = -0.0348591;
+in[] = 2.73635;
+in[] = -0.362817;
+in[] = 7.16836;
+in[] = 1.62772;
+in[] = 8.83682;
+in[] = 6.13235;
+in[] = 7.68205;
+in[] = 10.972;
+out1 at stop: -0.941841
+out2 at stop: -0.830169
+Time: 180.05
+startIndex: 2724
+endIndex: 2526
+distanceTraveledAlongPath: 1314.37
+Total length of path: 675.147
+Start -> x: -2.259 y: 23.23 yaw: 0.65782
+Stop -> x: -23.6454 y: 26.8385 yaw: -2.24463
+Calculated average vx: 0.0657002 km/h
+vx at stop: 6.57707
+vy at stop: -0.378819
+--------------------------------- 
+averageDistanceTraveledOnMap: 913.988
+averageVelocityOnMap: 0.0456867
+Iteration 7
+Inputs at stop: 
+in[] = 1;
+in[] = 7.61129;
+in[] = -0.295925;
+in[] = -0.561415;
+in[] = 1.3079;
+in[] = 3.04462;
+in[] = 6.19158;
+in[] = 2.01092;
+in[] = 11.1165;
+in[] = 1.15194;
+in[] = 16.0273;
+in[] = 0.21836;
+in[] = 20.844;
+in[] = -0.970059;
+in[] = -2.18173;
+in[] = 0.074298;
+in[] = 2.78714;
+in[] = -0.21355;
+in[] = 7.66979;
+in[] = -1.27232;
+in[] = 12.5806;
+in[] = -2.2049;
+in[] = 17.5165;
+in[] = -2.98639;
+out1 at stop: -0.998531
+out2 at stop: 0.550299
+Time: 180.05
+startIndex: 2496
+endIndex: 2235
+distanceTraveledAlongPath: 1303.88
+Total length of path: 675.147
+Start -> x: -19.708 y: 30.032 yaw: -2.1356
+Stop -> x: -36.7071 y: 19.1208 yaw: 1.50297
+Calculated average vx: 0.0651758 km/h
+vx at stop: 7.83325
+vy at stop: -0.333943
+--------------------------------- 
+averageDistanceTraveledOnMap: 1044.38
+averageVelocityOnMap: 0.0522043
+Iteration 8
+Inputs at stop: 
+in[] = 1;
+in[] = 6.60153;
+in[] = 0.0691928;
+in[] = -0.0585204;
+in[] = 2.35116;
+in[] = 3.62444;
+in[] = 6.8366;
+in[] = 1.64898;
+in[] = 10.5573;
+in[] = -1.68615;
+in[] = 14.1081;
+in[] = -5.14056;
+in[] = 18.8083;
+in[] = -6.012;
+in[] = -1.89884;
+in[] = 0.605561;
+in[] = 2.98937;
+in[] = 0.529344;
+in[] = 6.99957;
+in[] = -2.43034;
+in[] = 10.459;
+in[] = -6.03396;
+in[] = 14.727;
+in[] = -8.42093;
+out1 at stop: -1
+out2 at stop: -1
+Time: 180.05
+startIndex: 3774
+endIndex: 3543
+distanceTraveledAlongPath: 1308.85
+Total length of path: 675.147
+Start -> x: -41.995 y: -13.095 yaw: -0.1813
+Stop -> x: -50.6777 y: 19.0466 yaw: -1.21024
+Calculated average vx: 0.0654245 km/h
+vx at stop: 5.63495
+vy at stop: -0.161266
+--------------------------------- 
+averageDistanceTraveledOnMap: 1175.26
+averageVelocityOnMap: 0.0587467
+Iteration 9
+Inputs at stop: 
+in[] = 1;
+in[] = 8.84233;
+in[] = 0.156033;
+in[] = 0.258237;
+in[] = -0.366335;
+in[] = 2.82479;
+in[] = 4.54806;
+in[] = 3.63682;
+in[] = 9.09127;
+in[] = 5.67051;
+in[] = 11.1754;
+in[] = 9.99975;
+in[] = 11.0447;
+in[] = 14.908;
+in[] = 0.987927;
+in[] = -0.0895406;
+in[] = 5.87585;
+in[] = 0.898234;
+in[] = 10.4177;
+in[] = 2.95445;
+in[] = 13.5126;
+in[] = 6.7543;
+in[] = 14.447;
+in[] = 11.6544;
+out1 at stop: 1
+out2 at stop: 0.402334
+Time: 180.05
+startIndex: 1179
+endIndex: 957
+distanceTraveledAlongPath: 1310.35
+Total length of path: 675.147
+Start -> x: -36.024 y: 61.879 yaw: 0.16601
+Stop -> x: -39.716 y: 85.0128 yaw: -2.95654
+Calculated average vx: 0.0654995 km/h
+vx at stop: 8.93416
+vy at stop: 0.206761
+--------------------------------- 
+averageDistanceTraveledOnMap: 1306.3
+averageVelocityOnMap: 0.0652967
+Iteration 0
+Inputs at stop: 
+in[] = 1;
+in[] = 5.21526;
+in[] = -0.645616;
+in[] = -1.16947;
+in[] = 4.32252;
+in[] = 0.173452;
+in[] = 4.51164;
+in[] = -4.78447;
+in[] = 4.47583;
+in[] = -9.75118;
+in[] = 7.81621;
+in[] = -8.94002;
+in[] = 11.4832;
+in[] = -5.54702;
+in[] = 0.97604;
+in[] = 0.781607;
+in[] = 1.55997;
+in[] = -4.10862;
+in[] = 1.31578;
+in[] = -9.09229;
+in[] = 3.59174;
+in[] = -13.2027;
+in[] = 8.25922;
+in[] = -12.243;
+out1 at stop: -1
+out2 at stop: -1
+Time: 17.15
+startIndex: 744
+endIndex: 1440
+distanceTraveledAlongPath: 115.403
+Total length of path: 322.397
+Start -> x: -26.969 y: 8.5048 yaw: 1.764
+Stop -> x: -37.869 y: 13.2026 yaw: -1.94396
+Calculated average vx: 0.0605615 km/h
+vx at stop: 4.36283
+vy at stop: -0.72375
+--------------------------------- 
+averageDistanceTraveledOnMap: 11.5403
+averageVelocityOnMap: 0.00605615
+Iteration 1
+Inputs at stop: 
+in[] = 1;
+in[] = 6.48268;
+in[] = 0.526927;
+in[] = 0.723007;
+in[] = 0.819877;
+in[] = 4.98452;
+in[] = 4.76823;
+in[] = 7.98047;
+in[] = 6.87321;
+in[] = 12.3278;
+in[] = 4.60165;
+in[] = 16.6119;
+in[] = 1.06269;
+in[] = 20.1374;
+in[] = 1.66846;
+in[] = 1.89788;
+in[] = 5.77185;
+in[] = 4.72123;
+in[] = 8.85872;
+in[] = 8.62507;
+in[] = 9.7522;
+in[] = 13.4133;
+in[] = 7.54247;
+in[] = 17.8022;
+out1 at stop: 1
+out2 at stop: 0.999999
+Time: 17.5
+startIndex: 1521
+endIndex: 270
+distanceTraveledAlongPath: 112.83
+Total length of path: 322.397
+Start -> x: -49.069 y: 13.364 yaw: -2.9586
+Stop -> x: 17.2357 y: 38.6989 yaw: 2.45573
+Calculated average vx: 0.0580267 km/h
+vx at stop: 7.07391
+vy at stop: 0.453009
+--------------------------------- 
+averageDistanceTraveledOnMap: 22.8233
+averageVelocityOnMap: 0.0118588
+Iteration 2
+Inputs at stop: 
+in[] = 1;
+in[] = 4.30168;
+in[] = -0.683013;
+in[] = -1.17653;
+in[] = 4.30848;
+in[] = 0.490034;
+in[] = 4.66679;
+in[] = -4.45854;
+in[] = 4.80061;
+in[] = -9.42358;
+in[] = 8.11133;
+in[] = -8.49882;
+in[] = 11.6603;
+in[] = -4.98258;
+in[] = 0.943178;
+in[] = 0.983557;
+in[] = 1.69376;
+in[] = -3.88388;
+in[] = 1.6199;
+in[] = -8.87298;
+in[] = 4.03489;
+in[] = -12.9033;
+in[] = 8.66688;
+in[] = -11.7848;
+out1 at stop: -1
+out2 at stop: -1
+Time: 13.1
+startIndex: 921
+endIndex: 1440
+distanceTraveledAlongPath: 85.9186
+Total length of path: 322.397
+Start -> x: -27.934 y: 36.666 yaw: 1.5928
+Stop -> x: -38.0221 y: 13.3038 yaw: -1.97807
+Calculated average vx: 0.059028 km/h
+vx at stop: 3.45741
+vy at stop: -0.81758
+--------------------------------- 
+averageDistanceTraveledOnMap: 31.4151
+averageVelocityOnMap: 0.0177616
+Iteration 3
+Inputs at stop: 
+in[] = 1;
+in[] = 5.07165;
+in[] = -0.629369;
+in[] = -1.17582;
+in[] = 4.30408;
+in[] = 0.155853;
+in[] = 4.44559;
+in[] = -4.80366;
+in[] = 4.3621;
+in[] = -9.7698;
+in[] = 7.71011;
+in[] = -8.99074;
+in[] = 11.4095;
+in[] = -5.6331;
+in[] = 0.963593;
+in[] = 0.796109;
+in[] = 1.50054;
+in[] = -4.0995;
+in[] = 1.20852;
+in[] = -9.0806;
+in[] = 3.44491;
+in[] = -13.2127;
+in[] = 8.12139;
+in[] = -12.2978;
+out1 at stop: -1
+out2 at stop: -1
+Time: 20.1
+startIndex: 591
+endIndex: 1440
+distanceTraveledAlongPath: 140.891
+Total length of path: 322.397
+Start -> x: -8.3991 y: -1.9111 yaw: -2.5305
+Stop -> x: -37.8934 y: 13.1967 yaw: -1.93401
+Calculated average vx: 0.0630856 km/h
+vx at stop: 4.21699
+vy at stop: -0.72406
+--------------------------------- 
+averageDistanceTraveledOnMap: 45.5043
+averageVelocityOnMap: 0.0240702
+Iteration 4
+Inputs at stop: 
+in[] = 1;
+in[] = 5.90687;
+in[] = -0.696476;
+in[] = -1.11327;
+in[] = 4.2418;
+in[] = 0.167034;
+in[] = 4.51907;
+in[] = -4.78674;
+in[] = 4.57162;
+in[] = -9.7533;
+in[] = 7.89704;
+in[] = -8.88285;
+in[] = 11.5031;
+in[] = -5.42516;
+in[] = 0.885023;
+in[] = 0.715566;
+in[] = 1.55584;
+in[] = -4.1635;
+in[] = 1.40035;
+in[] = -9.15073;
+in[] = 3.74906;
+in[] = -13.22;
+in[] = 8.39873;
+in[] = -12.1774;
+out1 at stop: -1
+out2 at stop: -1
+Time: 27.45
+startIndex: 273
+endIndex: 1440
+distanceTraveledAlongPath: 193.869
+Total length of path: 322.397
+Start -> x: 15.583 y: 36.14 yaw: 2.6927
+Stop -> x: -37.831 y: 13.0715 yaw: -1.96431
+Calculated average vx: 0.0635637 km/h
+vx at stop: 5.05738
+vy at stop: -0.672443
+--------------------------------- 
+averageDistanceTraveledOnMap: 64.8912
+averageVelocityOnMap: 0.0304266
+Iteration 5
+Inputs at stop: 
+in[] = 1;
+in[] = 5.91041;
+in[] = 0.428942;
+in[] = 0.795009;
+in[] = -3.30842;
+in[] = 3.85481;
+in[] = 1.45684;
+in[] = 5.02528;
+in[] = 5.57312;
+in[] = 7.78596;
+in[] = 7.92796;
+in[] = 12.0032;
+in[] = 5.90999;
+in[] = 16.4124;
+in[] = 2.12404;
+in[] = 1.89441;
+in[] = 6.38504;
+in[] = 4.47376;
+in[] = 9.69424;
+in[] = 8.19101;
+in[] = 10.8653;
+in[] = 12.919;
+in[] = 8.9152;
+in[] = 17.4293;
+out1 at stop: 1
+out2 at stop: 1
+Time: 3.3
+startIndex: 162
+endIndex: 267
+distanceTraveledAlongPath: 17.4784
+Total length of path: 322.397
+Start -> x: 16.449 y: 21.464 yaw: 0.97248
+Stop -> x: 17.5796 y: 38.524 yaw: 2.50634
+Calculated average vx: 0.0476683 km/h
+vx at stop: 6.49566
+vy at stop: 0.519711
+--------------------------------- 
+averageDistanceTraveledOnMap: 66.6391
+averageVelocityOnMap: 0.0351934
+Iteration 6
+Inputs at stop: 
+in[] = 1;
+in[] = 4.29261;
+in[] = -0.76698;
+in[] = -1.08592;
+in[] = 4.33085;
+in[] = 0.505744;
+in[] = 4.65999;
+in[] = -4.44486;
+in[] = 4.76455;
+in[] = -9.4106;
+in[] = 8.08067;
+in[] = -8.50536;
+in[] = 11.6503;
+in[] = -5.0101;
+in[] = 0.968517;
+in[] = 1.01909;
+in[] = 1.6904;
+in[] = -3.85269;
+in[] = 1.58714;
+in[] = -8.84126;
+in[] = 3.97834;
+in[] = -12.8857;
+in[] = 8.61683;
+in[] = -11.7945;
+out1 at stop: -1
+out2 at stop: -1
+Time: 13.9
+startIndex: 894
+endIndex: 1440
+distanceTraveledAlongPath: 90.4135
+Total length of path: 322.397
+Start -> x: -29.872 y: 32.668 yaw: 1.0925
+Stop -> x: -38.0516 y: 13.3355 yaw: -1.97824
+Calculated average vx: 0.0585411 km/h
+vx at stop: 3.45287
+vy at stop: -0.766689
+--------------------------------- 
+averageDistanceTraveledOnMap: 75.6804
+averageVelocityOnMap: 0.0410475
+Iteration 7
+Inputs at stop: 
+in[] = 1;
+in[] = 5.64374;
+in[] = -0.699449;
+in[] = -1.06701;
+in[] = 4.2883;
+in[] = 0.215039;
+in[] = 4.52843;
+in[] = -4.74068;
+in[] = 4.54375;
+in[] = -9.70749;
+in[] = 7.8756;
+in[] = -8.86199;
+in[] = 11.5075;
+in[] = -5.43143;
+in[] = 0.93573;
+in[] = 0.788717;
+in[] = 1.56996;
+in[] = -4.09524;
+in[] = 1.37708;
+in[] = -9.08116;
+in[] = 3.69523;
+in[] = -13.1679;
+in[] = 8.35258;
+in[] = -12.1602;
+out1 at stop: -1
+out2 at stop: -1
+Time: 24
+startIndex: 408
+endIndex: 1440
+distanceTraveledAlongPath: 171.384
+Total length of path: 322.397
+Start -> x: 1.7573 y: 25.71 yaw: -1.5332
+Stop -> x: -37.8847 y: 13.1519 yaw: -1.95676
+Calculated average vx: 0.064269 km/h
+vx at stop: 4.78991
+vy at stop: -0.670145
+--------------------------------- 
+averageDistanceTraveledOnMap: 92.8188
+averageVelocityOnMap: 0.0474744
+Iteration 8
+Inputs at stop: 
+in[] = 1;
+in[] = 4.61051;
+in[] = -0.62918;
+in[] = -1.17439;
+in[] = 4.28107;
+in[] = 0.210307;
+in[] = 4.45809;
+in[] = -4.74806;
+in[] = 4.41016;
+in[] = -9.71467;
+in[] = 7.75251;
+in[] = -8.91166;
+in[] = 11.4278;
+in[] = -5.52762;
+in[] = 0.936083;
+in[] = 0.826625;
+in[] = 1.50807;
+in[] = -4.06501;
+in[] = 1.25173;
+in[] = -9.04807;
+in[] = 3.51765;
+in[] = -13.164;
+in[] = 8.18746;
+in[] = -12.2157;
+out1 at stop: -1
+out2 at stop: -1
+Time: 32.1
+startIndex: 87
+endIndex: 1440
+distanceTraveledAlongPath: 224.848
+Total length of path: 322.397
+Start -> x: 9.4072 y: 11.136 yaw: 0.97246
+Stop -> x: -37.9171 y: 13.2063 yaw: -1.94062
+Calculated average vx: 0.0630415 km/h
+vx at stop: 3.75589
+vy at stop: -0.758001
+--------------------------------- 
+averageDistanceTraveledOnMap: 115.304
+averageVelocityOnMap: 0.0537785
+Iteration 9
+Inputs at stop: 
+in[] = 1;
+in[] = 5.0519;
+in[] = -0.647496;
+in[] = -1.14079;
+in[] = 4.14291;
+in[] = 0.462599;
+in[] = 4.57308;
+in[] = -4.48025;
+in[] = 4.77902;
+in[] = -9.44282;
+in[] = 8.07596;
+in[] = -8.47005;
+in[] = 11.5735;
+in[] = -4.90262;
+in[] = 0.770798;
+in[] = 0.907176;
+in[] = 1.59202;
+in[] = -3.94884;
+in[] = 1.59065;
+in[] = -8.93849;
+in[] = 4.06395;
+in[] = -12.9333;
+in[] = 8.67919;
+in[] = -11.7476;
+out1 at stop: -1
+out2 at stop: -1
+Time: 2.5
+startIndex: 1344
+endIndex: 1440
+distanceTraveledAlongPath: 15.9875
+Total length of path: 322.397
+Start -> x: -43.475 y: 24.393 yaw: -0.41374
+Stop -> x: -38.0089 y: 13.0899 yaw: -1.9917
+Calculated average vx: 0.0575548 km/h
+vx at stop: 4.19703
+vy at stop: -0.735312
+--------------------------------- 
+averageDistanceTraveledOnMap: 116.902
+averageVelocityOnMap: 0.059534
+
+totalAverageDistanceTraveled: 902.258
+Calculated total average vx: 0.0623552 km/h
+--------------------------------- 

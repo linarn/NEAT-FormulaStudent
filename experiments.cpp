@@ -1680,7 +1680,7 @@ bool CFSD_evaluate(Organism *org, Population *pop) {
   }
 
   //Decide if its a winner
-  if (org->fitness>=540) {//TODO change?
+  if (org->fitness>=1000) {//TODO change?
     org->winner=true;
     return true;
   }
@@ -1691,8 +1691,6 @@ bool CFSD_evaluate(Organism *org, Population *pop) {
 
 }
 
-//     cart_and_pole() was take directly from the pole simulator written
-//     by Richard Sutton and Charles Anderson.
 float go_car(Network *net, Population *pop)
 {
   //config
@@ -1705,8 +1703,8 @@ float go_car(Network *net, Population *pop)
   int random_start=1;
   int numInputCones = 10;
   int numNoConeInputs = 4; //including bias
-  std::string coneFile = "simulation-map-closed-lap.txt";
-  std::string pathFile = "trackdrive_path_1.csv";
+  std::string coneFile;
+  std::string pathFile;
   //inputs
   float vx,
         vy,
@@ -1722,191 +1720,281 @@ float go_car(Network *net, Population *pop)
 
   vector<NNode*>::iterator out_iter;
 
-  /* Read in cone positions and a complete middle path for reference */
-  auto map = readMap(coneFile, pathFile);
-  Eigen::ArrayXXf leftCones = std::get<0>(map);
-  Eigen::ArrayXXf rightCones = std::get<1>(map);
-  Eigen::ArrayXXf smallCones = std::get<2>(map);
-  Eigen::ArrayXXf bigCones = std::get<3>(map);
-  std::vector<float> globalPath = std::get<4>(map);
-
-  uint32_t idx1=0;
-  uint32_t idx2=idx1+3;
-  float pathLength=0.0f;
-    for (int i = 0; i<globalPath.size()/3; i++){
-      pathLength += sqrtf(powf(globalPath[idx2]-globalPath[idx1],2)+powf(globalPath[idx2+1]-globalPath[idx1+1],2));
-      idx1 +=3;
-      idx2 +=3;
-    }
   int step;
   int startIndex;
   int closestPointIndex;
-  float averageDistanceTraveled = 0;
-  //std::cout<<"NEW ORGANISM"<<"\n";
-  for(int i = 0; i<iterations; i++){
-  //std::cout<<"ITERATION: "<<i<<"\n";
-    if (random_start) {
-      std::random_device rd;     // only used once to initialise (seed) engine
-      std::mt19937 rng(rd());    // random-number engine used (Mersenne-Twister in this case)
-      std::uniform_int_distribution<int> uni(0,globalPath.size()/3-1); // guaranteed unbiased
-      auto random_integer = uni(rng);
-      ////std::cout<<" random_integer: "<<random_integer<<"\n";
-      x = globalPath[random_integer*3];
-      y = globalPath[random_integer*3+1];
-      yaw = globalPath[random_integer*3+2];
-      startIndex = random_integer*3;
+  float totalAverageDistanceTraveled = 0.0f;
+  float totalAverageVelocity = 0.0f;
+  float averageVelocityOnMap;
+  float averageVelocityPerIteration;
+  float averageDistanceTraveledOnMap;
+  float pathLength;
+  float totalDist = 0;
+  int maps=0;
+  for (int i = 0; i < 10; i++) {
+    int its =0;
+    maps++;
+    averageDistanceTraveledOnMap = 0.0f;
+    averageVelocityOnMap = 0.0f;
+    if (i==0) {
+      coneFile = "track1.csv";
+      pathFile = "path1.csv";
+      //std::cout<<"Map "<<i+1<<std::endl;
+    } else if (i==1){
+      coneFile = "track2.csv";
+      pathFile = "path2.csv";
+      //std::cout<<"Map "<<i+1<<std::endl;
+    } else if (i==2){
+      coneFile = "track3.csv";
+      pathFile = "path3.csv";
+      //std::cout<<"Map "<<i+1<<std::endl;
+    } else if (i==3){
+      coneFile = "track4.csv";
+      pathFile = "path4.csv";
+      //std::cout<<"Map "<<i+1<<std::endl;
+    } else if (i==4){
+      coneFile = "track5.csv";
+      pathFile = "path5.csv";
+      //std::cout<<"Map "<<i+1<<std::endl;
+    } else if (i==5){
+      coneFile = "track6.csv";
+      pathFile = "path6.csv";
+      //std::cout<<"Map "<<i+1<<std::endl;
+    } else if (i==6){
+      coneFile = "track7.csv";
+      pathFile = "path7.csv";
+      //std::cout<<"Map "<<i+1<<std::endl;
+    } else if (i==7){
+      coneFile = "track8.csv";
+      pathFile = "path8.csv";
+      //std::cout<<"Map "<<i+1<<std::endl;
+    } else if (i==8){
+      coneFile = "track9.csv";
+      pathFile = "path9.csv";
+      //std::cout<<"Map "<<i+1<<std::endl;
+    } else if (i==9){
+      coneFile = "track10.csv";
+      pathFile = "path10.csv";
+      //std::cout<<"Map "<<i+1<<std::endl;
+    } else{
+      std::cout<<"ERROR READING MAP FROM FILE"<<std::endl;
     }
-    else{
-     startIndex = 0;
-     x = globalPath[startIndex]; y = globalPath[startIndex+1]; yaw = globalPath[startIndex+2];
-    }
-    z = 0.0f; roll = 0.0f; pitch = 0.0f;
-    vx = 0.1f; vy = 0.0f; vz = 0.0f; rollRate = 0.0f; pitchRate = 0.0f; yawRate = 0.0f;
-    //std::cout<<" startIndex: "<< startIndex <<" x: "<<x<<" y: "<< y<<"\n";
-    step = 0;
-    float distanceTraveledAlongPath=0.0f;
-    int lastClosestPointIndex = startIndex;
-    Eigen::Vector2f vehicleLocation;
-    vehicleLocation <<x,
-                      y;
-    /*--- Iterate through the action-learn loop. ---*/
-    while (step++*dt<timeLimit){
-      /*-- setup the input layer based on the four iputs --*/
-      //setup_input(net,x,x_dot,theta,theta_dot);
-      in[0]=1.0;  //Bias
-      in[1]=vx;
-      in[2]=vy;
-      in[3]=yawRate;
 
-      Eigen::ArrayXXd leftSide = simConeDetectorSlam(leftCones, vehicleLocation, yaw, numInputCones/2);
-      Eigen::ArrayXXd rightSide = simConeDetectorSlam(rightCones, vehicleLocation, yaw, numInputCones/2);
-      int j=0;
-      int k=0;
-      for (int i = numNoConeInputs; i < numNoConeInputs+numInputCones*2-1; i+=2) {
-        if (i<numNoConeInputs+numInputCones) {
-          in[i] = leftSide(j,0);
-          in[i+1] = leftSide(j,1);
-          j++;
-        } else{
-          in[i] = rightSide(k,0);
-          in[i+1] = rightSide(k,1);
-          k++;
-        }
-      }
-      /*for (int i=0;i<24;i++){
-        in[i]=0;
-      }*/
-      net->load_sensors(in);
-      //activate_net(net);   /*-- activate the network based on the input --*/
-      //Activate the net
-      //If it loops, exit returning only fitness of 1 step
-      if (!(net->activate())) return 1;
+    /* Read in cone positions and a complete middle path for reference */
+    auto map = readMap(coneFile, pathFile);
+    Eigen::ArrayXXf leftCones = std::get<0>(map);
+    Eigen::ArrayXXf rightCones = std::get<1>(map);
+    Eigen::ArrayXXf smallCones = std::get<2>(map);
+    Eigen::ArrayXXf bigCones = std::get<3>(map);
+    std::vector<float> globalPath = std::get<4>(map);
 
-      /*-- decide which way to push via which output unit is greater --*/
-      out_iter=net->outputs.begin();
-      outSteer=(*out_iter)->activation*2-1;
-      ++out_iter;
-      outAcc=(*out_iter)->activation*2-1;
-      //std::cout<<"out1: "<<outSteer<<"\n";
-      //std::cout<<"out2: "<<outAcc<<"\n";
-      steeringAngle = maxSteer*3.14159265f/180.0f*outSteer;
-      if(outAcc>=0)
-        accelerationRequest = maxAcc*outAcc;
-      else
-        accelerationRequest = maxDec*outAcc;
-      /*--- Apply action to the simulated cart-pole ---*/
-      vehicleModel(steeringAngle, accelerationRequest, &vx, &vy, &yawRate, dt);
-      worldPosition(&x, &y, &z, &roll, &pitch, &yaw, vx, vy, vz, rollRate, pitchRate, yawRate,dt);
-      if(vx<0){ // If reversing,
-        break;
-      }
-      /*--- Check for failure.  If so, return steps ---*/
-      vehicleLocation << x,
-                         y;
-      /* Find closest global path point */
-      Eigen::Vector2f tmpPoint;
-      float vehicleOffset = std::numeric_limits<float>::infinity();
-      for(uint32_t j = 0; j < globalPath.size()/3; j++)
-      {
-          tmpPoint << globalPath[j*3],
-                      globalPath[j*3+1];
-          float tmpDist = (vehicleLocation-tmpPoint).norm();
-          if(tmpDist < vehicleOffset)
-          {
-            vehicleOffset = tmpDist;
-            closestPointIndex = j*3;
-          } // End of if
-      } // End of for
-      if (fabs(vehicleOffset)>2.0f){ // if going of track, break
-        break;
+    uint32_t idx1=0;
+    uint32_t idx2=idx1+3;
+      pathLength=0.0f;
+      for (int i = 0; i<globalPath.size()/3; i++){
+        pathLength += sqrtf(powf(globalPath[idx2]-globalPath[idx1],2)+powf(globalPath[idx2+1]-globalPath[idx1+1],2));
+        idx1 +=3;
+        idx2 +=3;
       }
 
-      /*std::cout<<"index1: "<<index1<<"\n";
-      std::cout<<"index2: "<<index2<<"\n";
-      std::cout<<"closestPointIndex: "<<closestPointIndex<<"\n";*/
+    //std::cout<<"NEW ORGANISM"<<"\n";
+    for(int i = 0; i<iterations; i++){
+      its++;
+    //std::cout<<"ITERATION: "<<i<<"\n";
+      if (random_start) {
+        std::random_device rd;     // only used once to initialise (seed) engine
+        std::mt19937 rng(rd());    // random-number engine used (Mersenne-Twister in this case)
+        std::uniform_int_distribution<int> uni(0,globalPath.size()/3-1); // guaranteed unbiased
+        auto random_integer = uni(rng);
+        ////std::cout<<" random_integer: "<<random_integer<<"\n";
+        x = globalPath[random_integer*3];
+        y = globalPath[random_integer*3+1];
+        yaw = globalPath[random_integer*3+2];
+        startIndex = random_integer*3;
+      }
+      else{
+       startIndex = 0;
+       x = globalPath[startIndex]; y = globalPath[startIndex+1]; yaw = globalPath[startIndex+2];
+      }
+      z = 0.0f; roll = 0.0f; pitch = 0.0f;
+      vx = 0.1f; vy = 0.0f; vz = 0.0f; rollRate = 0.0f; pitchRate = 0.0f; yawRate = 0.0f;
+      //std::cout<<" startIndex: "<< startIndex <<" x: "<<x<<" y: "<< y<<"\n";
+      step = 0;
+      float distanceTraveledAlongPath=0.0f;
+      float averageVelocityPerIteration = 0.0f;
+      int lastClosestPointIndex = startIndex;
+      Eigen::Vector2f vehicleLocation;
+      vehicleLocation <<x,
+                        y;
+      /*--- Iterate through the action-learn loop. ---*/
+      while (step++*dt<timeLimit){
+        /*-- setup the input layer based on the four iputs --*/
+        //setup_input(net,x,x_dot,theta,theta_dot);
+        in[0]=1.0;  //Bias
+        in[1]=vx;
+        in[2]=vy;
+        in[3]=yawRate;
 
-      /*if (std::abs(closestPointIndex-lastClosestPointIndex)<1000){
-        //distanceTraveledAlongPath += closestPointIndex-lastClosestPointIndex;
-        for (int i=lastClosestPointIndex; i<closestPointIndex; i++){
-          distanceTraveledAlongPath += sqrtf(powf(globalPath[i+3]-globalPath[i],2)+powf(globalPath[i+4]-globalPath[i+1],2));
-        }
-      }*/
-
-      uint32_t index1=lastClosestPointIndex;
-      uint32_t index2=index1+3;
-      float diff = std::abs(closestPointIndex-lastClosestPointIndex);
-      if (index2>globalPath.size()-3)
-        index2 = 0;
-      if (diff>=3 && ((lastClosestPointIndex < closestPointIndex && diff<1000.0f) || (lastClosestPointIndex > closestPointIndex && diff>1000.0f)) ) {
-        //std::cout<<"Enter count loop with index1: "<<index1<<" index2: "<<index2<<" closestPointIndex: "<<closestPointIndex<<"\n";
-        while (index1 != closestPointIndex){
-          distanceTraveledAlongPath += sqrtf(powf(globalPath[index2]-globalPath[index1],2)+powf(globalPath[index2+1]-globalPath[index1+1],2));
-          //std::cout<<"Count in while: "<<distanceTraveledAlongPath<<"\n";
-          index1 +=3;
-          index2 +=3;
-          if (index1>globalPath.size()-3){
-            //std::cout<<"index1 = 0 -> closestPointIndex = "<< closestPointIndex<<"\n";
-            index1 = 0;
+        Eigen::ArrayXXd leftSide = simConeDetectorSlam(leftCones, vehicleLocation, yaw, numInputCones/2);
+        Eigen::ArrayXXd rightSide = simConeDetectorSlam(rightCones, vehicleLocation, yaw, numInputCones/2);
+        int j=0;
+        int k=0;
+        for (int i = numNoConeInputs; i < numNoConeInputs+numInputCones*2-1; i+=2) {
+          if (i<numNoConeInputs+numInputCones) {
+            in[i] = leftSide(j,0);
+            in[i+1] = leftSide(j,1);
+            j++;
+          } else{
+            in[i] = rightSide(k,0);
+            in[i+1] = rightSide(k,1);
+            k++;
           }
+        }
+        /*for (int i=0;i<24;i++){
+          in[i]=0;
+        }*/
+        net->load_sensors(in);
+        //activate_net(net);   /*-- activate the network based on the input --*/
+        //Activate the net
+        //If it loops, exit returning only fitness of 1 step
+        if (!(net->activate())) return 1;
 
-          else if (index2>globalPath.size()-3){
-            //std::cout<<"index2 = 0 -> closestPointIndex = "<< closestPointIndex<<"\n";
-            index2 = 0;
-          }
+        /*-- decide which way to push via which output unit is greater --*/
+        out_iter=net->outputs.begin();
+        outSteer=(*out_iter)->activation*2-1;
+        ++out_iter;
+        outAcc=(*out_iter)->activation*2-1;
+        //std::cout<<"out1: "<<outSteer<<"\n";
+        //std::cout<<"out2: "<<outAcc<<"\n";
+        steeringAngle = maxSteer*3.14159265f/180.0f*outSteer;
+        if(outAcc>=0)
+          accelerationRequest = maxAcc*outAcc;
+        else
+          accelerationRequest = maxDec*outAcc;
+        /*--- Apply action to the simulated cart-pole ---*/
+        vehicleModel(steeringAngle, accelerationRequest, &vx, &vy, &yawRate, dt);
+        worldPosition(&x, &y, &z, &roll, &pitch, &yaw, vx, vy, vz, rollRate, pitchRate, yawRate,dt);
+        if(vx<0){ // If reversing,
+          break;
+        }
+        /*--- Check for failure.  If so, return steps ---*/
+        vehicleLocation << x,
+                           y;
+        /* Find closest global path point */
+        Eigen::Vector2f tmpPoint;
+        float vehicleOffset = std::numeric_limits<float>::infinity();
+        for(uint32_t j = 0; j < globalPath.size()/3; j++)
+        {
+            tmpPoint << globalPath[j*3],
+                        globalPath[j*3+1];
+            float tmpDist = (vehicleLocation-tmpPoint).norm();
+            if(tmpDist < vehicleOffset)
+            {
+              vehicleOffset = tmpDist;
+              closestPointIndex = j*3;
+            } // End of if
+        } // End of for
+        if (fabs(vehicleOffset)>3.0f){ // if going far of track, break
+          //std::cout<<"I'M OFF TRACK"<<std::endl;
+          break;
+        }
+        //std::cout<<"in[numNoConeInputs]: "<<in[numNoConeInputs]<<" "<<in[numNoConeInputs+1]<<std::endl;
+        //std::cout<<"in[numNoConeInputs+numInputCones]: "<<in[numNoConeInputs+numInputCones]<<" "<<in[numNoConeInputs+numInputCones+1]<<std::endl;
+        if (((in[numNoConeInputs]<1.0) && (in[numNoConeInputs]>-1.0))&&((in[numNoConeInputs+1]<0.65) && (in[numNoConeInputs+1]>-0.65))) {
+          //std::cout<<"I HIT A CONE"<<std::endl;
+          break; // if hitting a cone, break
 
         }
+        if (((in[numNoConeInputs+numInputCones]<1.0) && (in[numNoConeInputs+numInputCones]>-1.0))&&((in[numNoConeInputs+1]<0.65) && (in[numNoConeInputs+1]>-0.65))) {
+          //std::cout<<"I HIT A CONE"<<std::endl;
+          break; // if hitting a cone, break
+        }
+
+        /*std::cout<<"index1: "<<index1<<"\n";
+        std::cout<<"index2: "<<index2<<"\n";
+        std::cout<<"closestPointIndex: "<<closestPointIndex<<"\n";*/
+
+        /*if (std::abs(closestPointIndex-lastClosestPointIndex)<1000){
+          //distanceTraveledAlongPath += closestPointIndex-lastClosestPointIndex;
+          for (int i=lastClosestPointIndex; i<closestPointIndex; i++){
+            distanceTraveledAlongPath += sqrtf(powf(globalPath[i+3]-globalPath[i],2)+powf(globalPath[i+4]-globalPath[i+1],2));
+          }
+        }*/
+
+        uint32_t index1=lastClosestPointIndex;
+        uint32_t index2=index1+3;
+        float diff = std::abs(closestPointIndex-lastClosestPointIndex);
+        if (index2>globalPath.size()-3)
+          index2 = 0;
+        if (diff>=3 && ((lastClosestPointIndex < closestPointIndex && diff<1000.0f) || (lastClosestPointIndex > closestPointIndex && diff>1000.0f)) ) {
+          //std::cout<<"Enter count loop with index1: "<<index1<<" index2: "<<index2<<" closestPointIndex: "<<closestPointIndex<<"\n";
+          while (index1 != closestPointIndex){
+            distanceTraveledAlongPath += sqrtf(powf(globalPath[index2]-globalPath[index1],2)+powf(globalPath[index2+1]-globalPath[index1+1],2));
+            //std::cout<<"Count in while: "<<distanceTraveledAlongPath<<"\n";
+            index1 +=3;
+            index2 +=3;
+            if (index1>globalPath.size()-3){
+              //std::cout<<"index1 = 0 -> closestPointIndex = "<< closestPointIndex<<"\n";
+              index1 = 0;
+            }
+
+            else if (index2>globalPath.size()-3){
+              //std::cout<<"index2 = 0 -> closestPointIndex = "<< closestPointIndex<<"\n";
+              index2 = 0;
+            }
+
+          }
+        }
+
+        lastClosestPointIndex = closestPointIndex;
+      }//End while
+      totalDist+=distanceTraveledAlongPath;
+      averageDistanceTraveledOnMap += distanceTraveledAlongPath;
+      averageVelocityOnMap += distanceTraveledAlongPath/step*dt*3.6f;
+
+      std::ofstream tmpFile;
+      tmpFile.open("00tmpStat",std::ios_base::app);
+      if (its ==1){
+      tmpFile<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< "<<std::endl;
+      tmpFile<<"Map "<<maps<<std::endl;
+      tmpFile<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< "<<std::endl;
       }
+      tmpFile<<"Iteration "<<i<<std::endl;
+      tmpFile<<"Inputs at stop: "<<std::endl;
+      for (int i=0;i<numInputCones*2+numNoConeInputs;i++){
+        tmpFile<<"in[] = "<<in[i]<<";"<<std::endl;
+      }
+      tmpFile<<"out1 at stop: "<<outSteer<<std::endl;
+      tmpFile<<"out2 at stop: "<<outAcc<<std::endl;
+      tmpFile<<"Time: "<<step*dt<<std::endl;
+      tmpFile<<"startIndex: "<<startIndex<<std::endl;
+      tmpFile<<"endIndex: "<<closestPointIndex<<std::endl;
+      tmpFile<<"distanceTraveledAlongPath: "<<distanceTraveledAlongPath<<std::endl;
+      tmpFile<<"Total length of path: "<<pathLength<<std::endl;
+      tmpFile<<"Start -> x: "<<globalPath[startIndex]<<" y: "<< globalPath[startIndex+1] <<" yaw: "<<globalPath[startIndex+2]<<std::endl;
+      tmpFile<<"Stop -> x: "<<x<<" y: "<< y <<" yaw: "<<yaw<<std::endl;
+      tmpFile<<"Calculated average vx: "<<distanceTraveledAlongPath/(step*dt)*3.6f<<" km/h"<<std::endl;
+      tmpFile<<"vx at stop: "<<vx<<std::endl;
+      tmpFile<<"vy at stop: "<<vy<<std::endl;
+      tmpFile<<"--------------------------------- "<<std::endl;
+      if (its == 10){
+      tmpFile<<"averageDistanceTraveledOnMap: "<<averageDistanceTraveledOnMap/iterations<<std::endl;
+      tmpFile<<"averageVelocityOnMap: "<<averageVelocityOnMap/iterations<<std::endl;
+      }
+      tmpFile.close();
+    }//end iterations
+    averageDistanceTraveledOnMap = averageDistanceTraveledOnMap/iterations;
+    averageVelocityOnMap=averageVelocityOnMap/iterations;
 
-      lastClosestPointIndex = closestPointIndex;
-    }//End while
-    //std::cout<<"FITNESS FOR ITERATION " << i<< ": "<<distanceTraveledAlongPath<<"\n";
-
-    averageDistanceTraveled += distanceTraveledAlongPath;
-
-    std::ofstream tmpFile;
-    tmpFile.open("00tmpStat",std::ios_base::app);
-    tmpFile<<"Iteration "<<i<<std::endl;
-    tmpFile<<"Inputs at stop: "<<std::endl;
-    for (int i=0;i<numInputCones*2+numNoConeInputs;i++){
-      tmpFile<<"in[] = "<<in[i]<<";"<<std::endl;
-    }
-    tmpFile<<"out1 at stop: "<<outSteer<<std::endl;
-    tmpFile<<"out2 at stop: "<<outAcc<<std::endl;
-    tmpFile<<"Time: "<<step*dt<<std::endl;
-    tmpFile<<"startIndex: "<<startIndex<<std::endl;
-    tmpFile<<"endIndex: "<<closestPointIndex<<std::endl;
-    tmpFile<<"distanceTraveledAlongPath: "<<distanceTraveledAlongPath<<std::endl;
-    tmpFile<<"Start -> x: "<<globalPath[startIndex]<<" y: "<< globalPath[startIndex+1] <<" yaw: "<<globalPath[startIndex+2]<<std::endl;
-    tmpFile<<"Stop -> x: "<<x<<" y: "<< y <<" yaw: "<<yaw<<std::endl;
-    tmpFile<<"Calculated average vx: "<<distanceTraveledAlongPath/step*dt*3.6f<<" km/h"<<std::endl;
-    tmpFile<<"vx at stop: "<<vx<<std::endl;
-    tmpFile<<"vy at stop: "<<vy<<std::endl;
-    tmpFile<<"--------------------------------- "<<std::endl;
-    tmpFile.close();
-  }//end for
-  averageDistanceTraveled=averageDistanceTraveled/iterations;
+    totalAverageDistanceTraveled+=averageDistanceTraveledOnMap;
+    totalAverageVelocity+=averageVelocityOnMap;
+  }// end maps
+  totalDist = totalDist/(maps*iterations);
+  totalAverageVelocity = totalAverageVelocity/maps;
+  totalAverageDistanceTraveled = totalAverageDistanceTraveled/maps;
   //std::cout<<"FITNESS FOR ORGANISM: "<<averageDistanceTraveled<<"\n";
-  if(averageDistanceTraveled > pop->highest_fitness){
+  //std::cout<<"pop highest fitness: "<<pop->highest_fitness<<"\n";
+  if(totalAverageDistanceTraveled > pop->highest_fitness){
     std::ifstream tmpFile("00tmpStat");
     std::string content = "";
     int i;
@@ -1919,16 +2007,16 @@ float go_car(Network *net, Population *pop)
     std::ofstream oFile;
     oFile.open("00stat");
     oFile << content;                 // output
-    oFile<<"\naverageDistanceTraveled: "<<averageDistanceTraveled<<std::endl;
-    oFile<<"Calculated total average vx: "<<averageDistanceTraveled/timeLimit*3.6f<<" km/h"<<std::endl;
-    oFile<<"Total length of path: "<<pathLength<<std::endl;
+    oFile<<"\ntotalAverageDistanceTraveled: "<<totalAverageDistanceTraveled<<std::endl;
+    oFile<<"totalDist: "<<totalDist<<std::endl;
+    oFile<<"Calculated total average vx: "<<totalAverageVelocity<<" km/h"<<std::endl;
     oFile<<"--------------------------------- "<<std::endl;
     oFile.close();
 
   }
   remove( "00tmpStat" );
-  //std::cout<<"CLEARED TIME LIMIT"<<"\n";
-  return averageDistanceTraveled; //distanceTraveledAlongPath;
+
+  return totalAverageDistanceTraveled;
 }// End go_car
 
 

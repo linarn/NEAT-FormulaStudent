@@ -465,13 +465,13 @@ double NEAT::fsigmoid(double activesum,double slope,double constant) {
 	//return (1/(1+(exp(-(slope*activesum+constant))))); //original setting ave 3423 on 40 runs of p2m, 3729 and 1 failure also
 
 	//PLAIN SIGMOID ---------------------------------------------------------
-	//return (1/(1+(exp(-activesum)))); //3511 and 1 failure
+	return (1/(1+(exp(-activesum)))); //3511 and 1 failure
 
 	//LEFT SHIFTED NON-STEEPENED---------------------------------------------
 	//return (1/(1+(exp(-activesum-constant)))); //simple left shifted
 
 	//NON-SHIFTED STEEPENED
-	return (1/(1+(exp(-(slope*activesum))))); //Compressed
+	//return (1/(1+(exp(-(slope*activesum))))); //Compressed
 }
 
 double NEAT::oldhebbian(double weight, double maxweight, double active_in, double active_out, double hebb_rate, double pre_rate, double post_rate) {
