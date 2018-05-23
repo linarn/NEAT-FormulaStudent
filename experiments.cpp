@@ -1655,7 +1655,7 @@ int CFSD_epoch(Population *pop,int generation,char *filename) {
 
 }
 
-bool CFSD_evaluate(Organism *org, Population *pop, generation) {
+bool CFSD_evaluate(Organism *org, Population *pop, int generation) {
   Network *net;
 
   int numnodes;  /* Used to figure out how many nodes
@@ -1691,7 +1691,7 @@ bool CFSD_evaluate(Organism *org, Population *pop, generation) {
 
 }
 
-float go_car(Network *net, Population *pop, generation)
+float go_car(Network *net, Population *pop, int generation)
 {
 /*------------------------------------SET UP-----------------------------------------------------*/
   const float dt = 1.0f / 20.0f; // Frequency
