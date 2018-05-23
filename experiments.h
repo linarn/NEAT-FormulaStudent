@@ -52,9 +52,9 @@ void cart_pole(int action, float *x,float *x_dot, float *theta, float *theta_dot
 
 //CFSD vehicle evolution routines ***************************
 Population *CFSD_test(int gens);
-bool CFSD_evaluate(Organism *org, Population *pop);
+bool CFSD_evaluate(Organism *org, Population *pop, int generation);
 int CFSD_epoch(Population *pop,int generation,char *filename);
-float go_car(Network *net, Population *pop); //Run input
+float go_car(Network *net, Population *pop, int generation); //Run input
 //Move the cart and pole
 void vehicleModel(float steeringAngle, float prevSteerAngle, float accelerationRequest, float *vx,float *vy, float *yawRate, float dt);
 float magicFormula(float const &a_slipAngle, float const &a_forceZ,

@@ -1613,7 +1613,7 @@ int CFSD_epoch(Population *pop,int generation,char *filename) {
 
   //Evaluate each organism on a test
   for(curorg=(pop->organisms).begin();curorg!=(pop->organisms).end();++curorg) {
-    if (CFSD_evaluate(*curorg,pop)) win=true;
+    if (CFSD_evaluate(*curorg,pop,generation)) win=true;
   }
 
   //Average and max their fitnesses for dumping to file and snapshot
@@ -1655,7 +1655,7 @@ int CFSD_epoch(Population *pop,int generation,char *filename) {
 
 }
 
-bool CFSD_evaluate(Organism *org, Population *pop) {
+bool CFSD_evaluate(Organism *org, Population *pop, generation) {
   Network *net;
 
   int numnodes;  /* Used to figure out how many nodes
@@ -1668,7 +1668,7 @@ bool CFSD_evaluate(Organism *org, Population *pop) {
   thresh=numnodes*2;  //Max number of visits allowed per activation
 
   //Try to run the car now
-  org->fitness = go_car(net, pop);//TODO change, thresh not used
+  org->fitness = go_car(net, pop, generation);//TODO change, thresh not used
 #ifndef NO_SCREEN_OUT
   cout<<"Org "<<(org->gnome)->genome_id<<" fitness: "<<org->fitness<<endl;
 #endif
@@ -1691,7 +1691,7 @@ bool CFSD_evaluate(Organism *org, Population *pop) {
 
 }
 
-float go_car(Network *net, Population *pop)
+float go_car(Network *net, Population *pop, generation)
 {
 /*------------------------------------SET UP-----------------------------------------------------*/
   const float dt = 1.0f / 20.0f; // Frequency
@@ -1733,7 +1733,6 @@ float go_car(Network *net, Population *pop)
   int hitRight = 0;
   int hitLeft = 0;
   int offTrack = 0;
-  int maxSteerCount;
 /*------------------------------------BEGIN A NEW MAP----------------------------------------------*/
   /*-- Test on all maps --*/
   for (int i = 0; i < 1; i++) {
@@ -1815,7 +1814,6 @@ float go_car(Network *net, Population *pop)
       //std::cout<<" startIndex: "<< startIndex <<" x: "<<x<<" y: "<< y<<"\n";
       step = 0;
       float distanceTraveledAlongPath=0.0f;
-      maxSteerCount = 0;
       int lastClosestPointIndex = startIndex;
       Eigen::Vector2f vehicleLocation;
       vehicleLocation <<x,
@@ -1856,9 +1854,6 @@ float go_car(Network *net, Population *pop)
         ++out_iter;
         outAcc=(*out_iter)->activation*2-1;
 
-        if (std::abs(outSteer)>0.99f) {
-          maxSteerCount +=1;
-        }
         //std::cout<<"out1: "<<outSteer<<"\n";
         //std::cout<<"out2: "<<outAcc<<"\n";
         steeringAngle = maxSteer*3.14159265f/180.0f*outSteer;
@@ -1998,7 +1993,8 @@ float go_car(Network *net, Population *pop)
     std::ofstream oFile;
     oFile.open("00stat");
     oFile << content;                 // output
-    oFile<<"\nTotal Average Distance Traveled: "<<totalDist/(maps*iterations)<<std::endl;
+    oFile<<"\nGeneration: "<<generation<<std::endl;
+    oFile<<"Total Average Distance Traveled: "<<totalDist/(maps*iterations)<<std::endl;
     oFile<<"Calculated total average vx: "<<totalVel/(maps*iterations)<<" km/h"<<std::endl;
     oFile<<"--------------------------------- "<<std::endl;
     oFile.close();
@@ -2016,7 +2012,6 @@ float go_car(Network *net, Population *pop)
     xyFile.open("00aXY");
     xyFile << content2;
     xyFile.close();
-    std::cout<<"maxSteerCount. "<<maxSteerCount<<std::endl;
   }
   std::ofstream tmpFile;
   tmpFile.open("00tmpStat", std::ofstream::out | std::ofstream::trunc);
