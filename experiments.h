@@ -56,7 +56,7 @@ bool CFSD_evaluate(Organism *org, Population *pop);
 int CFSD_epoch(Population *pop,int generation,char *filename);
 float go_car(Network *net, Population *pop); //Run input
 //Move the cart and pole
-void vehicleModel(float steeringAngle,float accelerationRequest, float *vx,float *vy, float *yawRate, float dt);
+void vehicleModel(float steeringAngle, float prevSteerAngle, float accelerationRequest, float *vx,float *vy, float *yawRate, float dt);
 float magicFormula(float const &a_slipAngle, float const &a_forceZ,
     float const &a_frictionCoefficient, float const &a_cAlpha, float const &a_c,
     float const &a_e);
