@@ -1566,7 +1566,7 @@ Population *CFSD_test(int gens) {
 	char temp[50];
         sprintf (temp, "gen_%d", gen);
 
-	status=CFSD_epoch(pop,gen,temp);
+  status=CFSD_epoch(pop,gen,temp);
 	//status=(pole1_epoch(pop,gen,fnamebuf->str()));
 
 	if (status) {
@@ -1610,10 +1610,58 @@ int CFSD_epoch(Population *pop,int generation,char *filename) {
 
   bool win=false;
   int winnernum;
+  double highestFitnessInPop = -1.0;
+  double highestValidationInPop = -1.0;
+  double validationOfOrg=-1.0;
+  double fitnessOfOrg=-1.0;
+  int validationLeaderGenomeID;
 
+  double highestValidationOverall;
+  std::string line;
+  ifstream infile;
+  infile.open("123401highestValidationOverall.txt");
+  while(std::getline(infile, line))
+{
+    highestValidationOverall=std::stod(line);
+    if (highestValidationOverall<=0.1) {
+      highestValidationOverall = 0.0;
+    }
+}
+infile.close();
   //Evaluate each organism on a test
   for(curorg=(pop->organisms).begin();curorg!=(pop->organisms).end();++curorg) {
-    if (CFSD_evaluate(*curorg,pop,generation)) win=true;
+    win = CFSD_evaluate(*curorg,pop,generation, &fitnessOfOrg, &validationOfOrg, highestValidationOverall);
+    if(fitnessOfOrg > highestFitnessInPop){
+      highestFitnessInPop = fitnessOfOrg;
+    }
+    if (validationOfOrg>highestValidationInPop) {
+      highestValidationInPop = validationOfOrg;
+      validationLeaderGenomeID = ((*curorg)->gnome)->genome_id;
+    }
+  }
+
+  std::cout<<"highestValidationInPop: "<<highestValidationInPop<<std::endl;
+  std::cout<<"highestFitnessInPop: "<<highestFitnessInPop<<std::endl;
+  std::ofstream fitnessFile;
+  fitnessFile.open("123401Fitness",std::ios_base::app);
+  fitnessFile<<highestFitnessInPop<<","<<highestValidationInPop<<endl;
+  fitnessFile.close();
+
+  if (highestValidationInPop> highestValidationOverall) {
+    highestValidationOverall = highestValidationInPop;
+    std::ofstream outFile;
+    outFile.open("123401highestValidationOverall.txt");
+    outFile<<highestValidationOverall<<endl;
+    outFile.close();
+    std::ofstream outFile2;
+    outFile2.open("123401ValidationWinnerGenomeID.txt");
+    outFile2<<validationLeaderGenomeID<<endl;
+    outFile2.close();
+
+    std::cout<<"highestValidationOverall: "<<highestValidationOverall<<std::endl;
+    char temp[50];
+          sprintf (temp, "123401highest_validation_population");
+    pop->print_to_file_by_species(temp);
   }
 
   //Average and max their fitnesses for dumping to file and snapshot
@@ -1648,6 +1696,8 @@ int CFSD_epoch(Population *pop,int generation,char *filename) {
   }
 
   //Create the next generation
+highestFitnessInPop = -1.0;
+highestValidationInPop = -1.0;
   pop->epoch(generation);
 
   if (win) return ((generation-1)*NEAT::pop_size+winnernum);
@@ -1655,7 +1705,7 @@ int CFSD_epoch(Population *pop,int generation,char *filename) {
 
 }
 
-bool CFSD_evaluate(Organism *org, Population *pop, int generation) {
+bool CFSD_evaluate(Organism *org, Population *pop, int generation, double *fitnessOfOrg, double *validationOfOrg, double highestValidationOverall) {
   Network *net;
 
   int numnodes;  /* Used to figure out how many nodes
@@ -1666,16 +1716,18 @@ bool CFSD_evaluate(Organism *org, Population *pop, int generation) {
   net=org->net;
   numnodes=((org->gnome)->nodes).size();
   thresh=numnodes*2;  //Max number of visits allowed per activation
-
+  double validationOfOrgTmp = *validationOfOrg;
   //Try to run the car now
-  org->fitness = go_car(net, pop, generation);//TODO change, thresh not used
+  org->fitness = go_car(net, pop, generation, &validationOfOrgTmp, highestValidationOverall);
+  *fitnessOfOrg = org->fitness;
+  *validationOfOrg = validationOfOrgTmp;
 #ifndef NO_SCREEN_OUT
   cout<<"Org "<<(org->gnome)->genome_id<<" fitness: "<<org->fitness<<endl;
 #endif
 
   if (org->fitness>pop->highest_fitness) {
     char temp[50];
-          sprintf (temp, "00highest_fitness_population");
+          sprintf (temp, "123401highest_fitness_population");
     pop->print_to_file_by_species(temp);
   }
 
@@ -1691,18 +1743,18 @@ bool CFSD_evaluate(Organism *org, Population *pop, int generation) {
 
 }
 
-float go_car(Network *net, Population *pop, int generation)
+float go_car(Network *net, Population *pop, int generation, double *validationOfOrgTmp, double highestValidationOverall)
 {
 /*------------------------------------SET UP-----------------------------------------------------*/
   const float dt = 1.0f / 20.0f; // Frequency
   const float maxAcc = 5.0f; // [m/s2]
   const float maxDec = 5.0f; // [m/s2]
   const float maxSteer = 25.0f; // [degrees]
-  const float timeLimit = 60.0f; // [seconds]
-  const int iterations = 3; // Number of runs per map
-  int random_start=0;
-  int numInputCones = 10;
-  int numNoConeInputs = 4; //including bias
+  const float timeLimit = 180.0f; // [seconds]
+  const int iterations = 1; // Number of runs per map
+  const int random_start=0;
+  const int numInputCones = 10;
+  const int numNoConeInputs = 4; //including bias
   std::string coneFile;
   std::string pathFile;
   //inputs
@@ -1721,6 +1773,7 @@ float go_car(Network *net, Population *pop, int generation)
   vector<NNode*>::iterator out_iter;
 
   int step;
+  bool mapChange = false;
   int startIndex;
   int closestPointIndex;
   float totalVel = 0.0f;
@@ -1734,8 +1787,8 @@ float go_car(Network *net, Population *pop, int generation)
   int hitLeft = 0;
   int offTrack = 0;
 /*------------------------------------BEGIN A NEW MAP----------------------------------------------*/
-  /*-- Test on all maps --*/
-  for (int i = 0; i < 1; i++) {
+  /*-- Train on all maps --*/
+  for (int i = 0; i < 56; i++) {
     int its =0;
     maps++;
     distanceTraveledOnMap = 0.0f;
@@ -1743,33 +1796,225 @@ float go_car(Network *net, Population *pop, int generation)
     if (i==0) {
       coneFile = "track1.csv";
       pathFile = "path1.csv";
+      mapChange = true;
     } else if (i==1){
       coneFile = "track2.csv";
       pathFile = "path2.csv";
+      mapChange = true;
     } else if (i==2){
       coneFile = "track3.csv";
       pathFile = "path3.csv";
+      mapChange = true;
     } else if (i==3){
-      coneFile = "track4.csv";
-      pathFile = "path4.csv";
+      coneFile = "track8small.csv";
+      pathFile = "path8small.csv";
+      mapChange = true;
     } else if (i==4){
       coneFile = "track5.csv";
       pathFile = "path5.csv";
+      mapChange = true;
     } else if (i==5){
       coneFile = "track6.csv";
       pathFile = "path6.csv";
+      mapChange = true;
     } else if (i==6){
       coneFile = "track7.csv";
       pathFile = "path7.csv";
+      mapChange = true;
     } else if (i==7){
       coneFile = "track8.csv";
       pathFile = "path8.csv";
+      mapChange = true;
     } else if (i==8){
       coneFile = "track9.csv";
       pathFile = "path9.csv";
+      mapChange = true;
     } else if (i==9){
       coneFile = "track10.csv";
       pathFile = "path10.csv";
+      mapChange = true;
+    } else if (i==10) {
+      coneFile = "track1R.csv";
+      pathFile = "path1R.csv";
+      mapChange = true;
+    } else if (i==11){
+      coneFile = "track2R.csv";
+      pathFile = "path2R.csv";
+      mapChange = true;
+    } else if (i==12){
+      coneFile = "track3R.csv";
+      pathFile = "path3R.csv";
+      mapChange = true;
+    } else if (i==13){
+      coneFile = "track8Rsmall.csv";
+      pathFile = "path8Rsmall.csv";
+      mapChange = true;
+    } else if (i==14){
+      coneFile = "track5R.csv";
+      pathFile = "path5R.csv";
+      mapChange = true;
+    } else if (i==15){
+      coneFile = "track6R.csv";
+      pathFile = "path6R.csv";
+      mapChange = true;
+    } else if (i==16){
+      coneFile = "track7R.csv";
+      pathFile = "path7R.csv";
+      mapChange = true;
+    } else if (i==17){
+      coneFile = "track8R.csv";
+      pathFile = "path8R.csv";
+      mapChange = true;
+    } else if (i==18){
+      coneFile = "track9R.csv";
+      pathFile = "path9R.csv";
+      mapChange = true;
+    } else if (i==19){
+      coneFile = "track10R.csv";
+      pathFile = "path10R.csv";
+      mapChange = true;
+    } else if (i==20){
+      coneFile = "track11.csv";
+      pathFile = "path11.csv";
+      mapChange = true;
+    } else if (i==21){
+      coneFile = "track11b.csv";
+      pathFile = "path11b.csv";
+      mapChange = true;
+    } else if (i==22){
+      coneFile = "track11R.csv";
+      pathFile = "path11R.csv";
+      mapChange = true;
+    } else if (i==23){
+      coneFile = "track11bR.csv";
+      pathFile = "path11bR.csv";
+      mapChange = true;
+    } else if (i==24){
+      coneFile = "track12.csv";
+      pathFile = "path12.csv";
+      mapChange = true;
+    } else if (i==25){
+      coneFile = "track12b.csv";
+      pathFile = "path12b.csv";
+      mapChange = true;
+    } else if (i==26){
+      coneFile = "track12m.csv";
+      pathFile = "path12m.csv";
+      mapChange = true;
+    } else if (i==27){
+      coneFile = "track12R.csv";
+      pathFile = "path12R.csv";
+      mapChange = true;
+    } else if (i==28){
+      coneFile = "track12bR.csv";
+      pathFile = "path12bR.csv";
+      mapChange = true;
+    } else if (i==29) {
+      coneFile = "track12mR.csv";
+      pathFile = "path12mR.csv";
+      mapChange = true;
+    } else if (i==30){
+      coneFile = "track13.csv";
+      pathFile = "path13.csv";
+      mapChange = true;
+    } else if (i==31){
+      coneFile = "track13b.csv";
+      pathFile = "path13b.csv";
+    } else if (i==32){
+      coneFile = "track13R.csv";
+      pathFile = "path13R.csv";
+      mapChange = true;
+    } else if (i==33){
+      coneFile = "track13bR.csv";
+      pathFile = "path13bR.csv";
+      mapChange = true;
+    } else if (i==34){
+      coneFile = "track14.csv";
+      pathFile = "path14.csv";
+      mapChange = true;
+    } else if (i==35){
+      coneFile = "track14b.csv";
+      pathFile = "path14b.csv";
+      mapChange = true;
+    } else if (i==36){
+      coneFile = "track14bR.csv";
+      pathFile = "path14bR.csv";
+      mapChange = true;
+    } else if (i==37){
+      coneFile = "track14R.csv";
+      pathFile = "path14R.csv";
+      mapChange = true;
+    } else if (i==38){
+      coneFile = "track15.csv";
+      pathFile = "path15.csv";
+      mapChange = true;
+    } else if (i==39){
+      coneFile = "track15b.csv";
+      pathFile = "path15b.csv";
+      mapChange = true;
+    } else if (i==40){
+      coneFile = "track15bR.csv";
+      pathFile = "path15bR.csv";
+      mapChange = true;
+    } else if (i==41){
+      coneFile = "track15R.csv";
+      pathFile = "path15R.csv";
+    } else if (i==42){
+      coneFile = "track16.csv";
+      pathFile = "path16.csv";
+      mapChange = true;
+    } else if (i==43){
+      coneFile = "track16R.csv";
+      pathFile = "path16R.csv";
+      mapChange = true;
+    } else if (i==44){
+      coneFile = "track16b.csv";
+      pathFile = "path16b.csv";
+      mapChange = true;
+    } else if (i==45){
+      coneFile = "track16bR.csv";
+      pathFile = "path16bR.csv";
+      mapChange = true;
+    } else if (i==46){
+      coneFile = "track17.csv";
+      pathFile = "path17.csv";
+      mapChange = true;
+    } else if (i==47){
+      coneFile = "track17R.csv";
+      pathFile = "path17R.csv";
+      mapChange = true;
+    } else if (i==48){
+      coneFile = "track17b.csv";
+      pathFile = "path17b.csv";
+      mapChange = true;
+    } else if (i==49){
+      coneFile = "track17bR.csv";
+      pathFile = "path17bR.csv";
+      mapChange = true;
+    } else if (i==50){
+      coneFile = "track18.csv";
+      pathFile = "path18.csv";
+      mapChange = true;
+    } else if (i==51){
+      coneFile = "track18R.csv";
+      pathFile = "path18R.csv";
+      mapChange = true;
+    } else if (i==52){
+      coneFile = "track18b.csv";
+      pathFile = "path18b.csv";
+      mapChange = true;
+    } else if (i==53){
+      coneFile = "track18bR.csv";
+      pathFile = "path18bR.csv";
+      mapChange = true;
+    } else if (i==54){
+      coneFile = "track19s.csv";
+      pathFile = "path19s.csv";
+      mapChange = true;
+    } else if (i==55){
+      coneFile = "track19sR.csv";
+      pathFile = "path19sR.csv";
+      mapChange = true;
     } else{
       std::cout<<"ERROR READING MAP FROM FILE"<<std::endl;
     }
@@ -1867,9 +2112,21 @@ float go_car(Network *net, Population *pop, int generation)
         worldPosition(&x, &y, &z, &roll, &pitch, &yaw, vx, vy, vz, rollRate, pitchRate, yawRate,dt);
         //Save path
         std::ofstream tmpXyFile;
-        tmpXyFile.open("00tmpXy",std::ios_base::app);
+        tmpXyFile.open("123401tmpXy",std::ios_base::app);
+        if (mapChange) {
+          tmpXyFile<<"New Map: "<<coneFile<<endl;
+        }
         tmpXyFile<<x<<","<<y<<endl;
         tmpXyFile.close();
+        //Save kinematic state
+        std::ofstream tmpSpeedFile;
+        tmpSpeedFile.open("123401tmpSpeed",std::ios_base::app);
+        if (mapChange) {
+          tmpSpeedFile<<"New Map: "<<coneFile<<endl;
+          mapChange = false;
+        }
+        tmpSpeedFile<<vx<<","<<vy<<","<<yawRate<<endl;
+        tmpSpeedFile.close();
         /*-- Find closest global path point --*/
         vehicleLocation << x,
                            y;
@@ -1942,10 +2199,325 @@ float go_car(Network *net, Population *pop, int generation)
       velocityOnMap += distanceTraveledAlongPath/(step*dt)*3.6f;
       /*-- Print temporary stats --*/
       std::ofstream tmpFile;
-      tmpFile.open("00tmpStat",std::ios_base::app);
+      tmpFile.open("123401tmpStat",std::ios_base::app);
       if (its ==1){
       tmpFile<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< "<<std::endl;
       tmpFile<<"Map "<<maps<<std::endl;
+      tmpFile<<"Total length of path: "<<pathLength<<std::endl;
+      tmpFile<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< "<<std::endl;
+      }
+      tmpFile<<"Iteration "<<i<<std::endl;
+      tmpFile<<"Time: "<<step*dt<<std::endl;
+      tmpFile<<"distanceTraveledAlongPath: "<<distanceTraveledAlongPath<<std::endl;
+      tmpFile<<"Calculated average vx: "<<distanceTraveledAlongPath/(step*dt)*3.6f<<" km/h"<<std::endl;
+      tmpFile<<"hitLeft: "<<hitLeft<<" hitRight: "<<hitRight<<" offTrack: "<<offTrack<<std::endl;
+      /*tmpFile<<"Inputs at stop: "<<std::endl;
+      for (int i=0;i<numInputCones*2+numNoConeInputs;i++){
+        tmpFile<<"in[] = "<<in[i]<<";"<<std::endl;
+      }*/
+      //tmpFile<<"out1 at stop: "<<outSteer<<std::endl;
+      //tmpFile<<"out2 at stop: "<<outAcc<<std::endl;
+      /*tmpFile<<"startIndex: "<<startIndex<<std::endl;
+      tmpFile<<"endIndex: "<<closestPointIndex<<std::endl;*/
+      //tmpFile<<"Start -> x: "<<globalPath[startIndex]<<" y: "<< globalPath[startIndex+1] <<" yaw: "<<globalPath[startIndex+2]<<std::endl;
+      tmpFile<<"Stop -> x: "<<x<<" y: "<< y <<" yaw: "<<yaw<<std::endl;
+      /*tmpFile<<"vx at stop: "<<vx<<std::endl;
+      tmpFile<<"vy at stop: "<<vy<<std::endl;*/
+      tmpFile<<"--------------------------------- "<<std::endl;
+      if (its == iterations){
+      tmpFile<<"averageDistanceTraveledOnMap: "<<distanceTraveledOnMap/iterations<<std::endl;
+      tmpFile<<"averageVelocityOnMap: "<<velocityOnMap/iterations<<std::endl;
+      }
+      tmpFile.close();
+      hitLeft = 0;
+      hitRight = 0;
+      offTrack = 0;
+    }//end iterations
+/*----------------------------------FINISHED ITERATIONS ON MAP--------------------------------------*/
+  }// end maps
+/*------------------------------------FINISHED ALL MAPS----------------------------------------------*/
+  /*-- Print temporary stats if new fitness record --*/
+  if((totalDist/(maps*iterations)) > pop->highest_fitness){
+    std::ifstream tmpFile("123401tmpStat");
+    std::string content = "";
+    int i;
+    for(i=0 ; tmpFile.eof()!=true ; i++) // get content of infile
+        content += tmpFile.get();
+    i--;
+    content.erase(content.end()-1);     // erase last character
+    tmpFile.close();
+    std::ofstream oFile;
+    oFile.open("123401stat");
+    oFile << content;                 // output
+    oFile<<"\nGeneration: "<<generation<<std::endl;
+    oFile<<"Total Average Distance Traveled: "<<totalDist/(maps*iterations)<<std::endl;
+    oFile<<"Calculated total average vx: "<<totalVel/(maps*iterations)<<" km/h"<<std::endl;
+    oFile<<"--------------------------------- "<<std::endl;
+    oFile.close();
+    std::ifstream tmpXyFile("123401tmpXy");
+    std::string content2 = "";
+    int j;
+    for(j=0 ; tmpXyFile.eof()!=true ; j++) // get content of infile
+        content2 += tmpXyFile.get();
+    j--;
+    content2.erase(content2.end()-1);     // erase last character
+    tmpXyFile.close();
+    std::ofstream xyFile;
+    xyFile.open("123401XY");
+    xyFile << content2;
+    xyFile.close();
+    std::ifstream tmpSpeedFile("123401tmpSpeed");
+    std::string content3 = "";
+    int k;
+    for(k=0 ; tmpSpeedFile.eof()!=true ; k++) // get content of infile
+        content3 += tmpSpeedFile.get();
+    k--;
+    content3.erase(content3.end()-1);     // erase last character
+    tmpSpeedFile.close();
+    std::ofstream speedFile;
+    speedFile.open("123401Speed");
+    speedFile << content3;
+    speedFile.close();
+  }
+  std::ofstream tmpFile;
+  tmpFile.open("123401tmpStat", std::ofstream::out | std::ofstream::trunc);
+  tmpFile.close();
+  std::ofstream tmpXyFile;
+  tmpXyFile.open("123401tmpXy", std::ofstream::out | std::ofstream::trunc);
+  tmpXyFile.close();
+  std::ofstream tmpSpeedFile;
+  tmpSpeedFile.open("123401tmpSpeed", std::ofstream::out | std::ofstream::trunc);
+  tmpSpeedFile.close();
+
+/*------------------------------------VALIDATION----------------------------------------------*/
+/*------------------------------------SET UP-----------------------------------------------------*/
+  totalVel = 0.0f;
+  float totalDistValidation = 0.0f;
+  prevSteerAngle = 0.0f;
+  int mapsValidation=0;
+  int iterationsValidation = 1;
+  hitRight = 0;
+  hitLeft = 0;
+  offTrack = 0;
+/*------------------------------------BEGIN A NEW MAP----------------------------------------------*/
+  /*-- Validation maps --*/
+  for (int i = 0; i < 6; i++) {
+    int its =0;
+    mapsValidation++;
+    distanceTraveledOnMap = 0.0f;
+    velocityOnMap = 0.0f;
+    if (i==0) {
+      coneFile = "track19.csv";
+      pathFile = "path19.csv";
+      mapChange = true;
+    } else if (i==1){
+      coneFile = "track19R.csv";
+      pathFile = "path19R.csv";
+      mapChange = true;
+    } else if (i==2){
+      coneFile = "track20.csv";
+      pathFile = "path20.csv";
+      mapChange = true;
+    } else if (i==3){
+      coneFile = "track20b.csv";
+      pathFile = "path20b.csv";
+      mapChange = true;
+    } else if (i==4){
+      coneFile = "track20R.csv";
+      pathFile = "path20R.csv";
+      mapChange = true;
+    } else if (i==5){
+      coneFile = "track20bR.csv";
+      pathFile = "path20bR.csv";
+      mapChange = true;
+    } else{
+      std::cout<<"ERROR READING MAP FROM FILE"<<std::endl;
+    }
+
+    /*-- Read in cone positions and a complete middle path for reference --*/
+    auto map = readMap(coneFile, pathFile);
+    Eigen::ArrayXXf leftCones = std::get<0>(map);
+    Eigen::ArrayXXf rightCones = std::get<1>(map);
+    Eigen::ArrayXXf smallCones = std::get<2>(map);
+    Eigen::ArrayXXf bigCones = std::get<3>(map);
+    std::vector<float> globalPath = std::get<4>(map);
+
+    /*-- Find the total path length for evaluation --*/
+    uint32_t idx1=0;
+    uint32_t idx2=idx1+3;
+      pathLength=0.0f;
+      for (int i = 0; i<globalPath.size()/3; i++){
+        pathLength += sqrtf(powf(globalPath[idx2]-globalPath[idx1],2)+powf(globalPath[idx2+1]-globalPath[idx1+1],2));
+        idx1 +=3;
+        idx2 +=3;
+      }
+/*------------------------------------ITERATE-----------------------------------------------------*/
+    for(int i = 0; i<iterationsValidation; i++){
+      its++;
+      /*-- Use a different random starting position for each iteration --*/
+      if (random_start) {
+        std::random_device rd;     // only used once to initialise (seed) engine
+        std::mt19937 rng(rd());    // random-number engine used (Mersenne-Twister in this case)
+        std::uniform_int_distribution<int> uni(0,globalPath.size()/3-1); // guaranteed unbiased
+        auto random_integer = uni(rng);
+        x = globalPath[random_integer*3];
+        y = globalPath[random_integer*3+1];
+        yaw = globalPath[random_integer*3+2];
+        startIndex = random_integer*3;
+      }
+      else{
+       startIndex = 0;
+       x = globalPath[startIndex]; y = globalPath[startIndex+1]; yaw = globalPath[startIndex+2];
+      }
+      z = 0.0f; roll = 0.0f; pitch = 0.0f;
+      vx = 0.1f; vy = 0.0f; vz = 0.0f; rollRate = 0.0f; pitchRate = 0.0f; yawRate = 0.0f;
+      //std::cout<<" startIndex: "<< startIndex <<" x: "<<x<<" y: "<< y<<"\n";
+      step = 0;
+      float distanceTraveledAlongPath=0.0f;
+      int lastClosestPointIndex = startIndex;
+      Eigen::Vector2f vehicleLocation;
+      vehicleLocation <<x,
+                        y;
+/*------------------------------------BEGIN AN ITERATION----------------------------------------------*/
+      /*-- Run car until failure or end of time limit --*/
+      while (step++*dt<timeLimit){
+        /*-- setup the input layer based on the four iputs --*/
+        in[0]=1.0;  //Bias
+        in[1]=vx;
+        in[2]=vy;
+        in[3]=yawRate;
+
+        Eigen::ArrayXXd leftSide = simConeDetectorSlam(leftCones, vehicleLocation, yaw, numInputCones/2);
+        Eigen::ArrayXXd rightSide = simConeDetectorSlam(rightCones, vehicleLocation, yaw, numInputCones/2);
+        int j=0;
+        int k=0;
+        for (int i = numNoConeInputs; i < numNoConeInputs+numInputCones*2-1; i+=2) {
+          if (i<numNoConeInputs+numInputCones) {
+            in[i] = leftSide(j,0);
+            in[i+1] = leftSide(j,1);
+            j++;
+          } else{
+            in[i] = rightSide(k,0);
+            in[i+1] = rightSide(k,1);
+            k++;
+          }
+        }
+        net->load_sensors(in);
+        //activate_net(net);   /*-- activate the network based on the input --*/
+        //Activate the net
+        //If it loops, exit returning only fitness of 1 step
+        if (!(net->activate())) return 1;
+
+        /*-- decide which way to push via which output unit is greater --*/
+        out_iter=net->outputs.begin();
+        outSteer=(*out_iter)->activation*2-1;
+        ++out_iter;
+        outAcc=(*out_iter)->activation*2-1;
+
+        //std::cout<<"out1: "<<outSteer<<"\n";
+        //std::cout<<"out2: "<<outAcc<<"\n";
+        steeringAngle = maxSteer*3.14159265f/180.0f*outSteer;
+        if(outAcc>=0)
+          accelerationRequest = maxAcc*outAcc;
+        else
+          accelerationRequest = maxDec*outAcc;
+        /*--- Apply action to the simulated car ---*/
+        vehicleModel(steeringAngle, prevSteerAngle, accelerationRequest, &vx, &vy, &yawRate, dt);
+        prevSteerAngle = steeringAngle;
+        worldPosition(&x, &y, &z, &roll, &pitch, &yaw, vx, vy, vz, rollRate, pitchRate, yawRate,dt);
+        //Save path
+        std::ofstream tmpXyFile;
+        tmpXyFile.open("123401tmpXyValidation",std::ios_base::app);
+        if (mapChange) {
+          tmpXyFile<<"New Map: "<<coneFile<<endl;
+        }
+        tmpXyFile<<x<<","<<y<<endl;
+        tmpXyFile.close();
+        //Save kinematic state
+        std::ofstream tmpSpeedFile;
+        tmpSpeedFile.open("123401tmpSpeedValidation",std::ios_base::app);
+        if (mapChange) {
+          tmpSpeedFile<<"New Map: "<<coneFile<<endl;
+          mapChange = false;
+        }
+        tmpSpeedFile<<vx<<","<<vy<<","<<yawRate<<endl;
+        tmpSpeedFile.close();
+        /*-- Find closest global path point --*/
+        vehicleLocation << x,
+                           y;
+        Eigen::Vector2f tmpPoint;
+        float vehicleOffset = std::numeric_limits<float>::infinity();
+        for(uint32_t j = 0; j < globalPath.size()/3; j++)
+        {
+          tmpPoint << globalPath[j*3],
+                      globalPath[j*3+1];
+          float tmpDist = (vehicleLocation-tmpPoint).norm();
+          if(tmpDist < vehicleOffset)
+          {
+            vehicleOffset = tmpDist;
+            closestPointIndex = j*3;
+          }
+        }
+
+        /*-- Check for failure --*/
+        if(vx<0){ // If reversing, break
+          break;
+        }
+        else if (fabs(vehicleOffset)>2.0f){ // if going far of track, break
+          //std::cout<<"I'M OFF TRACK"<<std::endl;
+          offTrack += 1;
+          break;
+        }
+        //std::cout<<"in[numNoConeInputs]: "<<in[numNoConeInputs]<<" "<<in[numNoConeInputs+1]<<std::endl;
+        //std::cout<<"in[numNoConeInputs+numInputCones]: "<<in[numNoConeInputs+numInputCones]<<" "<<in[numNoConeInputs+numInputCones+1]<<std::endl;
+        else if (((leftSide(0,0)<1.0) && (leftSide(0,0)>-1.0))&&((leftSide(0,1)<0.65) && (leftSide(0,1)>-0.65))) {
+          //std::cout<<"I HIT A CONE"<<std::endl;
+          hitLeft += 1;
+          break; // if hitting a cone, break
+
+        }
+        else if (((rightSide(0,0)<1.0) && (rightSide(0,0)>-1.0))&&((rightSide(0,1)<0.65) && (rightSide(0,1)>-0.65))) {
+          //std::cout<<"I HIT A CONE"<<std::endl;
+          hitRight += 1;
+          break; // if hitting a cone, break
+        }
+
+        /*-- Calculate Distance Traveled for this iteration --*/
+        uint32_t index1=lastClosestPointIndex;
+        uint32_t index2=index1+3;
+        float diff = std::abs(closestPointIndex-lastClosestPointIndex);
+        if (index2>globalPath.size()-3)
+          index2 = 0;
+        if (diff>=3 && ((lastClosestPointIndex < closestPointIndex && diff<1000.0f) || (lastClosestPointIndex > closestPointIndex && diff>1000.0f)) ) {
+          //std::cout<<"Enter count loop with index1: "<<index1<<" index2: "<<index2<<" closestPointIndex: "<<closestPointIndex<<"\n";
+          while (index1 != closestPointIndex){
+            distanceTraveledAlongPath += sqrtf(powf(globalPath[index2]-globalPath[index1],2)+powf(globalPath[index2+1]-globalPath[index1+1],2));
+            //std::cout<<"Count in while: "<<distanceTraveledAlongPath<<"\n";
+            index1 +=3;
+            index2 +=3;
+            if (index1>globalPath.size()-3){
+              //std::cout<<"index1 = 0 -> closestPointIndex = "<< closestPointIndex<<"\n";
+              index1 = 0;
+            }
+            else if (index2>globalPath.size()-3){
+              //std::cout<<"index2 = 0 -> closestPointIndex = "<< closestPointIndex<<"\n";
+              index2 = 0;
+            }
+          }
+        }
+        lastClosestPointIndex = closestPointIndex;
+      }//End while
+/*-----------------------------------FINISHED AN ITERATION-------------------------------------------*/
+      totalDistValidation+=distanceTraveledAlongPath;
+      totalVel+=distanceTraveledAlongPath/(step*dt)*3.6f;
+      distanceTraveledOnMap += distanceTraveledAlongPath;
+      velocityOnMap += distanceTraveledAlongPath/(step*dt)*3.6f;
+      /*-- Print temporary stats --*/
+      std::ofstream tmpFile;
+      tmpFile.open("123401tmpStatValidation",std::ios_base::app);
+      if (its ==1){
+      tmpFile<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< "<<std::endl;
+      tmpFile<<"Map "<<mapsValidation<<std::endl;
       tmpFile<<"Total length of path: "<<pathLength<<std::endl;
       tmpFile<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< "<<std::endl;
       }
@@ -1967,9 +2539,9 @@ float go_car(Network *net, Population *pop, int generation)
       /*tmpFile<<"vx at stop: "<<vx<<std::endl;
       tmpFile<<"vy at stop: "<<vy<<std::endl;*/
       tmpFile<<"--------------------------------- "<<std::endl;
-      if (its == iterations){
-      tmpFile<<"averageDistanceTraveledOnMap: "<<distanceTraveledOnMap/iterations<<std::endl;
-      tmpFile<<"averageVelocityOnMap: "<<velocityOnMap/iterations<<std::endl;
+      if (its == iterationsValidation){
+      tmpFile<<"averageDistanceTraveledOnMap: "<<distanceTraveledOnMap/iterationsValidation<<std::endl;
+      tmpFile<<"averageVelocityOnMap: "<<velocityOnMap/iterationsValidation<<std::endl;
       }
       tmpFile.close();
       hitLeft = 0;
@@ -1980,8 +2552,8 @@ float go_car(Network *net, Population *pop, int generation)
   }// end maps
 /*------------------------------------FINISHED ALL MAPS----------------------------------------------*/
   /*-- Print temporary stats if new fitness record --*/
-  if((totalDist/(maps*iterations)) > pop->highest_fitness){
-    std::ifstream tmpFile("00tmpStat");
+  if((totalDistValidation/(mapsValidation*iterationsValidation)) > highestValidationOverall){
+    std::ifstream tmpFile("123401tmpStatValidation");
     std::string content = "";
     int i;
     for(i=0 ; tmpFile.eof()!=true ; i++) // get content of infile
@@ -1991,15 +2563,15 @@ float go_car(Network *net, Population *pop, int generation)
     tmpFile.close();
 
     std::ofstream oFile;
-    oFile.open("00stat");
+    oFile.open("123401statValidationValidation");
     oFile << content;                 // output
     oFile<<"\nGeneration: "<<generation<<std::endl;
-    oFile<<"Total Average Distance Traveled: "<<totalDist/(maps*iterations)<<std::endl;
-    oFile<<"Calculated total average vx: "<<totalVel/(maps*iterations)<<" km/h"<<std::endl;
+    oFile<<"Total Average Distance Traveled: "<<totalDistValidation/(mapsValidation*iterationsValidation)<<std::endl;
+    oFile<<"Calculated total average vx: "<<totalVel/(mapsValidation*iterationsValidation)<<" km/h"<<std::endl;
     oFile<<"--------------------------------- "<<std::endl;
     oFile.close();
 
-    std::ifstream tmpXyFile("00tmpXy");
+    std::ifstream tmpXyFile("123401tmpXyValidation");
     std::string content2 = "";
     int j;
     for(j=0 ; tmpXyFile.eof()!=true ; j++) // get content of infile
@@ -2009,16 +2581,38 @@ float go_car(Network *net, Population *pop, int generation)
     tmpXyFile.close();
 
     std::ofstream xyFile;
-    xyFile.open("00aXY");
+    xyFile.open("123401XYvalidation");
     xyFile << content2;
     xyFile.close();
+
+    std::ifstream tmpSpeedFile("123401tmpSpeedValidation");
+    std::string content3 = "";
+    int k;
+    for(k=0 ; tmpSpeedFile.eof()!=true ; k++) // get content of infile
+        content3 += tmpSpeedFile.get();
+    k--;
+    content3.erase(content3.end()-1);     // erase last character
+    tmpSpeedFile.close();
+
+    std::ofstream speedFile;
+    speedFile.open("123401SpeedValidation");
+    speedFile << content3;
+    speedFile.close();
   }
-  std::ofstream tmpFile;
-  tmpFile.open("00tmpStat", std::ofstream::out | std::ofstream::trunc);
-  tmpFile.close();
-  std::ofstream tmpXyFile;
-  tmpXyFile.open("00tmpXy", std::ofstream::out | std::ofstream::trunc);
-  tmpXyFile.close();
+
+  std::ofstream tmpFile2;
+  tmpFile2.open("123401tmpStatValidation", std::ofstream::out | std::ofstream::trunc);
+  tmpFile2.close();
+  std::ofstream tmpXyFile2;
+  tmpXyFile2.open("123401tmpXyValidation", std::ofstream::out | std::ofstream::trunc);
+  tmpXyFile2.close();
+  std::ofstream tmpSpeedFile2;
+  tmpSpeedFile2.open("123401tmpSpeedValidation", std::ofstream::out | std::ofstream::trunc);
+  tmpSpeedFile2.close();
+  *validationOfOrgTmp = totalDistValidation/(mapsValidation*iterationsValidation);
+/*------------------------------------TEST----------------------------------------------*/
+
+
   return (totalDist/(maps*iterations));
 }// End go_car
 

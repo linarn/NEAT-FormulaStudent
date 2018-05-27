@@ -1,0 +1,1065 @@
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Map 1
+Total length of path: 262.816
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Iteration 0
+Time: 4.65
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 1 offTrack: 0
+out1 at stop: 0.416218
+out2 at stop: -1
+Start -> x: -3.6334 y: -41.892 yaw: 0.50785
+Stop -> x: -3.00324 y: -42.5124 yaw: 1.05424
+--------------------------------- 
+Iteration 1
+Time: 10.4
+distanceTraveledAlongPath: 2.99637
+Calculated average vx: 1.0372 km/h
+hitLeft: 0 hitRight: 0 offTrack: 1
+out1 at stop: -1
+out2 at stop: 0.865799
+Start -> x: -6.1686 y: -13.432 yaw: -0.49237
+Stop -> x: -1.6797 y: -14.1482 yaw: 0.0858299
+--------------------------------- 
+Iteration 2
+Time: 17.65
+distanceTraveledAlongPath: 1.00005
+Calculated average vx: 0.203976 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.202357
+Start -> x: -3.0147 y: 1.4702 yaw: -3.1317
+Stop -> x: -3.30614 y: 1.1607 yaw: 2.73669
+--------------------------------- 
+Iteration 3
+Time: 3.9
+distanceTraveledAlongPath: 0.500004
+Calculated average vx: 0.461542 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.65691
+Start -> x: 18.767 y: -26.2 yaw: 1.5756
+Stop -> x: 18.0682 y: -25.8941 yaw: 1.25776
+--------------------------------- 
+Iteration 4
+Time: 0.85
+distanceTraveledAlongPath: 3.4978
+Calculated average vx: 14.8142 km/h
+hitLeft: 0 hitRight: 0 offTrack: 1
+out1 at stop: 1
+out2 at stop: 0.999962
+Start -> x: 10.941 y: -39.307 yaw: 0.20142
+Stop -> x: 14.2878 y: -36.2112 yaw: 0.893255
+--------------------------------- 
+Iteration 5
+Time: 0.6
+distanceTraveledAlongPath: 1.99995
+Calculated average vx: 11.9997 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.999996
+Start -> x: 18.844 y: -9.7073 yaw: 1.5584
+Stop -> x: 17.9007 y: -7.58257 yaw: 2.04444
+--------------------------------- 
+Iteration 6
+Time: 3.35
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.839735
+Start -> x: -13.18 y: -25.922 yaw: -3.102
+Stop -> x: -13.281 y: -26.6231 yaw: 2.82668
+--------------------------------- 
+Iteration 7
+Time: 42.05
+distanceTraveledAlongPath: 1.00008
+Calculated average vx: 0.0856189 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: -1
+out2 at stop: -1
+Start -> x: -29.077 y: -39.545 yaw: -0.039829
+Stop -> x: -30.1458 y: -38.1577 yaw: 0.906062
+--------------------------------- 
+Iteration 8
+Time: 10.45
+distanceTraveledAlongPath: 0.500175
+Calculated average vx: 0.172309 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.864937
+Start -> x: -3.9853 y: -22.971 yaw: -2.3356
+Stop -> x: -3.58415 y: -24.3752 yaw: 2.95785
+--------------------------------- 
+Iteration 9
+Time: 3.6
+distanceTraveledAlongPath: 0.500121
+Calculated average vx: 0.500121 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.698588
+Start -> x: 18.655 y: -21.202 yaw: 1.5915
+Stop -> x: 18.0064 y: -20.9413 yaw: 1.31155
+--------------------------------- 
+averageDistanceTraveledOnMap: 1.19946
+averageVelocityOnMap: 2.92747
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Map 2
+Total length of path: 320.549
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Iteration 0
+Time: 8.3
+distanceTraveledAlongPath: 0.997265
+Calculated average vx: 0.432549 km/h
+hitLeft: 0 hitRight: 1 offTrack: 0
+out1 at stop: -1
+out2 at stop: -1
+Start -> x: -9.2753 y: 0.84981 yaw: 3.0702
+Stop -> x: -9.894 y: 2.18276 yaw: -2.20816
+--------------------------------- 
+Iteration 1
+Time: 14
+distanceTraveledAlongPath: 0.998267
+Calculated average vx: 0.256697 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.718598
+Start -> x: 13.723 y: 6.0566 yaw: -2.3333
+Stop -> x: 13.5541 y: 4.61639 yaw: 3.05918
+--------------------------------- 
+Iteration 2
+Time: 0.05
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.0775412
+Start -> x: -21.068 y: 48.089 yaw: 2.1854
+Stop -> x: -21.0683 y: 48.078 yaw: 2.19453
+--------------------------------- 
+Iteration 3
+Time: 3.15
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.945497
+Start -> x: 6.8021 y: 2.4351 yaw: -2.9641
+Stop -> x: 6.80597 y: 1.76888 yaw: 2.98662
+--------------------------------- 
+Iteration 4
+Time: 9.8
+distanceTraveledAlongPath: 0.997666
+Calculated average vx: 0.36649 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.922212
+Start -> x: 13.935 y: 67.416 yaw: -0.95467
+Stop -> x: 15.7928 y: 67.1197 yaw: -1.86256
+--------------------------------- 
+Iteration 5
+Time: 0.85
+distanceTraveledAlongPath: 3.9978
+Calculated average vx: 16.9319 km/h
+hitLeft: 0 hitRight: 0 offTrack: 1
+out1 at stop: 1
+out2 at stop: 0.999882
+Start -> x: 6.1388 y: 28.398 yaw: 1.6895
+Stop -> x: 3.32967 y: 31.9894 yaw: 2.38136
+--------------------------------- 
+Iteration 6
+Time: 4.5
+distanceTraveledAlongPath: 0.5
+Calculated average vx: 0.4 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.855921
+Start -> x: 15.497 y: 53.221 yaw: -1.5708
+Stop -> x: 16.2647 y: 52.5968 yaw: -1.91736
+--------------------------------- 
+Iteration 7
+Time: 11.15
+distanceTraveledAlongPath: 1.50015
+Calculated average vx: 0.484353 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.922996
+Start -> x: 14.677 y: 8.3371 yaw: -1.8627
+Stop -> x: 15.9452 y: 6.60215 yaw: 3.11838
+--------------------------------- 
+Iteration 8
+Time: 18.95
+distanceTraveledAlongPath: 0.995241
+Calculated average vx: 0.189069 km/h
+hitLeft: 0 hitRight: 1 offTrack: 0
+out1 at stop: -1
+out2 at stop: -0.961344
+Start -> x: -7.3981 y: 63.468 yaw: 2.2817
+Stop -> x: -7.28489 y: 64.103 yaw: 2.83971
+--------------------------------- 
+Iteration 9
+Time: 15.05
+distanceTraveledAlongPath: 1
+Calculated average vx: 0.239203 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.213086
+Start -> x: -1.2263 y: 37.818 yaw: -3.1402
+Stop -> x: -1.69299 y: 37.0125 yaw: 2.43019
+--------------------------------- 
+averageDistanceTraveledOnMap: 1.09864
+averageVelocityOnMap: 1.93002
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Map 3
+Total length of path: 650.709
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Iteration 0
+Time: 0.45
+distanceTraveledAlongPath: 0.500437
+Calculated average vx: 4.00349 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.938458
+Start -> x: 130.76 y: 12.143 yaw: 1.4219
+Stop -> x: 130.725 y: 12.4867 yaw: 1.56626
+--------------------------------- 
+Iteration 1
+Time: 1.3
+distanceTraveledAlongPath: 0.502429
+Calculated average vx: 1.39134 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.796395
+Start -> x: 119.06 y: -3.958 yaw: 0.61978
+Stop -> x: 119.258 y: -3.51335 yaw: 0.617497
+--------------------------------- 
+Iteration 2
+Time: 5.15
+distanceTraveledAlongPath: 0.499592
+Calculated average vx: 0.349229 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.998484
+Start -> x: 80.809 y: 25.01 yaw: 0.21625
+Stop -> x: 80.88 y: 26.0904 yaw: -0.336473
+--------------------------------- 
+Iteration 3
+Time: 1.55
+distanceTraveledAlongPath: 0.499383
+Calculated average vx: 1.15986 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.818472
+Start -> x: 126.54 y: 2.5946 yaw: 1.0445
+Stop -> x: 126.496 y: 3.07097 yaw: 1.03485
+--------------------------------- 
+Iteration 4
+Time: 3.15
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.152567
+Start -> x: 105.06 y: -11.693 yaw: 0.49978
+Stop -> x: 104.844 y: -11.0625 yaw: 0.167309
+--------------------------------- 
+Iteration 5
+Time: 9.2
+distanceTraveledAlongPath: 0.500178
+Calculated average vx: 0.195722 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -1
+Start -> x: 30.393 y: -4.9075 yaw: 0.11282
+Stop -> x: 30.7465 y: -4.02492 yaw: 0.314123
+--------------------------------- 
+Iteration 6
+Time: 13.85
+distanceTraveledAlongPath: 1.99952
+Calculated average vx: 0.51973 km/h
+hitLeft: 0 hitRight: 1 offTrack: 0
+out1 at stop: -0.918291
+out2 at stop: -1
+Start -> x: 24.991 y: -55.673 yaw: -0.50954
+Stop -> x: 26.2869 y: -57.2191 yaw: 0.79498
+--------------------------------- 
+Iteration 7
+Time: 4.15
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 1 offTrack: 0
+out1 at stop: 0.999999
+out2 at stop: -1
+Start -> x: 18.822 y: -7.8984 yaw: 0.37109
+Stop -> x: 19.3164 y: -8.65088 yaw: 0.78126
+--------------------------------- 
+Iteration 8
+Time: 4.35
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.999993
+Start -> x: 33.448 y: -28.455 yaw: -2.7168
+Stop -> x: 33.6185 y: -29.3564 yaw: 3.10175
+--------------------------------- 
+Iteration 9
+Time: 3.45
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.2091
+Start -> x: 65.17 y: -49.497 yaw: 1.2609
+Stop -> x: 64.531 y: -49.1464 yaw: 0.895383
+--------------------------------- 
+averageDistanceTraveledOnMap: 0.450154
+averageVelocityOnMap: 0.761937
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Map 4
+Total length of path: 151.988
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Iteration 0
+Time: 0.65
+distanceTraveledAlongPath: 1.00048
+Calculated average vx: 5.54109 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.999542
+Start -> x: -23.218 y: -8.148 yaw: -0.3668
+Stop -> x: -22.1028 y: -8.11299 yaw: 0.0344931
+--------------------------------- 
+Iteration 1
+Time: 3.05
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.169477
+Start -> x: 13.586 y: 12.875 yaw: -2.427
+Stop -> x: 13.9215 y: 12.3241 yaw: -2.74846
+--------------------------------- 
+Iteration 2
+Time: 1.2
+distanceTraveledAlongPath: 7.46244
+Calculated average vx: 22.3873 km/h
+hitLeft: 0 hitRight: 0 offTrack: 1
+out1 at stop: 1
+out2 at stop: 1
+Start -> x: -25.03 y: -1.5943 yaw: -2.1353
+Stop -> x: -24.0353 y: -10.3643 yaw: -1.26036
+--------------------------------- 
+Iteration 3
+Time: 5.25
+distanceTraveledAlongPath: 0.500003
+Calculated average vx: 0.342859 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.664324
+Start -> x: 0.17761 y: -6.0419 yaw: -0.066408
+Stop -> x: 0.683524 y: -5.13983 yaw: -0.503091
+--------------------------------- 
+Iteration 4
+Time: 84.3
+distanceTraveledAlongPath: 3.49509
+Calculated average vx: 0.149256 km/h
+hitLeft: 0 hitRight: 0 offTrack: 1
+out1 at stop: -1
+out2 at stop: -0.999995
+Start -> x: 9.9244 y: 7.2026 yaw: -1.7817
+Stop -> x: 11.7987 y: 6.42052 yaw: -0.924682
+--------------------------------- 
+Iteration 5
+Time: 0.9
+distanceTraveledAlongPath: 4.00002
+Calculated average vx: 16.0001 km/h
+hitLeft: 0 hitRight: 0 offTrack: 1
+out1 at stop: 1
+out2 at stop: 1
+Start -> x: 7.8133 y: -8.1537 yaw: -0.5541
+Stop -> x: 12.6986 y: -8.79299 yaw: 0.0275006
+--------------------------------- 
+Iteration 6
+Time: 33.65
+distanceTraveledAlongPath: 1.99258
+Calculated average vx: 0.213174 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: -1
+out2 at stop: -0.0592166
+Start -> x: 11.078 y: 10.45 yaw: -2.1354
+Stop -> x: 8.88693 y: 8.83719 yaw: -0.0611732
+--------------------------------- 
+Iteration 7
+Time: 15.3
+distanceTraveledAlongPath: 3.99731
+Calculated average vx: 0.940543 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: -1
+out2 at stop: -1
+Start -> x: 5.0737 y: -6.9574 yaw: -0.32968
+Stop -> x: 9.50072 y: -7.23314 yaw: 1.86109
+--------------------------------- 
+Iteration 8
+Time: 0.8
+distanceTraveledAlongPath: 3.4985
+Calculated average vx: 15.7433 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.999992
+Start -> x: 15.767 y: -11.682 yaw: 0.38205
+Stop -> x: 18.6007 y: -8.97468 yaw: 0.894422
+--------------------------------- 
+Iteration 9
+Time: 1.05
+distanceTraveledAlongPath: 6.48905
+Calculated average vx: 22.2482 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.999984
+Start -> x: 18.087 y: -10.748 yaw: 0.47779
+Stop -> x: 21.1756 y: -4.64472 yaw: 1.28447
+--------------------------------- 
+averageDistanceTraveledOnMap: 3.24355
+averageVelocityOnMap: 8.35657
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Map 5
+Total length of path: 280.075
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Iteration 0
+Time: 0.7
+distanceTraveledAlongPath: 2.4969
+Calculated average vx: 12.8412 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.999996
+Start -> x: -25.748 y: -26.745 yaw: 0.86567
+Stop -> x: -25.0426 y: -23.6912 yaw: 1.44284
+--------------------------------- 
+Iteration 1
+Time: 12.4
+distanceTraveledAlongPath: 0.999406
+Calculated average vx: 0.29015 km/h
+hitLeft: 0 hitRight: 1 offTrack: 0
+out1 at stop: -1
+out2 at stop: -0.98999
+Start -> x: -32.018 y: -9.7979 yaw: 1.9019
+Stop -> x: -31.132 y: -8.74323 yaw: 2.87225
+--------------------------------- 
+Iteration 2
+Time: 5.7
+distanceTraveledAlongPath: 0.49989
+Calculated average vx: 0.31572 km/h
+hitLeft: 0 hitRight: 1 offTrack: 0
+out1 at stop: 0.999998
+out2 at stop: -1
+Start -> x: -24.109 y: -20.508 yaw: 1.9241
+Stop -> x: -23.1363 y: -19.7671 yaw: 2.52163
+--------------------------------- 
+Iteration 3
+Time: 2.95
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.159412
+Start -> x: -36.152 y: -30.986 yaw: 0.86714
+Stop -> x: -36.5538 y: -30.5092 yaw: 0.556699
+--------------------------------- 
+Iteration 4
+Time: 10.65
+distanceTraveledAlongPath: 1
+Calculated average vx: 0.338028 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.160088
+Start -> x: 2.0005 y: -1.4993 yaw: 0.00034986
+Stop -> x: 3.18536 y: 0.289647 yaw: -1.15751
+--------------------------------- 
+Iteration 5
+Time: 5.9
+distanceTraveledAlongPath: 0.5
+Calculated average vx: 0.305085 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.995952
+Start -> x: -1.7641 y: -1.5 yaw: 7.4127e-08
+Stop -> x: -1.28358 y: -0.406993 yaw: -0.587211
+--------------------------------- 
+Iteration 6
+Time: 4.45
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.968505
+Start -> x: -27.233 y: -1.9583 yaw: 0.20421
+Stop -> x: -27.1963 y: -1.02082 yaw: -0.271437
+--------------------------------- 
+Iteration 7
+Time: 20.9
+distanceTraveledAlongPath: 1.99971
+Calculated average vx: 0.344447 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -1
+Start -> x: 37.107 y: -36.943 yaw: -1.9066
+Stop -> x: 38.1381 y: -39.6779 yaw: -2.56092
+--------------------------------- 
+Iteration 8
+Time: 0.65
+distanceTraveledAlongPath: 2.49708
+Calculated average vx: 13.83 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.999999
+Start -> x: -25.424 y: -26.364 yaw: 0.86567
+Stop -> x: -24.7506 y: -23.7338 yaw: 1.39846
+--------------------------------- 
+Iteration 9
+Time: 0.95
+distanceTraveledAlongPath: 1.00045
+Calculated average vx: 3.79118 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.978936
+Start -> x: -23.74 y: -22.457 yaw: 1.6535
+Stop -> x: -24.1642 y: -21.5384 yaw: 1.9409
+--------------------------------- 
+averageDistanceTraveledOnMap: 1.09934
+averageVelocityOnMap: 3.20558
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Map 6
+Total length of path: 497.854
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Iteration 0
+Time: 4.25
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.180973
+Start -> x: 13.706 y: 36.427 yaw: 0.0049
+Stop -> x: 13.9081 y: 37.3006 yaw: -0.448723
+--------------------------------- 
+Iteration 1
+Time: 28.1
+distanceTraveledAlongPath: 1.9999
+Calculated average vx: 0.256214 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: -1
+out2 at stop: 0.164629
+Start -> x: -33.931 y: 15.054 yaw: 1.9337
+Stop -> x: -34.8144 y: 16.5414 yaw: -2.2811
+--------------------------------- 
+Iteration 2
+Time: 4.95
+distanceTraveledAlongPath: 0.500025
+Calculated average vx: 0.363655 km/h
+hitLeft: 0 hitRight: 1 offTrack: 0
+out1 at stop: 1
+out2 at stop: -1
+Start -> x: -6.3152 y: -20.986 yaw: 3.0916
+Stop -> x: -6.53377 y: -19.9468 yaw: -2.68737
+--------------------------------- 
+Iteration 3
+Time: 4.3
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.995951
+Start -> x: 41.927 y: 26.863 yaw: -1.219
+Stop -> x: 42.8319 y: 26.9681 yaw: -1.69277
+--------------------------------- 
+Iteration 4
+Time: 6.9
+distanceTraveledAlongPath: 0.500141
+Calculated average vx: 0.260943 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.998212
+Start -> x: 6.6943 y: -19.905 yaw: -2.5308
+Stop -> x: 7.02467 y: -21.307 yaw: 2.99239
+--------------------------------- 
+Iteration 5
+Time: 2.65
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.184598
+Start -> x: 45.143 y: 1.6716 yaw: -1.3416
+Stop -> x: 45.7016 y: 1.71925 yaw: -1.61899
+--------------------------------- 
+Iteration 6
+Time: 14.15
+distanceTraveledAlongPath: 2.0005
+Calculated average vx: 0.508962 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.141591
+Start -> x: -34.607 y: 29.324 yaw: 1.3106
+Stop -> x: -35.9541 y: 31.6698 yaw: -0.251259
+--------------------------------- 
+Iteration 7
+Time: 5.35
+distanceTraveledAlongPath: 0.499234
+Calculated average vx: 0.335933 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.999992
+Start -> x: 35.711 y: 33.814 yaw: -0.54104
+Stop -> x: 36.5433 y: 34.5691 yaw: -1.11578
+--------------------------------- 
+Iteration 8
+Time: 5.55
+distanceTraveledAlongPath: 0.498934
+Calculated average vx: 0.323633 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.219853
+Start -> x: -28.274 y: 36.02 yaw: 0.18978
+Stop -> x: -28.1385 y: 37.1759 yaw: -0.406981
+--------------------------------- 
+Iteration 9
+Time: 7
+distanceTraveledAlongPath: 0.499508
+Calculated average vx: 0.25689 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.99602
+Start -> x: -31.942 y: 34.491 yaw: 0.5903
+Stop -> x: -32.2398 y: 35.9206 yaw: -0.180704
+--------------------------------- 
+averageDistanceTraveledOnMap: 0.649824
+averageVelocityOnMap: 0.230623
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Map 7
+Total length of path: 355.744
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Iteration 0
+Time: 0.5
+distanceTraveledAlongPath: 0.499964
+Calculated average vx: 3.59974 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.998231
+Start -> x: -54.013 y: -34.839 yaw: 0.15402
+Stop -> x: -53.3893 y: -34.4886 yaw: 0.442418
+--------------------------------- 
+Iteration 1
+Time: 0.75
+distanceTraveledAlongPath: 2.99919
+Calculated average vx: 14.3961 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.999489
+Start -> x: 11.517 y: -27.573 yaw: 0.83469
+Stop -> x: 12.3508 y: -24.0902 yaw: 1.45323
+--------------------------------- 
+Iteration 2
+Time: 2.65
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.0852044
+Start -> x: 8.4699 y: -8.3428 yaw: 2.212
+Stop -> x: 7.97732 y: -8.61084 yaw: 1.93461
+--------------------------------- 
+Iteration 3
+Time: 4.7
+distanceTraveledAlongPath: 0.500509
+Calculated average vx: 0.383369 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.657783
+Start -> x: -72.205 y: -38.194 yaw: 0.20462
+Stop -> x: -71.987 y: -37.2839 yaw: -0.192065
+--------------------------------- 
+Iteration 4
+Time: 14.8
+distanceTraveledAlongPath: 3.50056
+Calculated average vx: 0.851486 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: -1
+out2 at stop: -0.0626603
+Start -> x: -57.385 y: 22.244 yaw: -2.2945
+Stop -> x: -58.0686 y: 19.6094 yaw: 1.06568
+--------------------------------- 
+Iteration 5
+Time: 0.85
+distanceTraveledAlongPath: 3.9996
+Calculated average vx: 16.9395 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.999996
+Start -> x: 11.166 y: -27.93 yaw: 0.79419
+Stop -> x: 12.7769 y: -23.8253 yaw: 1.34255
+--------------------------------- 
+Iteration 6
+Time: 21.75
+distanceTraveledAlongPath: 1.50067
+Calculated average vx: 0.248386 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: -1
+out2 at stop: -0.997249
+Start -> x: -48.741 y: 31.954 yaw: -2.3099
+Stop -> x: -48.6137 y: 30.5544 yaw: 0.216453
+--------------------------------- 
+Iteration 7
+Time: 17.45
+distanceTraveledAlongPath: 3.99922
+Calculated average vx: 0.825053 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: -1
+out2 at stop: -1
+Start -> x: -55.495 y: -35.069 yaw: 0.15479
+Stop -> x: -51.9439 y: -33.6535 yaw: 2.38815
+--------------------------------- 
+Iteration 8
+Time: 18.25
+distanceTraveledAlongPath: 0.999762
+Calculated average vx: 0.197213 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.877848
+Start -> x: -15.174 y: -35.437 yaw: 0.25206
+Stop -> x: -14.7205 y: -35.0258 yaw: -0.0825724
+--------------------------------- 
+Iteration 9
+Time: 34.4
+distanceTraveledAlongPath: 2.50202
+Calculated average vx: 0.26184 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.366573
+Start -> x: -39.088 y: -22.89 yaw: 0.59614
+Stop -> x: -37.1277 y: -23.4047 yaw: -1.17667
+--------------------------------- 
+averageDistanceTraveledOnMap: 2.05015
+averageVelocityOnMap: 3.77027
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Map 8
+Total length of path: 460.671
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Iteration 0
+Time: 2.55
+distanceTraveledAlongPath: 0.50024
+Calculated average vx: 0.706222 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.900031
+Start -> x: 28.854 y: -30.589 yaw: -0.63058
+Stop -> x: 29.4832 y: -30.469 yaw: -0.746211
+--------------------------------- 
+Iteration 1
+Time: 42.65
+distanceTraveledAlongPath: 0.50006
+Calculated average vx: 0.0422091 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: -1
+out2 at stop: -0.194506
+Start -> x: -71.604 y: -26.79 yaw: -0.59249
+Stop -> x: -71.0566 y: -26.9442 yaw: 2.537
+--------------------------------- 
+Iteration 2
+Time: 7.6
+distanceTraveledAlongPath: 0.5
+Calculated average vx: 0.236842 km/h
+hitLeft: 0 hitRight: 1 offTrack: 0
+out1 at stop: 0.993443
+out2 at stop: -1
+Start -> x: -38.5 y: 1.5 yaw: 3.1416
+Stop -> x: -39.1235 y: 2.98592 yaw: -2.34491
+--------------------------------- 
+Iteration 3
+Time: 2.6
+distanceTraveledAlongPath: 0.499218
+Calculated average vx: 0.691225 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.961325
+Start -> x: 69.045 y: 11.982 yaw: 1.863
+Stop -> x: 68.4671 y: 12.2301 yaw: 1.7051
+--------------------------------- 
+Iteration 4
+Time: 18.65
+distanceTraveledAlongPath: 1.50014
+Calculated average vx: 0.289571 km/h
+hitLeft: 0 hitRight: 0 offTrack: 1
+out1 at stop: 1
+out2 at stop: -0.999998
+Start -> x: 36.723 y: -36.748 yaw: -0.51988
+Stop -> x: 38.2439 y: -35.3118 yaw: -0.0165751
+--------------------------------- 
+Iteration 5
+Time: 0.95
+distanceTraveledAlongPath: 2.4984
+Calculated average vx: 9.46762 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.999999
+Start -> x: 37.899 y: 34.687 yaw: -2.6689
+Stop -> x: 36.4262 y: 32.3863 yaw: -1.92313
+--------------------------------- 
+Iteration 6
+Time: 1.05
+distanceTraveledAlongPath: 3.00002
+Calculated average vx: 10.2858 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -1
+Start -> x: 51.79 y: 35.484 yaw: 2.7557
+Stop -> x: 48.7168 y: 34.9837 yaw: -2.75159
+--------------------------------- 
+Iteration 7
+Time: 5.4
+distanceTraveledAlongPath: 0.500004
+Calculated average vx: 0.333336 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.808566
+Start -> x: -8.0498 y: -21.01 yaw: 0.0044001
+Stop -> x: -7.40754 y: -20.1116 yaw: -0.447372
+--------------------------------- 
+Iteration 8
+Time: 3.15
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.999999
+Start -> x: 29.476 y: 16.179 yaw: -1.7491
+Stop -> x: 30.1018 y: 15.9506 yaw: -2.08157
+--------------------------------- 
+Iteration 9
+Time: 3.15
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.999999
+Start -> x: 29.476 y: 16.179 yaw: -1.7491
+Stop -> x: 30.1018 y: 15.9506 yaw: -2.08157
+--------------------------------- 
+averageDistanceTraveledOnMap: 0.949808
+averageVelocityOnMap: 2.20528
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Map 9
+Total length of path: 727.298
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Iteration 0
+Time: 1.15
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.807758
+Start -> x: -43.937 y: -12.628 yaw: -0.27119
+Stop -> x: -43.6627 y: -12.5166 yaw: -0.253435
+--------------------------------- 
+Iteration 1
+Time: 0.7
+distanceTraveledAlongPath: 2.49898
+Calculated average vx: 12.8519 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.999996
+Start -> x: -49.819 y: 75.387 yaw: -1.7639
+Stop -> x: -48.9378 y: 72.3792 yaw: -1.18673
+--------------------------------- 
+Iteration 2
+Time: 3.05
+distanceTraveledAlongPath: 0.500203
+Calculated average vx: 0.590403 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.895399
+Start -> x: 27.569 y: 55.569 yaw: 2.2111
+Stop -> x: 26.7511 y: 55.7772 yaw: 2.05376
+--------------------------------- 
+Iteration 3
+Time: 2.95
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.129688
+Start -> x: -19.067 y: -8.8213 yaw: 0.36973
+Stop -> x: -19.1959 y: -8.21076 yaw: 0.0592896
+--------------------------------- 
+Iteration 4
+Time: 0.45
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.218511
+Start -> x: 36.932 y: 20.841 yaw: 1.2167
+Stop -> x: 36.8462 y: 20.8748 yaw: 1.18174
+--------------------------------- 
+Iteration 5
+Time: 4.85
+distanceTraveledAlongPath: 1.00004
+Calculated average vx: 0.742295 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.814378
+Start -> x: -5.414 y: 7.9072 yaw: -2.7403
+Stop -> x: -5.81096 y: 6.87476 yaw: -3.08526
+--------------------------------- 
+Iteration 6
+Time: 11.4
+distanceTraveledAlongPath: 1.48765
+Calculated average vx: 0.469783 km/h
+hitLeft: 0 hitRight: 1 offTrack: 0
+out1 at stop: -1
+out2 at stop: -0.999894
+Start -> x: -45.231 y: 44.153 yaw: -2.5176
+Stop -> x: -46.6787 y: 44.7159 yaw: -1.4302
+--------------------------------- 
+Iteration 7
+Time: 3.35
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 1 offTrack: 0
+out1 at stop: 1
+out2 at stop: -1
+Start -> x: -2.2784 y: -2.3297 yaw: 0.31982
+Stop -> x: -1.93663 y: -2.96549 yaw: 0.656249
+--------------------------------- 
+Iteration 8
+Time: 4.7
+distanceTraveledAlongPath: 0.499963
+Calculated average vx: 0.38295 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.995066
+Start -> x: -10.942 y: 5.5745 yaw: -2.7495
+Stop -> x: -10.9914 y: 4.63502 yaw: 3.12479
+--------------------------------- 
+Iteration 9
+Time: 3.15
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.963586
+Start -> x: -4.9562 y: 8.108 yaw: -2.7282
+Stop -> x: -4.79672 y: 7.46114 yaw: -3.06067
+--------------------------------- 
+averageDistanceTraveledOnMap: 0.598683
+averageVelocityOnMap: 1.50374
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Map 10
+Total length of path: 322.397
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+Iteration 0
+Time: 10.55
+distanceTraveledAlongPath: 1.00001
+Calculated average vx: 0.341237 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.480679
+Start -> x: -4.0723 y: 3.5714 yaw: -2.1968
+Stop -> x: -3.31162 y: 1.58349 yaw: 2.93939
+--------------------------------- 
+Iteration 1
+Time: 0.45
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.217151
+Start -> x: -46.114 y: 0.98678 yaw: -0.91097
+Stop -> x: -46.0403 y: 1.04216 yaw: -0.94593
+--------------------------------- 
+Iteration 2
+Time: 2.1
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.657715
+Start -> x: 12.506 y: 15.68 yaw: 0.97234
+Stop -> x: 12.33 y: 16.0721 yaw: 0.849209
+--------------------------------- 
+Iteration 3
+Time: 4.75
+distanceTraveledAlongPath: 0.499666
+Calculated average vx: 0.378694 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.0993644
+Start -> x: -46.711 y: 1.7887 yaw: -0.9514
+Stop -> x: -46.141 y: 1.61261 yaw: -0.929644
+--------------------------------- 
+Iteration 4
+Time: 0.45
+distanceTraveledAlongPath: 0.500023
+Calculated average vx: 4.00018 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.845736
+Start -> x: -16.677 y: -9.1692 yaw: 0.0094989
+Stop -> x: -16.3306 y: -9.06651 yaw: 0.139999
+--------------------------------- 
+Iteration 5
+Time: 33.6
+distanceTraveledAlongPath: 1.00014
+Calculated average vx: 0.107158 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: -1
+out2 at stop: -1
+Start -> x: -34.955 y: -7.9083 yaw: -0.36007
+Stop -> x: -35.2814 y: -6.76923 yaw: 1.61704
+--------------------------------- 
+Iteration 6
+Time: 17.65
+distanceTraveledAlongPath: 1.00161
+Calculated average vx: 0.204295 km/h
+hitLeft: 0 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: -0.541263
+Start -> x: 1.6436 y: 27.707 yaw: -1.5139
+Stop -> x: 2.14421 y: 27.1913 yaw: -1.98337
+--------------------------------- 
+Iteration 7
+Time: 5.25
+distanceTraveledAlongPath: 0.50012
+Calculated average vx: 0.34294 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: -0.984939
+out2 at stop: -1
+Start -> x: -35.433 y: 14.883 yaw: -1.4139
+Stop -> x: -34.3154 y: 14.7526 yaw: -1.94931
+--------------------------------- 
+Iteration 8
+Time: 2.35
+distanceTraveledAlongPath: 0
+Calculated average vx: 0 km/h
+hitLeft: 0 hitRight: 1 offTrack: 0
+out1 at stop: -1
+out2 at stop: -1
+Start -> x: -38.238 y: 20.645 yaw: -0.90479
+Stop -> x: -38.5866 y: 20.2906 yaw: -0.66045
+--------------------------------- 
+Iteration 9
+Time: 0.65
+distanceTraveledAlongPath: 1.99961
+Calculated average vx: 11.0748 km/h
+hitLeft: 1 hitRight: 0 offTrack: 0
+out1 at stop: 1
+out2 at stop: 0.999999
+Start -> x: 5.8583 y: 36.322 yaw: -2.6821
+Stop -> x: 3.97965 y: 34.5014 yaw: -2.29391
+--------------------------------- 
+averageDistanceTraveledOnMap: 0.650119
+averageVelocityOnMap: 1.64493
+
+Generation: 1
+Total Average Distance Traveled: 1.19897
+Calculated total average vx: 2.65364 km/h
+--------------------------------- 
